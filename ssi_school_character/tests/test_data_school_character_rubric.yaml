@@ -1,66 +1,63 @@
-setup:
-  steps:
-    - step: "Create scale"
-      action: "create"
-      model: "school_character_scale"
-      save_as: "scale"
-      values:
-        name: "Rubric Scale"
-        code: "TEST-RUBRIC-SCALE"
-    - step: "Create level 1"
-      action: "create"
-      model: "school_character_level"
-      save_as: "level_1"
-      values:
-        name: "Rubric Level One"
-        code: "TEST-RL1"
-        scale_id: "REC: scale.id"
-        sequence: 10
-    - step: "Create level 2"
-      action: "create"
-      model: "school_character_level"
-      save_as: "level_2"
-      values:
-        name: "Rubric Level Two"
-        code: "TEST-RL2"
-        scale_id: "REC: scale.id"
-        sequence: 20
-    - step: "Create level 3"
-      action: "create"
-      model: "school_character_level"
-      save_as: "level_3"
-      values:
-        name: "Rubric Level Three"
-        code: "TEST-RL3"
-        scale_id: "REC: scale.id"
-        sequence: 30
-    - step: "Create level 4"
-      action: "create"
-      model: "school_character_level"
-      save_as: "level_4"
-      values:
-        name: "Rubric Level Four"
-        code: "TEST-RL4"
-        scale_id: "REC: scale.id"
-        sequence: 40
-    - step: "Create construct"
-      action: "create"
-      model: "school_character_construct"
-      save_as: "construct"
-      values:
-        name: "Rubric Construct"
-        code: "TEST-RUBRIC-CONSTRUCT"
-
 scenarios:
   - name: "Create rubric with four descriptors"
     steps:
+      - step: "Create scale"
+        action: "create"
+        model: "school_character_scale"
+        save_as: "scale"
+        values:
+          name: "Rubric Scale"
+          code: "TEST-RUBRIC-SCALE-A"
+      - step: "Create level 1"
+        action: "create"
+        model: "school_character_level"
+        save_as: "level_1"
+        values:
+          name: "Rubric Level One"
+          code: "TEST-RL1-A"
+          scale_id: "REC: scale.id"
+          sequence: 10
+      - step: "Create level 2"
+        action: "create"
+        model: "school_character_level"
+        save_as: "level_2"
+        values:
+          name: "Rubric Level Two"
+          code: "TEST-RL2-A"
+          scale_id: "REC: scale.id"
+          sequence: 20
+      - step: "Create level 3"
+        action: "create"
+        model: "school_character_level"
+        save_as: "level_3"
+        values:
+          name: "Rubric Level Three"
+          code: "TEST-RL3-A"
+          scale_id: "REC: scale.id"
+          sequence: 30
+      - step: "Create level 4"
+        action: "create"
+        model: "school_character_level"
+        save_as: "level_4"
+        values:
+          name: "Rubric Level Four"
+          code: "TEST-RL4-A"
+          scale_id: "REC: scale.id"
+          sequence: 40
+      - step: "Create construct"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct"
+        values:
+          name: "Rubric Construct"
+          code: "TEST-RUBRIC-CONSTRUCT-A"
       - step: "Create rubric with inline descriptors"
         action: "create"
         model: "school_character_rubric"
         save_as: "rubric"
         values:
           name: "Test Rubric"
-          code: "TEST-RUBRIC"
+          code: "TEST-RUBRIC-A"
           construct_id: "REC: construct.id"
           scale_id: "REC: scale.id"
           descriptor_ids:
@@ -111,6 +108,13 @@ scenarios:
 
   - name: "Create rubric without scale must fail (required)"
     steps:
+      - step: "Create construct"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct"
+        values:
+          name: "Rubric Construct No Scale"
+          code: "TEST-RUBRIC-CONSTRUCT-B"
       - step: "Try to save a rubric with no scale"
         action: "form"
         model: "school_character_rubric"
@@ -119,5 +123,5 @@ scenarios:
           message_contains: "required field"
         values:
           name: "Scaleless Rubric"
-          code: "TEST-RUBRIC-NOSCALE"
+          code: "TEST-RUBRIC-NOSCALE-B"
           construct_id: "REC: construct"
