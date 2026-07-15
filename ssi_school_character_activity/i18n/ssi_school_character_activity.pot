@@ -1,0 +1,901 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ssi_school_character_activity
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity_alignment__activity_id
+msgid "# Activity"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__name
+msgid "# Document"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__active_approval_ids
+msgid "Active Approvals"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__active_approver_partner_ids
+msgid "Active Partners"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__active_approver_user_ids
+msgid "Active Users"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.ui.menu,name:ssi_school_character_activity.menu_character_activity_root
+msgid "Activity"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity_alignment__activity_dok
+msgid "Activity (DOK)"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity_alignment__activity_construct_id
+msgid "Activity Construct"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__alignment_ids
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_activity.school_character_activity_view_form
+msgid "Alignment Gate"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__allowed_policy_template_ids
+msgid "Allowed Policy Templates"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields.selection,name:ssi_school_character_activity.selection__school_character_activity__rbt_level__analyze
+msgid "Analyze"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields.selection,name:ssi_school_character_activity.selection__school_character_activity__rbt_level__apply
+msgid "Apply"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__approval_template_id
+msgid "Approval Configuration"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__approval_template_id
+msgid "Approval Template"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__approval_ids
+msgid "Approvals"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__approve_ok
+msgid ""
+"Approve policy\n"
+"\n"
+"* If active user can see and execute 'Approve' button"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__approved
+msgid "Approved"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__arena_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_activity.school_character_activity_view_search
+msgid "Arena"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__approve_ok
+msgid "Can Approve"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__cancel_ok
+msgid "Can Cancel"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__confirm_ok
+msgid "Can Confirm"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__done_ok
+msgid "Can Finished"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__manual_number_ok
+msgid "Can Input Manual Document Number"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__reject_ok
+msgid "Can Reject"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__restart_ok
+msgid "Can Restart"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__restart_approval_ok
+msgid "Can Restart Approval"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__open_ok
+msgid "Can Start"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__cancel_reason_id
+msgid "Cancel Reason"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__cancel_ok
+msgid ""
+"Cancel policy\n"
+"\n"
+"* If active user can see and execute 'Cancel' button"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:school_grade_class,name:ssi_school_character_activity.demo_grade_class
+msgid "Character Activity Demo Class 7A"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:school_teacher,name:ssi_school_character_activity.demo_teacher
+msgid "Character Activity Demo Teacher"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.actions.act_window,name:ssi_school_character_activity.school_character_activity_action
+#: model:ir.ui.menu,name:ssi_school_character_activity.school_character_activity_menu
+msgid "Character Learning Activities"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model,name:ssi_school_character_activity.model_school_character_activity
+msgid "Character Learning Activity"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.module.category,name:ssi_school_character_activity.school_character_activity_data_ownership_module_category
+msgid "Character Learning Activity - Data Ownership"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.module.category,name:ssi_school_character_activity.school_character_activity_workflow_module_category
+msgid "Character Learning Activity - Workflow"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model,name:ssi_school_character_activity.model_school_character_activity_alignment
+msgid "Character Learning Activity Alignment Gate"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__rbt_level
+msgid ""
+"Cognitive level of the objective on the Revised Bloom's Taxonomy (ICLAD Bab "
+"8)."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__company_id
+msgid "Company"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__company_partner_id
+msgid "Company Partner"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__company_id
+msgid ""
+"Company that own the document\n"
+"\n"
+"* Automatically filled with user's company.\n"
+"  Default company can be changed"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__confirm_ok
+msgid ""
+"Confirm policy\n"
+"\n"
+"* If active user can see and execute 'Confirm' button"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__construct_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_activity.school_character_activity_view_search
+msgid "Construct"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields.selection,name:ssi_school_character_activity.selection__school_character_activity__rbt_level__create
+msgid "Create"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__create_uid
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity_alignment__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__create_date
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity_alignment__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__curriculum_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_activity.school_character_activity_view_search
+msgid "Curriculum Map"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields.selection,name:ssi_school_character_activity.selection__school_character_activity__dok_level__1
+msgid "DOK 1 - Recall"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields.selection,name:ssi_school_character_activity.selection__school_character_activity__dok_level__2
+msgid "DOK 2 - Skill/Concept"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields.selection,name:ssi_school_character_activity.selection__school_character_activity__dok_level__3
+msgid "DOK 3 - Strategic Thinking"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields.selection,name:ssi_school_character_activity.selection__school_character_activity__dok_level__4
+msgid "DOK 4 - Extended Thinking"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__dok_level
+msgid "DOK Level"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__dok_level
+msgid "Depth of Knowledge level of the delivered activity (ICLAD Bab 8)."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__description
+msgid "Description"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_activity.school_character_activity_view_form
+msgid "Design"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__display_name
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity_alignment__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__date
+msgid "Document Date"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__done_ok
+msgid ""
+"Done policy\n"
+"\n"
+"* If active user can see and execute 'Done' button"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__date_end
+msgid "End Date"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields.selection,name:ssi_school_character_activity.selection__school_character_activity__rbt_level__evaluate
+msgid "Evaluate"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields.selection,name:ssi_school_character_activity.selection__school_character_activity__solo_target__extended_abstract
+msgid "Extended Abstract"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity_alignment__feedback_plan
+msgid "Feedback Plan"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__description
+msgid "Free-text description of the delivered learning activity."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__grade_class_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_activity.school_character_activity_view_search
+msgid "Grade Class"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_activity.school_character_activity_view_search
+msgid "Group By"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity_alignment__feedback_plan
+msgid ""
+"How feedback will be given to the learner on this line to close the learning"
+" loop."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__id
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity_alignment__id
+msgid "ID"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__message_needaction
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity_alignment__indicator_id
+msgid "Indicator"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity____last_update
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity_alignment____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__write_uid
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity_alignment__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__write_date
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity_alignment__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__objective
+msgid "Learning Objective (RBT)"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:res.groups,name:ssi_school_character_activity.school_character_activity_manager_group
+msgid "Manager"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__manual_number_ok
+msgid ""
+"Manual number assignment policy\n"
+"\n"
+"* If active user can edit document number"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__method_id
+msgid "Method"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields.selection,name:ssi_school_character_activity.selection__school_character_activity__solo_target__multistructural
+msgid "Multistructural"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__need_validation
+msgid "Need Validation"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__next_approval_ids
+msgid "Next Approvals"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__note
+msgid "Note"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity_alignment__objective_rbt
+msgid "Objective (RBT)"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:res.groups,name:ssi_school_character_activity.school_character_activity_officer_group
+msgid "Officer"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity_alignment__planned_evidence
+msgid "Planned Evidence"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__policy_template_id
+msgid "Policy Template"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields.selection,name:ssi_school_character_activity.selection__school_character_activity__solo_target__prestructural
+msgid "Prestructural"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__rbt_level
+msgid "RBT Level"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__reject_ok
+msgid ""
+"Reject policy\n"
+"\n"
+"* If active user can see and execute 'Reject' button"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__rejected
+msgid "Rejected"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields.selection,name:ssi_school_character_activity.selection__school_character_activity__solo_target__relational
+msgid "Relational"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields.selection,name:ssi_school_character_activity.selection__school_character_activity__rbt_level__remember
+msgid "Remember"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__user_id
+msgid "Responsible"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__restart_approval_ok
+msgid ""
+"Restart approval policy\n"
+"\n"
+"* If active user can see and execute 'Restart Approval' button"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__restart_ok
+msgid ""
+"Restart policy\n"
+"\n"
+"* If active user can see and execute 'Restart' button"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__reviewer_id
+msgid "Reviewer"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity_alignment__solo_rubric
+msgid "SOLO Rubric"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__solo_target
+msgid "SOLO Target"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__open_ok
+msgid ""
+"Start policy\n"
+"\n"
+"* If active user can see and execute 'Start' button"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__state
+msgid "State"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__subconstruct_id
+msgid "Sub-construct"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__teacher_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_activity.school_character_activity_view_search
+msgid "Teacher"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__curriculum_id
+msgid ""
+"The Character Curriculum Map this activity delivers on. Optional: an "
+"activity may be designed independently of a formal map."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__alignment_ids
+msgid ""
+"The RBT-DOK-SOLO alignment-gate lines (ICLAD Bab 8): for each objective, the"
+" activity, planned evidence, success rubric, and feedback plan that keep "
+"objective, activity, and evidence aligned."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity_alignment__activity_dok
+msgid ""
+"The activity to be delivered for this line, described at its Depth of "
+"Knowledge (the actual cognitive demand)."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__arena_id
+msgid ""
+"The arena/program (e.g. classroom, project, live-in) that hosts this "
+"activity as a practice ground for the construct."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity_alignment__indicator_id
+msgid ""
+"The behavioral indicator that this alignment line observes as evidence of "
+"the construct."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__construct_id
+msgid "The character construct this learning activity develops."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity_alignment__activity_id
+msgid "The character learning activity document this line belongs to."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__method_id
+msgid "The character-development method applied in this activity."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity_alignment__activity_construct_id
+msgid ""
+"The construct of the parent activity, used to restrict the indicator choices"
+" on this line to that construct."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__date_end
+msgid ""
+"The date the delivered activity ends. Leave empty for a single-session "
+"activity."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__date
+msgid "The date this Character Learning Activity document was drawn up."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity_alignment__planned_evidence
+msgid ""
+"The evidence the activity is planned to produce (work product, observation, "
+"artifact) that shows the objective was met."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__grade_class_id
+msgid "The homeroom class that carries out this learning activity."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__objective
+msgid ""
+"The learning objective for this activity, phrased on the Revised Bloom's "
+"Taxonomy (ICLAD Bab 8)."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity_alignment__objective_rbt
+msgid ""
+"The learning objective for this line, phrased on the Revised Bloom's "
+"Taxonomy (the intended thinking level)."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__subconstruct_id
+msgid ""
+"The specific sub-construct this activity targets, when the design is more "
+"granular than the construct itself."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity_alignment__solo_rubric
+msgid ""
+"The success criteria / rubric phrased on the SOLO taxonomy used to judge the"
+" quality of the evidence for this line."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__solo_target
+msgid ""
+"The target Structure of the Observed Learning Outcome (SOLO taxonomy) that "
+"the planned evidence should reach (ICLAD Bab 8)."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__teacher_id
+msgid "The teacher who designs and facilitates this learning activity."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__name
+msgid ""
+"Transaction/document number\n"
+"\n"
+"* Unique indentifer of transaction\n"
+"* Leave '/' to automatically generate number\n"
+"* Change '/' into any number/identifier to manually assign number.\n"
+"  Manual number assignment can be done in 'Draft' state\n"
+"  Only user with 'Can Manualy Assign Number' policy can manually assign number.\n"
+"* Transaction with number other than '/' can not be deleted."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields.selection,name:ssi_school_character_activity.selection__school_character_activity__rbt_level__understand
+msgid "Understand"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields.selection,name:ssi_school_character_activity.selection__school_character_activity__solo_target__unistructural
+msgid "Unistructural"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:res.groups,name:ssi_school_character_activity.school_character_activity_user_group
+msgid "User"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__user_id
+msgid ""
+"User that responsible for document\n"
+"\n"
+"* Create user can be different with responsible user\n"
+"* Automatically filled with user that initiate document creation.\n"
+"  Default responsible can be changed."
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__reviewer_id
+msgid ""
+"User that responsible to review document\n"
+"\n"
+"* Unless it configured to approve reviewer does not equal to approver"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__active_approver_user_ids
+msgid "Users that can approve/reject document"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: ssi_school_character_activity
+#: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__website_message_ids
+msgid "Website communication history"
+msgstr ""
