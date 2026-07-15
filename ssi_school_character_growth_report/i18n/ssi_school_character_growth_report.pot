@@ -1,0 +1,746 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ssi_school_character_growth_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__name
+msgid "# Document"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__report_id
+msgid "# Growth Report"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__academic_term_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_growth_report.school_character_growth_report_view_search
+msgid "Academic Term"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__academic_year_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_growth_report.school_character_growth_report_view_search
+msgid "Academic Year"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__level_id
+msgid "Achieved Level"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__active_approval_ids
+msgid "Active Approvals"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__active_approver_partner_ids
+msgid "Active Partners"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__active_approver_user_ids
+msgid "Active Users"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__allowed_policy_template_ids
+msgid "Allowed Policy Templates"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__approval_template_id
+msgid "Approval Configuration"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__approval_template_id
+msgid "Approval Template"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__approval_ids
+msgid "Approvals"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__approve_ok
+msgid ""
+"Approve policy\n"
+"\n"
+"* If active user can see and execute 'Approve' button"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__approved
+msgid "Approved"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__calibration_id
+msgid "Calibration"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__approve_ok
+msgid "Can Approve"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__cancel_ok
+msgid "Can Cancel"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__confirm_ok
+msgid "Can Confirm"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__done_ok
+msgid "Can Finished"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__manual_number_ok
+msgid "Can Input Manual Document Number"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__reject_ok
+msgid "Can Reject"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__restart_ok
+msgid "Can Restart"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__restart_approval_ok
+msgid "Can Restart Approval"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__open_ok
+msgid "Can Start"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__cancel_reason_id
+msgid "Cancel Reason"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__cancel_ok
+msgid ""
+"Cancel policy\n"
+"\n"
+"* If active user can see and execute 'Cancel' button"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model,name:ssi_school_character_growth_report.model_school_character_growth_report
+msgid "Character Growth Report"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.module.category,name:ssi_school_character_growth_report.school_character_growth_report_data_ownership_module_category
+msgid "Character Growth Report - Data Ownership"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.module.category,name:ssi_school_character_growth_report.school_character_growth_report_workflow_module_category
+msgid "Character Growth Report - Workflow"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model,name:ssi_school_character_growth_report.model_school_character_growth_report_line
+msgid "Character Growth Report Line"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.actions.act_window,name:ssi_school_character_growth_report.school_character_growth_report_action
+#: model:ir.ui.menu,name:ssi_school_character_growth_report.school_character_growth_report_menu
+msgid "Character Growth Reports"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__company_id
+msgid "Company"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__company_partner_id
+msgid "Company Partner"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__company_id
+msgid ""
+"Company that own the document\n"
+"\n"
+"* Automatically filled with user's company.\n"
+"  Default company can be changed"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__confirm_ok
+msgid ""
+"Confirm policy\n"
+"\n"
+"* If active user can see and execute 'Confirm' button"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__construct_id
+msgid "Construct"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields.selection,name:ssi_school_character_growth_report.selection__school_character_growth_report__pathway__core
+msgid "Core"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__create_uid
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__create_date
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__display_name
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__date
+msgid "Document Date"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__done_ok
+msgid ""
+"Done policy\n"
+"\n"
+"* If active user can see and execute 'Done' button"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__evidence_count
+msgid "Evidence Count"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__evidence_ids
+msgid "Evidence Entries"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields.selection,name:ssi_school_character_growth_report.selection__school_character_growth_report__pathway__full
+msgid "Full"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_growth_report.school_character_growth_report_view_search
+msgid "Group By"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__line_ids
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_growth_report.school_character_growth_report_view_form
+msgid "Growth Lines"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__narrative
+msgid "Growth Narrative"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.ui.menu,name:ssi_school_character_growth_report.menu_character_growth_report_root
+msgid "Growth Report"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__homeroom_teacher_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_growth_report.school_character_growth_report_view_search
+msgid "Homeroom Teacher"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__id
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__id
+msgid "ID"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__message_needaction
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report____last_update
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__write_uid
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__write_date
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields.selection,name:ssi_school_character_growth_report.selection__school_character_growth_report__pathway__lite
+msgid "Lite"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:res.groups,name:ssi_school_character_growth_report.school_character_growth_report_manager_group
+msgid "Manager"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__manual_number_ok
+msgid ""
+"Manual number assignment policy\n"
+"\n"
+"* If active user can edit document number"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__need_validation
+msgid "Need Validation"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__next_approval_ids
+msgid "Next Approvals"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__next_step
+msgid "Next Step"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__note
+msgid "Note"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report_line__evidence_count
+msgid "Number of evidence entries linked to this growth line."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:res.groups,name:ssi_school_character_growth_report.school_character_growth_report_officer_group
+msgid "Officer"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__overall_narrative
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_growth_report.school_character_growth_report_view_form
+msgid "Overall Narrative"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__pathway
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_growth_report.school_character_growth_report_view_search
+msgid "Pathway"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__policy_template_id
+msgid "Policy Template"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__reject_ok
+msgid ""
+"Reject policy\n"
+"\n"
+"* If active user can see and execute 'Reject' button"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__rejected
+msgid "Rejected"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__user_id
+msgid "Responsible"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__restart_approval_ok
+msgid ""
+"Restart approval policy\n"
+"\n"
+"* If active user can see and execute 'Restart Approval' button"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__restart_ok
+msgid ""
+"Restart policy\n"
+"\n"
+"* If active user can see and execute 'Restart' button"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__reviewer_id
+msgid "Reviewer"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__open_ok
+msgid ""
+"Start policy\n"
+"\n"
+"* If active user can see and execute 'Start' button"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__state
+msgid "State"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__student_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_growth_report.school_character_growth_report_view_search
+msgid "Student"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__academic_term_id
+msgid "The academic term this growth report covers."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__academic_year_id
+msgid "The academic year this growth report covers."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report_line__construct_id
+msgid "The character construct this growth line profiles."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report_line__evidence_ids
+msgid ""
+"The character evidence entries that support this growth line, drawn only "
+"from legitimate character observations (the sole admissible evidence "
+"source)."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report_line__report_id
+msgid "The character growth report document this line belongs to."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__pathway
+msgid ""
+"The character-learning pathway (lite/core/full) this report is compiled at, "
+"chosen per school."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__date
+msgid "The date this Character Growth Report document was drawn up."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report_line__next_step
+msgid ""
+"The feedforward next step for the student to pursue on this construct, "
+"phrased as growth language."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report_line__narrative
+msgid ""
+"The formative narrative describing how the student grew on this construct, "
+"phrased as growth language (ICLAD Bab 14.4). Free text with no fixed labels "
+"or scores."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__homeroom_teacher_id
+msgid "The homeroom teacher who compiles this growth report."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__overall_narrative
+msgid ""
+"The overall, formative growth narrative for the student across this term, "
+"phrased as growth language (ICLAD Bab 14.4). Free text with no fixed labels "
+"or scores."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__line_ids
+msgid ""
+"The per-construct growth lines: for each construct the achieved level, the "
+"growth narrative, the feedforward next step, and the linked character "
+"evidence."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report_line__level_id
+msgid ""
+"The scale level the student achieved for this construct, taken from the "
+"configured character scale. Never hardcoded."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__student_id
+msgid "The student whose character growth this report profiles."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__calibration_id
+msgid ""
+"The teacher calibration session that validates the scoring behind this "
+"report, kept as a validation reference."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__name
+msgid ""
+"Transaction/document number\n"
+"\n"
+"* Unique indentifer of transaction\n"
+"* Leave '/' to automatically generate number\n"
+"* Change '/' into any number/identifier to manually assign number.\n"
+"  Manual number assignment can be done in 'Draft' state\n"
+"  Only user with 'Can Manualy Assign Number' policy can manually assign number.\n"
+"* Transaction with number other than '/' can not be deleted."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:res.groups,name:ssi_school_character_growth_report.school_character_growth_report_user_group
+msgid "User"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__user_id
+msgid ""
+"User that responsible for document\n"
+"\n"
+"* Create user can be different with responsible user\n"
+"* Automatically filled with user that initiate document creation.\n"
+"  Default responsible can be changed."
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__reviewer_id
+msgid ""
+"User that responsible to review document\n"
+"\n"
+"* Unless it configured to approve reviewer does not equal to approver"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__active_approver_user_ids
+msgid "Users that can approve/reject document"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__website_message_ids
+msgid "Website communication history"
+msgstr ""
