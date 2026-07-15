@@ -1,0 +1,283 @@
+scenarios:
+  - name: "Calibration Full Workflow With Ratings Per Participant And Anchor"
+    steps:
+      - step: "Setup - create character profile"
+        action: "create"
+        model: "school_character_profile"
+        save_as: "profile"
+        values:
+          name: "Calibration Profile A"
+          code: "CAL-PROF-A"
+
+      - step: "Setup - create first construct"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct_1"
+        values:
+          name: "Integrity Cal A"
+          code: "CAL-CON-A1"
+          profile_id: "REC: profile.id"
+
+      - step: "Setup - create second construct"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct_2"
+        values:
+          name: "Service Cal A"
+          code: "CAL-CON-A2"
+          profile_id: "REC: profile.id"
+
+      - step: "Setup - create scale"
+        action: "create"
+        model: "school_character_scale"
+        save_as: "scale"
+        values:
+          name: "Cal Scale A"
+          code: "CAL-SCL-A"
+
+      - step: "Setup - create lower level"
+        action: "create"
+        model: "school_character_level"
+        save_as: "level_low"
+        values:
+          name: "Developing Cal A"
+          code: "CAL-LVL-A1"
+          scale_id: "REC: scale.id"
+          sequence: 10
+
+      - step: "Setup - create higher level"
+        action: "create"
+        model: "school_character_level"
+        save_as: "level_high"
+        values:
+          name: "Consistent Cal A"
+          code: "CAL-LVL-A2"
+          scale_id: "REC: scale.id"
+          sequence: 20
+
+      - step: "Setup - create first anchor"
+        action: "create"
+        model: "school_character_anchor"
+        save_as: "anchor_1"
+        values:
+          name: "Integrity Developing Anchor A"
+          code: "CAL-ANC-A1"
+          construct_id: "REC: construct_1.id"
+          level_id: "REC: level_low.id"
+          source_type: "observation"
+          sample_text: "Admits a small mistake only after being asked."
+
+      - step: "Setup - create second anchor"
+        action: "create"
+        model: "school_character_anchor"
+        save_as: "anchor_2"
+        values:
+          name: "Integrity Consistent Anchor A"
+          code: "CAL-ANC-A2"
+          construct_id: "REC: construct_1.id"
+          level_id: "REC: level_high.id"
+          source_type: "observation"
+          sample_text: "Reports own mistake unprompted and proposes a fix."
+
+      - step: "Setup - create first participant employee"
+        action: "create"
+        model: "hr.employee"
+        save_as: "employee_1"
+        values:
+          name: "Calibration Employee A1"
+
+      - step: "Setup - create first participant teacher"
+        action: "create"
+        model: "school_teacher"
+        save_as: "participant_1"
+        values:
+          name: "Calibration Teacher A1"
+          code: "CAL-TCH-A1"
+          employee_id: "REC: employee_1.id"
+
+      - step: "Setup - create second participant employee"
+        action: "create"
+        model: "hr.employee"
+        save_as: "employee_2"
+        values:
+          name: "Calibration Employee A2"
+
+      - step: "Setup - create second participant teacher"
+        action: "create"
+        model: "school_teacher"
+        save_as: "participant_2"
+        values:
+          name: "Calibration Teacher A2"
+          code: "CAL-TCH-A2"
+          employee_id: "REC: employee_2.id"
+
+      - step: "Setup - create third participant employee"
+        action: "create"
+        model: "hr.employee"
+        save_as: "employee_3"
+        values:
+          name: "Calibration Employee A3"
+
+      - step: "Setup - create third participant teacher"
+        action: "create"
+        model: "school_teacher"
+        save_as: "participant_3"
+        values:
+          name: "Calibration Teacher A3"
+          code: "CAL-TCH-A3"
+          employee_id: "REC: employee_3.id"
+
+      - step:
+          "Create calibration with two constructs, three participants, two anchors and
+          ratings"
+        action: "create"
+        model: "school_character_calibration"
+        save_as: "calibration"
+        values:
+          date: 2026-07-20
+          agreement_result: "83% within one level"
+          notes: "Align teachers on scoring the integrity anchors."
+          construct_ids:
+            - - 6
+              - 0
+              - - "REC: construct_1.id"
+                - "REC: construct_2.id"
+          participant_ids:
+            - - 6
+              - 0
+              - - "REC: participant_1.id"
+                - "REC: participant_2.id"
+                - "REC: participant_3.id"
+          anchor_ids:
+            - - 6
+              - 0
+              - - "REC: anchor_1.id"
+                - "REC: anchor_2.id"
+          rating_ids:
+            - - 0
+              - 0
+              - participant_id: "REC: participant_1.id"
+                anchor_id: "REC: anchor_1.id"
+                assigned_level_id: "REC: level_low.id"
+            - - 0
+              - 0
+              - participant_id: "REC: participant_2.id"
+                anchor_id: "REC: anchor_1.id"
+                assigned_level_id: "REC: level_low.id"
+            - - 0
+              - 0
+              - participant_id: "REC: participant_3.id"
+                anchor_id: "REC: anchor_1.id"
+                assigned_level_id: "REC: level_high.id"
+            - - 0
+              - 0
+              - participant_id: "REC: participant_1.id"
+                anchor_id: "REC: anchor_2.id"
+                assigned_level_id: "REC: level_high.id"
+            - - 0
+              - 0
+              - participant_id: "REC: participant_2.id"
+                anchor_id: "REC: anchor_2.id"
+                assigned_level_id: "REC: level_high.id"
+            - - 0
+              - 0
+              - participant_id: "REC: participant_3.id"
+                anchor_id: "REC: anchor_2.id"
+                assigned_level_id: "REC: level_high.id"
+
+      - step: "Assert calibration created in draft with full scope and ratings"
+        action: "assert"
+        target: "calibration"
+        asserts:
+          id:
+            type: "value"
+            operator: "is_truthy"
+          state:
+            type: "value"
+            expected: "draft"
+          construct_ids:
+            type: "m2m"
+            check: "count"
+            expected_count: 2
+          participant_ids:
+            type: "m2m"
+            check: "count"
+            expected_count: 3
+          anchor_ids:
+            type: "m2m"
+            check: "count"
+            expected_count: 2
+          rating_ids:
+            type: "o2m"
+            check: "count"
+            expected_count: 6
+          rating_count:
+            type: "value"
+            expected: 6
+
+      - step: "Fetch one participant-anchor rating line"
+        action: "search"
+        model: "school_character_calibration.rating"
+        domain:
+          - ["calibration_id", "=", "REC: calibration.id"]
+          - ["participant_id", "=", "REC: participant_3.id"]
+          - ["anchor_id", "=", "REC: anchor_1.id"]
+        save_as: "outlier_rating"
+        expect_count: 1
+
+      - step: "Assert the outlier rating stored its assigned level"
+        action: "assert"
+        target: "outlier_rating"
+        asserts:
+          assigned_level_id:
+            type: "m2o"
+            expected: "REC: level_high"
+
+      - step: "Confirm calibration"
+        action: "call"
+        target: "calibration"
+        method: "action_confirm"
+        as_user: "base.user_admin"
+        asserts:
+          state:
+            type: "value"
+            expected: "confirm"
+
+      - step: "Invalidate calibration cache before approve"
+        action: "call"
+        target: "calibration"
+        method: "invalidate_cache"
+
+      - step: "Approve calibration"
+        action: "call"
+        target: "calibration"
+        method: "action_approve_approval"
+        as_user: "base.user_admin"
+        asserts:
+          state:
+            type: "value"
+            expected: "open"
+
+      - step: "Assert document number generated with CAL prefix"
+        action: "assert"
+        target: "calibration"
+        asserts:
+          name:
+            type: "value"
+            operator: "contains"
+            expected: "CAL"
+
+      - step: "Invalidate calibration cache before done"
+        action: "call"
+        target: "calibration"
+        method: "invalidate_cache"
+
+      - step: "Done calibration"
+        action: "call"
+        target: "calibration"
+        method: "action_done"
+        as_user: "base.user_admin"
+        asserts:
+          state:
+            type: "value"
+            expected: "done"

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 OpenSynergy Indonesia
+     Copyright 2026 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+<!-- ===================== Character Observation ===================== -->
+<record
+        id="school_character_observation_workflow_module_category"
+        model="ir.module.category"
+    >
+    <field name="name">Character Observation - Workflow</field>
+    <field name="parent_id" ref="ssi_school.school_workflow_module_category" />
+</record>
+
+<record
+        id="school_character_observation_data_ownership_module_category"
+        model="ir.module.category"
+    >
+    <field name="name">Character Observation - Data Ownership</field>
+    <field name="parent_id" ref="ssi_school.school_data_ownership_module_category" />
+</record>
+
+<!-- ===================== Character Calibration ===================== -->
+<record
+        id="school_character_calibration_workflow_module_category"
+        model="ir.module.category"
+    >
+    <field name="name">Character Teacher Calibration - Workflow</field>
+    <field name="parent_id" ref="ssi_school.school_workflow_module_category" />
+</record>
+
+<record
+        id="school_character_calibration_data_ownership_module_category"
+        model="ir.module.category"
+    >
+    <field name="name">Character Teacher Calibration - Data Ownership</field>
+    <field name="parent_id" ref="ssi_school.school_data_ownership_module_category" />
+</record>
+
+</odoo>
