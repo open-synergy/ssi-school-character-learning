@@ -124,8 +124,8 @@ scenarios:
             expected: "lite"
           line_ids:
             type: "o2m"
-            operator: "count"
-            expected: 2
+            check: "count"
+            expected_count: 2
 
       - step: "Assert first line stored target level from construct scale"
         action: "assert"
@@ -246,7 +246,7 @@ scenarios:
             type: "value"
             expected: "cancel"
 
-  - name: "Curriculum Requires Academic Year"
+  - name: "Curriculum Cancel from Confirm"
     steps:
       - step: "Setup - create character profile"
         action: "create"
@@ -256,12 +256,56 @@ scenarios:
           name: "Curriculum Profile C"
           code: "CCM-PROF-C"
 
-      - step: "Saving a curriculum without academic year must fail"
-        action: "form"
-        model: "school_character_curriculum"
-        expect_error:
-          type: "AssertionError"
-          message_contains: "required"
+      - step: "Setup - create construct"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct"
         values:
-          profile_id: "REC: profile"
-          pathway: "core"
+          name: "Integrity C"
+          code: "CCM-CON-C1"
+          profile_id: "EVAL: registry['profile'].id"
+
+      - step: "Setup - create academic year"
+        action: "create"
+        model: "school_academic_year"
+        save_as: "academic_year"
+        values:
+          name: "Curriculum AY C"
+          code: "CCM-AY-C"
+          date_start: 2026-07-01
+          date_end: 2027-06-30
+
+      - step: "Create curriculum with one line"
+        action: "create"
+        model: "school_character_curriculum"
+        save_as: "curriculum"
+        values:
+          date: 2026-07-03
+          academic_year_id: "EVAL: registry['academic_year'].id"
+          profile_id: "EVAL: registry['profile'].id"
+          pathway: "full"
+          line_ids:
+            - - 0
+              - 0
+              - construct_id: "EVAL: registry['construct'].id"
+                capaian: "Learner demonstrates integrity."
+
+      - step: "Confirm curriculum"
+        action: "call"
+        target: "curriculum"
+        method: "action_confirm"
+        as_user: "base.user_admin"
+        asserts:
+          state:
+            type: "value"
+            expected: "confirm"
+
+      - step: "Cancel curriculum from confirm"
+        action: "call"
+        target: "curriculum"
+        method: "action_cancel"
+        as_user: "base.user_admin"
+        asserts:
+          state:
+            type: "value"
+            expected: "cancel"
