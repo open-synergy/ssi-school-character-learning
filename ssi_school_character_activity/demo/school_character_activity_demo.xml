@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 OpenSynergy Indonesia
+     Copyright 2026 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<!-- Illustrative demo data only. The concrete values below (a pilot grade
+     class, teacher, and a project-based character learning activity) are
+     examples drawn from a pilot and are NOT part of the module's code. They
+     demonstrate that a Character Learning Activity is fully configured per
+     school; nothing here is hardcoded in models or views. -->
+<odoo>
+<!-- ===================== Supporting school master data ===================== -->
+<record id="demo_grade_class" model="school_grade_class">
+    <field name="name">Character Activity Demo Class 7A</field>
+    <field name="code">CLA-DEMO-CLS7A</field>
+    <field name="school_id" ref="ssi_school_character_curriculum.demo_school" />
+    <field name="grade_id" ref="ssi_school_character_curriculum.demo_grade" />
+</record>
+
+<record id="demo_teacher_employee" model="hr.employee">
+    <field name="name">Character Activity Demo Teacher</field>
+</record>
+<record id="demo_teacher" model="school_teacher">
+    <field name="name">Character Activity Demo Teacher</field>
+    <field name="code">CLA-DEMO-TCH</field>
+    <field name="employee_id" ref="demo_teacher_employee" />
+</record>
+
+<!-- ===================== Character Learning Activity ===================== -->
+<record id="demo_activity" model="school_character_activity">
+    <field name="date">2026-08-01</field>
+    <field name="date_end">2026-09-30</field>
+    <field name="curriculum_id" ref="ssi_school_character_curriculum.demo_curriculum" />
+    <field name="construct_id" ref="ssi_school_character.construct_integrity" />
+    <field name="subconstruct_id" ref="ssi_school_character.subconstruct_honesty" />
+    <field name="arena_id" ref="ssi_school_character.arena_classroom" />
+    <field name="method_id" ref="ssi_school_character.method_modeling" />
+    <field name="grade_class_id" ref="demo_grade_class" />
+    <field name="teacher_id" ref="demo_teacher" />
+    <field name="rbt_level">create</field>
+    <field name="dok_level">3</field>
+    <field name="solo_target">relational</field>
+    <field
+            name="objective"
+        >Learners design and run a small integrity-themed project (PjBL) that requires them to plan honest reporting of their own progress.</field>
+    <field
+            name="description"
+        >A project-based learning activity where each group delivers a mini project and keeps a transparent progress log.</field>
+</record>
+
+<record id="demo_activity_alignment" model="school_character_activity.alignment">
+    <field name="activity_id" ref="demo_activity" />
+    <field name="indicator_id" ref="ssi_school_character.indicator_admit_mistake" />
+    <field
+            name="objective_rbt"
+        >Create a project plan that includes a self-reported honesty checkpoint.</field>
+    <field
+            name="activity_dok"
+        >Run the mini project over several weeks and log progress transparently.</field>
+    <field
+            name="planned_evidence"
+        >The group's progress log and final reflection admitting at least one mistake.</field>
+    <field
+            name="solo_rubric"
+        >Relational: the learner connects honest reporting to the outcome of the project.</field>
+    <field
+            name="feedback_plan"
+        >Weekly formative feedback on the accuracy and honesty of the progress log.</field>
+</record>
+</odoo>

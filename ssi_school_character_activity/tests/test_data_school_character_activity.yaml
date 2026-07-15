@@ -1,0 +1,238 @@
+scenarios:
+  - name: "Activity Full Workflow Create Confirm Approve Done"
+    steps:
+      - step: "Setup - create character profile"
+        action: "create"
+        model: "school_character_profile"
+        save_as: "profile"
+        values:
+          name: "Activity Profile A"
+          code: "CLA-PROF-A"
+
+      - step: "Setup - create construct"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct"
+        values:
+          name: "Integrity A"
+          code: "CLA-CON-A1"
+          profile_id: "EVAL: registry['profile'].id"
+
+      - step: "Setup - create arena"
+        action: "create"
+        model: "school_character_arena"
+        save_as: "arena"
+        values:
+          name: "Classroom A"
+          code: "CLA-ARENA-A"
+
+      - step: "Setup - create method"
+        action: "create"
+        model: "school_character_method"
+        save_as: "method"
+        values:
+          name: "Modeling A"
+          code: "CLA-METHOD-A"
+
+      - step: "Setup - create indicator on the construct"
+        action: "create"
+        model: "school_character_indicator"
+        save_as: "indicator"
+        values:
+          name: "Admit Mistake A"
+          code: "CLA-IND-A1"
+          construct_id: "EVAL: registry['construct'].id"
+
+      - step: "Create activity with one alignment line"
+        action: "create"
+        model: "school_character_activity"
+        save_as: "activity"
+        values:
+          date: 2026-08-01
+          construct_id: "EVAL: registry['construct'].id"
+          arena_id: "EVAL: registry['arena'].id"
+          method_id: "EVAL: registry['method'].id"
+          objective: "Learners design and run a small integrity-themed project."
+          rbt_level: "create"
+          dok_level: "3"
+          solo_target: "relational"
+          alignment_ids:
+            - - 0
+              - 0
+              - indicator_id: "EVAL: registry['indicator'].id"
+                objective_rbt: "Create a project plan with an honesty checkpoint."
+                activity_dok: "Run the mini project and log progress transparently."
+                planned_evidence: "The group's progress log and final reflection."
+                solo_rubric: "Relational: connects honest reporting to outcome."
+                feedback_plan: "Weekly formative feedback on the progress log."
+
+      - step: "Assert activity created in draft with one alignment line"
+        action: "assert"
+        target: "activity"
+        asserts:
+          id:
+            type: "value"
+            operator: "is_truthy"
+          state:
+            type: "value"
+            expected: "draft"
+          dok_level:
+            type: "value"
+            expected: "3"
+          alignment_ids:
+            type: "o2m"
+            check: "count"
+            expected_count: 1
+
+      - step: "Fetch the alignment line by its activity"
+        action: "search"
+        model: "school_character_activity.alignment"
+        domain:
+          - ["activity_id", "=", "REC: activity.id"]
+        save_as: "alignment_line"
+        expect_count: 1
+
+      - step: "Assert alignment line stored indicator and related construct"
+        action: "assert"
+        target: "alignment_line"
+        asserts:
+          indicator_id:
+            type: "m2o"
+            expected: "REC: indicator"
+          activity_construct_id:
+            type: "m2o"
+            expected: "REC: construct"
+
+      - step: "Confirm activity"
+        action: "call"
+        target: "activity"
+        method: "action_confirm"
+        as_user: "base.user_admin"
+        asserts:
+          state:
+            type: "value"
+            expected: "confirm"
+
+      - step: "Invalidate activity cache before approve"
+        action: "call"
+        target: "activity"
+        method: "invalidate_cache"
+
+      - step: "Approve activity"
+        action: "call"
+        target: "activity"
+        method: "action_approve_approval"
+        as_user: "base.user_admin"
+        asserts:
+          state:
+            type: "value"
+            expected: "open"
+
+      - step: "Assert document number generated"
+        action: "assert"
+        target: "activity"
+        asserts:
+          name:
+            type: "value"
+            operator: "contains"
+            expected: "CLA"
+
+      - step: "Invalidate activity cache before done"
+        action: "call"
+        target: "activity"
+        method: "invalidate_cache"
+
+      - step: "Done activity"
+        action: "call"
+        target: "activity"
+        method: "action_done"
+        as_user: "base.user_admin"
+        asserts:
+          state:
+            type: "value"
+            expected: "done"
+
+  - name: "Activity Cancel from Confirm"
+    steps:
+      - step: "Setup - create character profile"
+        action: "create"
+        model: "school_character_profile"
+        save_as: "profile"
+        values:
+          name: "Activity Profile B"
+          code: "CLA-PROF-B"
+
+      - step: "Setup - create construct"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct"
+        values:
+          name: "Integrity B"
+          code: "CLA-CON-B1"
+          profile_id: "EVAL: registry['profile'].id"
+
+      - step: "Setup - create arena"
+        action: "create"
+        model: "school_character_arena"
+        save_as: "arena"
+        values:
+          name: "Classroom B"
+          code: "CLA-ARENA-B"
+
+      - step: "Setup - create method"
+        action: "create"
+        model: "school_character_method"
+        save_as: "method"
+        values:
+          name: "Modeling B"
+          code: "CLA-METHOD-B"
+
+      - step: "Create activity with one alignment line"
+        action: "create"
+        model: "school_character_activity"
+        save_as: "activity"
+        values:
+          date: 2026-08-02
+          construct_id: "EVAL: registry['construct'].id"
+          arena_id: "EVAL: registry['arena'].id"
+          method_id: "EVAL: registry['method'].id"
+          objective: "Learners run a service activity."
+          dok_level: "2"
+          alignment_ids:
+            - - 0
+              - 0
+              - objective_rbt: "Apply service routines honestly."
+                activity_dok: "Deliver the service activity."
+                planned_evidence: "Reflection journal entry."
+
+      - step: "Assert activity created in draft"
+        action: "assert"
+        target: "activity"
+        asserts:
+          state:
+            type: "value"
+            expected: "draft"
+          alignment_ids:
+            type: "o2m"
+            check: "count"
+            expected_count: 1
+
+      - step: "Confirm activity"
+        action: "call"
+        target: "activity"
+        method: "action_confirm"
+        as_user: "base.user_admin"
+        asserts:
+          state:
+            type: "value"
+            expected: "confirm"
+
+      - step: "Cancel activity from confirm"
+        action: "call"
+        target: "activity"
+        method: "action_cancel"
+        as_user: "base.user_admin"
+        asserts:
+          state:
+            type: "value"
+            expected: "cancel"

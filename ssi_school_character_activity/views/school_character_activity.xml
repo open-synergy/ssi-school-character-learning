@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 OpenSynergy Indonesia
+     Copyright 2026 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+<record id="school_character_activity_view_search" model="ir.ui.view">
+    <field name="name">school_character_activity - search</field>
+    <field name="model">school_character_activity</field>
+    <field
+            name="inherit_id"
+            ref="ssi_transaction_mixin.mixin_transaction_view_search"
+        />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//search" position="inside">
+                <field name="curriculum_id" />
+                <field name="construct_id" />
+                <field name="arena_id" />
+                <field name="method_id" />
+                <field name="grade_class_id" />
+                <field name="teacher_id" />
+                <group expand="0" string="Group By">
+                    <filter
+                            name="group_by_curriculum_id"
+                            string="Curriculum Map"
+                            context="{'group_by': 'curriculum_id'}"
+                        />
+                    <filter
+                            name="group_by_construct_id"
+                            string="Construct"
+                            context="{'group_by': 'construct_id'}"
+                        />
+                    <filter
+                            name="group_by_arena_id"
+                            string="Arena"
+                            context="{'group_by': 'arena_id'}"
+                        />
+                    <filter
+                            name="group_by_grade_class_id"
+                            string="Grade Class"
+                            context="{'group_by': 'grade_class_id'}"
+                        />
+                    <filter
+                            name="group_by_teacher_id"
+                            string="Teacher"
+                            context="{'group_by': 'teacher_id'}"
+                        />
+                </group>
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="school_character_activity_view_tree" model="ir.ui.view">
+    <field name="name">school_character_activity - tree</field>
+    <field name="model">school_character_activity</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="ssi_transaction_mixin.mixin_transaction_view_tree" />
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='company_id']" position="after">
+                <field name="date" />
+                <field name="curriculum_id" />
+                <field name="construct_id" />
+                <field name="arena_id" />
+                <field name="grade_class_id" />
+                <field name="teacher_id" />
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="school_character_activity_view_form" model="ir.ui.view">
+    <field name="name">school_character_activity - form</field>
+    <field name="model">school_character_activity</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="ssi_transaction_mixin.mixin_transaction_view_form" />
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='user_id']" position="after">
+                <field name="curriculum_id" />
+                <field name="construct_id" />
+                <field
+                        name="subconstruct_id"
+                        domain="[('construct_id', '=', construct_id)]"
+                    />
+                <field name="arena_id" />
+                <field name="method_id" />
+                <field name="grade_class_id" />
+                <field name="teacher_id" />
+            </xpath>
+            <xpath expr="//group[@name='header_right']" position="inside">
+                <field name="date" />
+                <field name="date_end" />
+                <field name="rbt_level" />
+                <field name="dok_level" />
+                <field name="solo_target" />
+            </xpath>
+            <xpath expr="//page[1]" position="before">
+                <page name="design" string="Design">
+                    <group name="design_group" colspan="4" col="1">
+                        <field name="objective" />
+                        <field name="description" />
+                    </group>
+                </page>
+                <page name="alignment" string="Alignment Gate">
+                    <field name="alignment_ids">
+                        <tree editable="bottom">
+                            <field name="activity_construct_id" invisible="1" />
+                            <field name="objective_rbt" />
+                            <field name="activity_dok" />
+                            <field name="planned_evidence" />
+                            <field name="solo_rubric" />
+                            <field name="feedback_plan" />
+                            <field
+                                    name="indicator_id"
+                                    domain="[('construct_id', '=', activity_construct_id)]"
+                                />
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="school_character_activity_action" model="ir.actions.act_window">
+    <field name="name">Character Learning Activities</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">school_character_activity</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+<menuitem
+        id="school_character_activity_menu"
+        name="Character Learning Activities"
+        parent="menu_character_activity_root"
+        action="school_character_activity_action"
+        groups="school_character_activity_user_group"
+        sequence="10"
+    />
+
+</odoo>
