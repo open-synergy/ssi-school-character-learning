@@ -1,0 +1,127 @@
+scenarios:
+  - name: "Create rubric with four descriptors"
+    steps:
+      - step: "Create scale"
+        action: "create"
+        model: "school_character_scale"
+        save_as: "scale"
+        values:
+          name: "Rubric Scale"
+          code: "TEST-RUBRIC-SCALE-A"
+      - step: "Create level 1"
+        action: "create"
+        model: "school_character_level"
+        save_as: "level_1"
+        values:
+          name: "Rubric Level One"
+          code: "TEST-RL1-A"
+          scale_id: "REC: scale.id"
+          sequence: 10
+      - step: "Create level 2"
+        action: "create"
+        model: "school_character_level"
+        save_as: "level_2"
+        values:
+          name: "Rubric Level Two"
+          code: "TEST-RL2-A"
+          scale_id: "REC: scale.id"
+          sequence: 20
+      - step: "Create level 3"
+        action: "create"
+        model: "school_character_level"
+        save_as: "level_3"
+        values:
+          name: "Rubric Level Three"
+          code: "TEST-RL3-A"
+          scale_id: "REC: scale.id"
+          sequence: 30
+      - step: "Create level 4"
+        action: "create"
+        model: "school_character_level"
+        save_as: "level_4"
+        values:
+          name: "Rubric Level Four"
+          code: "TEST-RL4-A"
+          scale_id: "REC: scale.id"
+          sequence: 40
+      - step: "Create construct"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct"
+        values:
+          name: "Rubric Construct"
+          code: "TEST-RUBRIC-CONSTRUCT-A"
+      - step: "Create rubric with inline descriptors"
+        action: "create"
+        model: "school_character_rubric"
+        save_as: "rubric"
+        values:
+          name: "Test Rubric"
+          code: "TEST-RUBRIC-A"
+          construct_id: "REC: construct.id"
+          scale_id: "REC: scale.id"
+          descriptor_ids:
+            - - 0
+              - 0
+              - level_id: "REC: level_1.id"
+                descriptor: "Descriptor for level one."
+                criteria: "Criteria for level one."
+            - - 0
+              - 0
+              - level_id: "REC: level_2.id"
+                descriptor: "Descriptor for level two."
+                criteria: "Criteria for level two."
+            - - 0
+              - 0
+              - level_id: "REC: level_3.id"
+                descriptor: "Descriptor for level three."
+                criteria: "Criteria for level three."
+            - - 0
+              - 0
+              - level_id: "REC: level_4.id"
+                descriptor: "Descriptor for level four."
+                criteria: "Criteria for level four."
+      - step: "Assert rubric relations"
+        action: "assert"
+        target: "rubric"
+        asserts:
+          construct_id:
+            type: "m2o"
+            expected: "REC: construct"
+          scale_id:
+            type: "m2o"
+            expected: "REC: scale"
+      - step: "Assert rubric owns four descriptors"
+        action: "assert"
+        target: "rubric"
+        asserts:
+          descriptor_ids:
+            type: "o2m"
+            check: "count"
+            expected_count: 4
+      - step: "Assert descriptors reference the scale levels"
+        action: "search"
+        model: "school_character_rubric.descriptor"
+        domain: [["rubric_id", "=", "REC: rubric.id"]]
+        save_as: "descriptors"
+        expect_count: 4
+
+  - name: "Create rubric without scale must fail (required)"
+    steps:
+      - step: "Create construct"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct"
+        values:
+          name: "Rubric Construct No Scale"
+          code: "TEST-RUBRIC-CONSTRUCT-B"
+      - step: "Try to save a rubric with no scale"
+        action: "form"
+        model: "school_character_rubric"
+        expect_error:
+          type: "AssertionError"
+          message_contains: "required field"
+        values:
+          name: "Scaleless Rubric"
+          code: "TEST-RUBRIC-NOSCALE-B"
+          construct_id: "REC: construct"

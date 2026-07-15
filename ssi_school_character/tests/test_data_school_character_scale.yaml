@@ -1,0 +1,138 @@
+scenarios:
+  - name: "Create scale with four ordered levels"
+    steps:
+      - step: "Create scale"
+        action: "create"
+        model: "school_character_scale"
+        save_as: "scale"
+        values:
+          name: "Test 4-Level Scale"
+          code: "TEST-SCALE-4L"
+      - step: "Create level 1"
+        action: "create"
+        model: "school_character_level"
+        save_as: "level_1"
+        values:
+          name: "Level One"
+          code: "TEST-L1"
+          scale_id: "REC: scale.id"
+          sequence: 10
+      - step: "Create level 2"
+        action: "create"
+        model: "school_character_level"
+        save_as: "level_2"
+        values:
+          name: "Level Two"
+          code: "TEST-L2"
+          scale_id: "REC: scale.id"
+          sequence: 20
+      - step: "Create level 3"
+        action: "create"
+        model: "school_character_level"
+        save_as: "level_3"
+        values:
+          name: "Level Three"
+          code: "TEST-L3"
+          scale_id: "REC: scale.id"
+          sequence: 30
+      - step: "Create level 4"
+        action: "create"
+        model: "school_character_level"
+        save_as: "level_4"
+        values:
+          name: "Level Four"
+          code: "TEST-L4"
+          scale_id: "REC: scale.id"
+          sequence: 40
+      - step: "Assert level 1 belongs to scale and has sequence 10"
+        action: "assert"
+        target: "level_1"
+        asserts:
+          scale_id:
+            type: "m2o"
+            expected: "REC: scale"
+          sequence:
+            type: "value"
+            expected: 10
+      - step: "Assert level 4 has the highest sequence"
+        action: "assert"
+        target: "level_4"
+        asserts:
+          sequence:
+            type: "value"
+            operator: "gt"
+            expected: 30
+      - step: "Assert the scale owns exactly four levels"
+        action: "search"
+        model: "school_character_level"
+        domain: [["scale_id", "=", "REC: scale.id"]]
+        save_as: "found_levels"
+        expect_count: 4
+      - step: "Assert levels are ordered by ascending sequence"
+        action: "search"
+        model: "school_character_level"
+        domain: [["scale_id", "=", "REC: scale.id"]]
+        save_as: "first_level"
+        limit: 1
+        order: "sequence asc"
+      - step: "First ordered level is Level One"
+        action: "assert"
+        target: "first_level"
+        asserts:
+          code:
+            type: "value"
+            expected: "TEST-L1"
+
+  - name: "Edit scale"
+    steps:
+      - step: "Create scale"
+        action: "create"
+        model: "school_character_scale"
+        save_as: "scale"
+        values:
+          name: "Editable Scale"
+          code: "TEST-SCALE-EDIT"
+      - step: "Rename scale"
+        action: "write"
+        target: "scale"
+        values:
+          name: "Renamed Scale"
+      - step: "Assert renamed"
+        action: "assert"
+        target: "scale"
+        asserts:
+          name:
+            type: "value"
+            expected: "Renamed Scale"
+
+  - name: "Delete scale"
+    steps:
+      - step: "Create scale"
+        action: "create"
+        model: "school_character_scale"
+        save_as: "scale"
+        values:
+          name: "Disposable Scale"
+          code: "TEST-SCALE-DEL"
+      - step: "Delete scale"
+        action: "unlink"
+        target: "scale"
+      - step: "Verify deleted"
+        action: "search"
+        model: "school_character_scale"
+        domain: [["code", "=", "TEST-SCALE-DEL"]]
+        save_as: "result"
+        expect_count: 0
+
+  - name: "Create level without scale must fail (required)"
+    steps:
+      - step: "Try to save an orphan level"
+        action: "form"
+        model: "school_character_level"
+        expect_error:
+          type: "AssertionError"
+          message_contains: "required field"
+        values:
+          name: "Orphan Level"
+          code: "TEST-ORPHAN"
+          sequence: 10

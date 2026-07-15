@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 OpenSynergy Indonesia
+     Copyright 2026 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+<record id="school_character_subconstruct_view_search" model="ir.ui.view">
+    <field name="name">school_character_subconstruct - search</field>
+    <field name="model">school_character_subconstruct</field>
+    <field
+            name="inherit_id"
+            ref="ssi_master_data_mixin.mixin_master_data_view_search"
+        />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//search" position="inside">
+                <field name="construct_id" />
+                <group expand="0" string="Group By">
+                    <filter
+                            name="group_by_construct"
+                            string="Construct"
+                            context="{'group_by': 'construct_id'}"
+                        />
+                </group>
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="school_character_subconstruct_view_tree" model="ir.ui.view">
+    <field name="name">school_character_subconstruct - tree</field>
+    <field name="model">school_character_subconstruct</field>
+    <field name="inherit_id" ref="ssi_master_data_mixin.mixin_master_data_view_tree" />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='code']" position="after">
+                <field name="construct_id" />
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="school_character_subconstruct_view_form" model="ir.ui.view">
+    <field name="name">school_character_subconstruct - form</field>
+    <field name="model">school_character_subconstruct</field>
+    <field name="inherit_id" ref="ssi_master_data_mixin.mixin_master_data_view_form" />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//notebook/page[@name='note']" position="before">
+                <page name="subconstruct" string="Sub-construct">
+                    <group name="subconstruct_group_1" string="Classification">
+                        <field name="construct_id" />
+                    </group>
+                    <group name="subconstruct_group_2" string="Definition">
+                        <field name="definition" nolabel="1" />
+                    </group>
+                </page>
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="school_character_subconstruct_action" model="ir.actions.act_window">
+    <field name="name">Character Sub-constructs</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">school_character_subconstruct</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+<menuitem
+        id="school_character_subconstruct_menu"
+        name="Character Sub-constructs"
+        parent="menu_character_configuration"
+        action="school_character_subconstruct_action"
+        groups="school_character_user_group"
+        sequence="80"
+    />
+
+</odoo>

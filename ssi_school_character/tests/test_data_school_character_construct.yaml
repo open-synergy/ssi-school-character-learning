@@ -1,0 +1,133 @@
+scenarios:
+  - name: "Profile to construct to sub-construct to indicator chain"
+    steps:
+      - step: "Create profile"
+        action: "create"
+        model: "school_character_profile"
+        save_as: "profile"
+        values:
+          name: "Test Profile"
+          code: "TEST-PROFILE"
+          description: "A test character profile."
+      - step: "Create construct under profile"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct"
+        values:
+          name: "Test Construct"
+          code: "TEST-CONSTRUCT"
+          profile_id: "REC: profile.id"
+          definition: "The trait to be formed."
+          boundary_statement: "What this construct is NOT."
+      - step: "Create sub-construct under construct"
+        action: "create"
+        model: "school_character_subconstruct"
+        save_as: "subconstruct"
+        values:
+          name: "Test Sub-construct"
+          code: "TEST-SUBCONSTRUCT"
+          construct_id: "REC: construct.id"
+          definition: "A finer facet of the construct."
+      - step: "Create indicator under construct and sub-construct"
+        action: "create"
+        model: "school_character_indicator"
+        save_as: "indicator"
+        values:
+          name: "Test Indicator"
+          code: "TEST-INDICATOR"
+          construct_id: "REC: construct.id"
+          subconstruct_id: "REC: subconstruct.id"
+          indicator_type: "positive"
+      - step: "Assert construct belongs to profile"
+        action: "assert"
+        target: "construct"
+        asserts:
+          profile_id:
+            type: "m2o"
+            expected: "REC: profile"
+      - step: "Assert sub-construct belongs to construct"
+        action: "assert"
+        target: "subconstruct"
+        asserts:
+          construct_id:
+            type: "m2o"
+            expected: "REC: construct"
+      - step: "Assert indicator relations and type"
+        action: "assert"
+        target: "indicator"
+        asserts:
+          construct_id:
+            type: "m2o"
+            expected: "REC: construct"
+          subconstruct_id:
+            type: "m2o"
+            expected: "REC: subconstruct"
+          indicator_type:
+            type: "value"
+            expected: "positive"
+
+  - name: "Construct with family and methods (m2m)"
+    steps:
+      - step: "Create family"
+        action: "create"
+        model: "school_character_family"
+        save_as: "family"
+        values:
+          name: "Test Family"
+          code: "TEST-FAMILY"
+      - step: "Create method one"
+        action: "create"
+        model: "school_character_method"
+        save_as: "method_1"
+        values:
+          name: "Test Method One"
+          code: "TEST-METHOD-1"
+      - step: "Create method two"
+        action: "create"
+        model: "school_character_method"
+        save_as: "method_2"
+        values:
+          name: "Test Method Two"
+          code: "TEST-METHOD-2"
+      - step: "Create construct with family and two methods"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct"
+        values:
+          name: "Construct With Methods"
+          code: "TEST-CONSTRUCT-M2M"
+          family_id: "REC: family.id"
+          method_ids:
+            - - 6
+              - 0
+              - - "REC: method_1.id"
+                - "REC: method_2.id"
+      - step: "Assert family link"
+        action: "assert"
+        target: "construct"
+        asserts:
+          family_id:
+            type: "m2o"
+            expected: "REC: family"
+      - step: "Assert methods m2m stored"
+        action: "assert"
+        target: "construct"
+        asserts:
+          method_ids:
+            type: "m2m"
+            check: "exact"
+            expected_records:
+              - "REC: method_1"
+              - "REC: method_2"
+
+  - name: "Create sub-construct without construct must fail (required)"
+    steps:
+      - step: "Try to save an orphan sub-construct"
+        action: "form"
+        model: "school_character_subconstruct"
+        expect_error:
+          type: "AssertionError"
+          message_contains: "required field"
+        values:
+          name: "Orphan Sub-construct"
+          code: "TEST-ORPHAN-SUB"
