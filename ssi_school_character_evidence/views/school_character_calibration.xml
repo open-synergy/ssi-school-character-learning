@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 OpenSynergy Indonesia
+     Copyright 2026 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+<record id="school_character_calibration_view_search" model="ir.ui.view">
+    <field name="name">school_character_calibration - search</field>
+    <field name="model">school_character_calibration</field>
+    <field
+            name="inherit_id"
+            ref="ssi_transaction_mixin.mixin_transaction_view_search"
+        />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//search" position="inside">
+                <field name="construct_ids" />
+                <field name="participant_ids" />
+                <field name="anchor_ids" />
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="school_character_calibration_view_tree" model="ir.ui.view">
+    <field name="name">school_character_calibration - tree</field>
+    <field name="model">school_character_calibration</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="ssi_transaction_mixin.mixin_transaction_view_tree" />
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='company_id']" position="after">
+                <field name="date" />
+                <field name="agreement_result" />
+                <field name="rating_count" />
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="school_character_calibration_view_form" model="ir.ui.view">
+    <field name="name">school_character_calibration - form</field>
+    <field name="model">school_character_calibration</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="ssi_transaction_mixin.mixin_transaction_view_form" />
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='user_id']" position="after">
+                <field name="agreement_result" />
+            </xpath>
+            <xpath expr="//group[@name='header_right']" position="inside">
+                <field name="date" />
+                <field name="rating_count" />
+            </xpath>
+            <xpath expr="//page[1]" position="before">
+                <page name="scope" string="Scope">
+                    <group name="scope_group" colspan="4" col="2">
+                        <field name="construct_ids" widget="many2many_tags" />
+                        <field name="participant_ids" widget="many2many_tags" />
+                        <field name="anchor_ids" widget="many2many_tags" />
+                    </group>
+                </page>
+                <page name="rating" string="Ratings">
+                    <field name="rating_ids">
+                        <tree editable="bottom">
+                            <field name="participant_id" />
+                            <field name="anchor_id" />
+                            <field name="assigned_level_id" />
+                        </tree>
+                    </field>
+                </page>
+                <page name="notes" string="Notes">
+                    <group name="notes_group" colspan="4" col="1">
+                        <field name="notes" nolabel="1" />
+                    </group>
+                </page>
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="school_character_calibration_action" model="ir.actions.act_window">
+    <field name="name">Character Teacher Calibrations</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">school_character_calibration</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+<menuitem
+        id="school_character_calibration_menu"
+        name="Character Teacher Calibrations"
+        parent="menu_character_measurement_root"
+        action="school_character_calibration_action"
+        groups="school_character_calibration_user_group"
+        sequence="20"
+    />
+
+</odoo>

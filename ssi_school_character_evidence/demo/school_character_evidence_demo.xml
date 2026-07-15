@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 OpenSynergy Indonesia
+     Copyright 2026 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<!-- Illustrative demo data only. The concrete values below (a pilot student,
+     teachers, an observation with its evidence entries, and a teacher
+     calibration session) are examples drawn from a pilot and are NOT part of
+     the module's code. They demonstrate that observations, evidence, and
+     calibration are configured per school; nothing here is hardcoded in
+     models or views. -->
+<odoo>
+<!-- ===================== Calibration anchor examples ===================== -->
+<record id="demo_anchor_integrity_developing" model="school_character_anchor">
+    <field name="name">Integrity - Developing Anchor</field>
+    <field name="code">OBS-DEMO-ANC-DEV</field>
+    <field name="construct_id" ref="ssi_school_character.construct_integrity" />
+    <field name="level_id" ref="ssi_school_character.level_iclad_developing" />
+    <field name="source_type">observation</field>
+    <field
+            name="sample_text"
+        >The student admits a small mistake only after being asked directly.</field>
+</record>
+
+<record id="demo_anchor_integrity_consistent" model="school_character_anchor">
+    <field name="name">Integrity - Consistent Anchor</field>
+    <field name="code">OBS-DEMO-ANC-CON</field>
+    <field name="construct_id" ref="ssi_school_character.construct_integrity" />
+    <field name="level_id" ref="ssi_school_character.level_iclad_consistent" />
+    <field name="source_type">observation</field>
+    <field
+            name="sample_text"
+        >The student reports their own mistake unprompted and proposes a fix.</field>
+</record>
+
+<!-- ===================== Character Observation ===================== -->
+<record id="demo_observation" model="school_character_observation">
+    <field name="date">2026-09-30</field>
+    <field name="student_id" ref="ssi_school.school_student_1" />
+    <field name="construct_id" ref="ssi_school_character.construct_integrity" />
+    <field name="subconstruct_id" ref="ssi_school_character.subconstruct_honesty" />
+    <field name="academic_year_id" ref="ssi_school.school_academic_year1" />
+    <field name="academic_term_id" ref="ssi_school.school_academic_term1" />
+    <field
+            name="provisional_level_id"
+            ref="ssi_school_character.level_iclad_consistent"
+        />
+    <field
+            name="summary"
+        >Across the term the student consistently reported their own mistakes and proposed fixes, supported by observation, reflection, and work-product evidence.</field>
+</record>
+
+<record
+        id="demo_observation_evidence_observation"
+        model="school_character_observation.evidence"
+    >
+    <field name="observation_id" ref="demo_observation" />
+    <field name="date">2026-08-15</field>
+    <field name="arena_id" ref="ssi_school_character.arena_classroom" />
+    <field name="indicator_id" ref="ssi_school_character.indicator_admit_mistake" />
+    <field name="observer_id" ref="ssi_school.school_teacher_1" />
+    <field name="context">Group work feedback session.</field>
+    <field
+            name="observed_behavior"
+        >The student openly acknowledged an error in the group's data and corrected it in front of peers.</field>
+    <field name="source_type">observation</field>
+    <field name="evidence_quality">strong</field>
+    <field name="matched_level_id" ref="ssi_school_character.level_iclad_consistent" />
+</record>
+
+<record
+        id="demo_observation_evidence_reflection"
+        model="school_character_observation.evidence"
+    >
+    <field name="observation_id" ref="demo_observation" />
+    <field name="date">2026-09-01</field>
+    <field name="arena_id" ref="ssi_school_character.arena_classroom" />
+    <field name="observer_id" ref="ssi_school.school_teacher_1" />
+    <field name="context">End-of-project self reflection.</field>
+    <field
+            name="observed_behavior"
+        >In their written reflection the student described a moment they were tempted to hide a mistake but chose to report it.</field>
+    <field name="source_type">reflection</field>
+    <field name="evidence_quality">good</field>
+    <field name="matched_level_id" ref="ssi_school_character.level_iclad_developing" />
+</record>
+
+<record
+        id="demo_observation_evidence_artifact"
+        model="school_character_observation.evidence"
+    >
+    <field name="observation_id" ref="demo_observation" />
+    <field name="date">2026-09-20</field>
+    <field name="arena_id" ref="ssi_school_character.arena_classroom" />
+    <field name="observer_id" ref="ssi_school.school_teacher_2" />
+    <field name="context">Project progress log review.</field>
+    <field
+            name="observed_behavior"
+        >The student's progress log transparently recorded a failed attempt and how it was resolved.</field>
+    <field name="source_type">artifact</field>
+    <field name="evidence_quality">sufficient</field>
+    <field name="matched_level_id" ref="ssi_school_character.level_iclad_consistent" />
+</record>
+
+<!-- ===================== Teacher Calibration session ===================== -->
+<record id="demo_calibration" model="school_character_calibration">
+    <field name="date">2026-07-20</field>
+    <field
+            name="construct_ids"
+            eval="[(6, 0, [
+                ref('ssi_school_character.construct_integrity'),
+                ref('ssi_school_character.construct_service'),
+            ])]"
+        />
+    <field
+            name="participant_ids"
+            eval="[(6, 0, [
+                ref('ssi_school.school_teacher_1'),
+                ref('ssi_school.school_teacher_2'),
+                ref('ssi_school.school_teacher_3'),
+            ])]"
+        />
+    <field
+            name="anchor_ids"
+            eval="[(6, 0, [
+                ref('demo_anchor_integrity_developing'),
+                ref('demo_anchor_integrity_consistent'),
+            ])]"
+        />
+    <field name="agreement_result">83% within one level</field>
+    <field
+            name="notes"
+        >Session to align teachers on scoring the integrity anchors before the term's observations begin.</field>
+</record>
+
+<record id="demo_calibration_rating_1" model="school_character_calibration.rating">
+    <field name="calibration_id" ref="demo_calibration" />
+    <field name="participant_id" ref="ssi_school.school_teacher_1" />
+    <field name="anchor_id" ref="demo_anchor_integrity_developing" />
+    <field name="assigned_level_id" ref="ssi_school_character.level_iclad_developing" />
+</record>
+
+<record id="demo_calibration_rating_2" model="school_character_calibration.rating">
+    <field name="calibration_id" ref="demo_calibration" />
+    <field name="participant_id" ref="ssi_school.school_teacher_2" />
+    <field name="anchor_id" ref="demo_anchor_integrity_developing" />
+    <field name="assigned_level_id" ref="ssi_school_character.level_iclad_developing" />
+</record>
+
+<record id="demo_calibration_rating_3" model="school_character_calibration.rating">
+    <field name="calibration_id" ref="demo_calibration" />
+    <field name="participant_id" ref="ssi_school.school_teacher_3" />
+    <field name="anchor_id" ref="demo_anchor_integrity_developing" />
+    <field name="assigned_level_id" ref="ssi_school_character.level_iclad_emerging" />
+</record>
+
+<record id="demo_calibration_rating_4" model="school_character_calibration.rating">
+    <field name="calibration_id" ref="demo_calibration" />
+    <field name="participant_id" ref="ssi_school.school_teacher_1" />
+    <field name="anchor_id" ref="demo_anchor_integrity_consistent" />
+    <field name="assigned_level_id" ref="ssi_school_character.level_iclad_consistent" />
+</record>
+
+<record id="demo_calibration_rating_5" model="school_character_calibration.rating">
+    <field name="calibration_id" ref="demo_calibration" />
+    <field name="participant_id" ref="ssi_school.school_teacher_2" />
+    <field name="anchor_id" ref="demo_anchor_integrity_consistent" />
+    <field name="assigned_level_id" ref="ssi_school_character.level_iclad_consistent" />
+</record>
+
+<record id="demo_calibration_rating_6" model="school_character_calibration.rating">
+    <field name="calibration_id" ref="demo_calibration" />
+    <field name="participant_id" ref="ssi_school.school_teacher_3" />
+    <field name="anchor_id" ref="demo_anchor_integrity_consistent" />
+    <field name="assigned_level_id" ref="ssi_school_character.level_iclad_transfer" />
+</record>
+</odoo>
