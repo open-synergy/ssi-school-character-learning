@@ -1,0 +1,320 @@
+scenarios:
+  - name: "Curriculum Full Workflow Create Confirm Approve Done"
+    steps:
+      - step: "Setup - create mastery scale"
+        action: "create"
+        model: "school_character_scale"
+        save_as: "scale"
+        values:
+          name: "Curriculum Scale A"
+          code: "CCM-SCALE-A"
+
+      - step: "Setup - create target level on the scale"
+        action: "create"
+        model: "school_character_level"
+        save_as: "level"
+        values:
+          name: "Consistent A"
+          code: "CCM-LVL-A"
+          scale_id: "EVAL: registry['scale'].id"
+          sequence: 30
+
+      - step: "Setup - create character profile"
+        action: "create"
+        model: "school_character_profile"
+        save_as: "profile"
+        values:
+          name: "Curriculum Profile A"
+          code: "CCM-PROF-A"
+
+      - step: "Setup - create first construct"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct_one"
+        values:
+          name: "Integrity A"
+          code: "CCM-CON-A1"
+          profile_id: "EVAL: registry['profile'].id"
+          scale_id: "EVAL: registry['scale'].id"
+
+      - step: "Setup - create second construct"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct_two"
+        values:
+          name: "Service A"
+          code: "CCM-CON-A2"
+          profile_id: "EVAL: registry['profile'].id"
+          scale_id: "EVAL: registry['scale'].id"
+
+      - step: "Setup - create arena"
+        action: "create"
+        model: "school_character_arena"
+        save_as: "arena"
+        values:
+          name: "Classroom A"
+          code: "CCM-ARENA-A"
+
+      - step: "Setup - create method"
+        action: "create"
+        model: "school_character_method"
+        save_as: "method"
+        values:
+          name: "Modeling A"
+          code: "CCM-METHOD-A"
+
+      - step: "Setup - create academic year"
+        action: "create"
+        model: "school_academic_year"
+        save_as: "academic_year"
+        values:
+          name: "Curriculum AY A"
+          code: "CCM-AY-A"
+          date_start: 2026-07-01
+          date_end: 2027-06-30
+
+      - step: "Setup - create academic term"
+        action: "create"
+        model: "school_academic_term"
+        save_as: "academic_term"
+        values:
+          name: "Curriculum Term A"
+          code: "CCM-TM-A"
+          date_start: 2026-07-01
+          date_end: 2026-12-31
+          year_id: "EVAL: registry['academic_year'].id"
+
+      - step: "Create curriculum with two lines (distinct constructs)"
+        action: "create"
+        model: "school_character_curriculum"
+        save_as: "curriculum"
+        values:
+          date: 2026-07-01
+          academic_year_id: "EVAL: registry['academic_year'].id"
+          academic_term_id: "EVAL: registry['academic_term'].id"
+          profile_id: "EVAL: registry['profile'].id"
+          pathway: "lite"
+          line_ids:
+            - - 0
+              - 0
+              - construct_id: "EVAL: registry['construct_one'].id"
+                arena_id: "EVAL: registry['arena'].id"
+                method_id: "EVAL: registry['method'].id"
+                target_level_id: "EVAL: registry['level'].id"
+                track: "intracurricular"
+                capaian: "Learner consistently tells the truth in class."
+            - - 0
+              - 0
+              - construct_id: "EVAL: registry['construct_two'].id"
+                track: "student_affairs"
+                capaian: "Learner initiates helping peers."
+
+      - step: "Assert curriculum created in draft with two lines"
+        action: "assert"
+        target: "curriculum"
+        asserts:
+          id:
+            type: "value"
+            operator: "is_truthy"
+          state:
+            type: "value"
+            expected: "draft"
+          pathway:
+            type: "value"
+            expected: "lite"
+          line_ids:
+            type: "o2m"
+            check: "count"
+            expected_count: 2
+
+      - step: "Fetch the first line by its construct"
+        action: "search"
+        model: "school_character_curriculum.line"
+        domain:
+          - ["curriculum_id", "=", "REC: curriculum.id"]
+          - ["construct_id", "=", "REC: construct_one.id"]
+        save_as: "first_line"
+        expect_count: 1
+
+      - step: "Assert first line stored target level from construct scale"
+        action: "assert"
+        target: "first_line"
+        asserts:
+          target_level_id:
+            type: "m2o"
+            expected: "REC: level"
+
+      - step: "Confirm curriculum"
+        action: "call"
+        target: "curriculum"
+        method: "action_confirm"
+        as_user: "base.user_admin"
+        asserts:
+          state:
+            type: "value"
+            expected: "confirm"
+
+      - step: "Invalidate curriculum cache before approve"
+        action: "call"
+        target: "curriculum"
+        method: "invalidate_cache"
+
+      - step: "Approve curriculum"
+        action: "call"
+        target: "curriculum"
+        method: "action_approve_approval"
+        as_user: "base.user_admin"
+        asserts:
+          state:
+            type: "value"
+            expected: "open"
+
+      - step: "Assert document number generated"
+        action: "assert"
+        target: "curriculum"
+        asserts:
+          name:
+            type: "value"
+            operator: "contains"
+            expected: "CCM"
+
+      - step: "Invalidate curriculum cache before done"
+        action: "call"
+        target: "curriculum"
+        method: "invalidate_cache"
+
+      - step: "Done curriculum"
+        action: "call"
+        target: "curriculum"
+        method: "action_done"
+        as_user: "base.user_admin"
+        asserts:
+          state:
+            type: "value"
+            expected: "done"
+
+  - name: "Curriculum Cancel from Draft"
+    steps:
+      - step: "Setup - create character profile"
+        action: "create"
+        model: "school_character_profile"
+        save_as: "profile"
+        values:
+          name: "Curriculum Profile B"
+          code: "CCM-PROF-B"
+
+      - step: "Setup - create construct"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct"
+        values:
+          name: "Integrity B"
+          code: "CCM-CON-B1"
+          profile_id: "EVAL: registry['profile'].id"
+
+      - step: "Setup - create academic year"
+        action: "create"
+        model: "school_academic_year"
+        save_as: "academic_year"
+        values:
+          name: "Curriculum AY B"
+          code: "CCM-AY-B"
+          date_start: 2026-07-01
+          date_end: 2027-06-30
+
+      - step: "Create curriculum with one line"
+        action: "create"
+        model: "school_character_curriculum"
+        save_as: "curriculum"
+        values:
+          date: 2026-07-02
+          academic_year_id: "EVAL: registry['academic_year'].id"
+          profile_id: "EVAL: registry['profile'].id"
+          pathway: "core"
+          line_ids:
+            - - 0
+              - 0
+              - construct_id: "EVAL: registry['construct'].id"
+                capaian: "Learner develops honesty."
+
+      - step: "Assert initial state is draft"
+        action: "assert"
+        target: "curriculum"
+        asserts:
+          state:
+            type: "value"
+            expected: "draft"
+
+      - step: "Cancel curriculum from draft"
+        action: "call"
+        target: "curriculum"
+        method: "action_cancel"
+        as_user: "base.user_admin"
+        asserts:
+          state:
+            type: "value"
+            expected: "cancel"
+
+  - name: "Curriculum Cancel from Confirm"
+    steps:
+      - step: "Setup - create character profile"
+        action: "create"
+        model: "school_character_profile"
+        save_as: "profile"
+        values:
+          name: "Curriculum Profile C"
+          code: "CCM-PROF-C"
+
+      - step: "Setup - create construct"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct"
+        values:
+          name: "Integrity C"
+          code: "CCM-CON-C1"
+          profile_id: "EVAL: registry['profile'].id"
+
+      - step: "Setup - create academic year"
+        action: "create"
+        model: "school_academic_year"
+        save_as: "academic_year"
+        values:
+          name: "Curriculum AY C"
+          code: "CCM-AY-C"
+          date_start: 2026-07-01
+          date_end: 2027-06-30
+
+      - step: "Create curriculum with one line"
+        action: "create"
+        model: "school_character_curriculum"
+        save_as: "curriculum"
+        values:
+          date: 2026-07-03
+          academic_year_id: "EVAL: registry['academic_year'].id"
+          profile_id: "EVAL: registry['profile'].id"
+          pathway: "full"
+          line_ids:
+            - - 0
+              - 0
+              - construct_id: "EVAL: registry['construct'].id"
+                capaian: "Learner demonstrates integrity."
+
+      - step: "Confirm curriculum"
+        action: "call"
+        target: "curriculum"
+        method: "action_confirm"
+        as_user: "base.user_admin"
+        asserts:
+          state:
+            type: "value"
+            expected: "confirm"
+
+      - step: "Cancel curriculum from confirm"
+        action: "call"
+        target: "curriculum"
+        method: "action_cancel"
+        as_user: "base.user_admin"
+        asserts:
+          state:
+            type: "value"
+            expected: "cancel"
