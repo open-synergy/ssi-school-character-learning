@@ -9,6 +9,7 @@ setuptools.setup(
     version=version,
     install_requires=[
         'odoo14-addon-ssi_school_character',
+        'odoo14-addon-ssi_school_character_curriculum',
     ],
     classifiers=[
         'Programming Language :: Python',
