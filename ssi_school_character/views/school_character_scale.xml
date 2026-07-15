@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 OpenSynergy Indonesia
+     Copyright 2026 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+<record id="school_character_scale_view_search" model="ir.ui.view">
+    <field name="name">school_character_scale - search</field>
+    <field name="model">school_character_scale</field>
+    <field
+            name="inherit_id"
+            ref="ssi_master_data_mixin.mixin_master_data_view_search"
+        />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data />
+    </field>
+</record>
+
+<record id="school_character_scale_view_tree" model="ir.ui.view">
+    <field name="name">school_character_scale - tree</field>
+    <field name="model">school_character_scale</field>
+    <field name="inherit_id" ref="ssi_master_data_mixin.mixin_master_data_view_tree" />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data />
+    </field>
+</record>
+
+<record id="school_character_scale_view_form" model="ir.ui.view">
+    <field name="name">school_character_scale - form</field>
+    <field name="model">school_character_scale</field>
+    <field name="inherit_id" ref="ssi_master_data_mixin.mixin_master_data_view_form" />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//notebook/page[@name='note']" position="before">
+                <page name="level" string="Levels">
+                    <field name="level_ids">
+                        <tree editable="bottom">
+                            <field name="sequence" widget="handle" />
+                            <field name="code" />
+                            <field name="name" />
+                            <field name="description" />
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="school_character_scale_action" model="ir.actions.act_window">
+    <field name="name">Character Scales</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">school_character_scale</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+<menuitem
+        id="school_character_scale_menu"
+        name="Character Scales"
+        parent="menu_character_configuration"
+        action="school_character_scale_action"
+        groups="school_character_user_group"
+        sequence="10"
+    />
+
+</odoo>

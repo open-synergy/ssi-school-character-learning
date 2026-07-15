@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 OpenSynergy Indonesia
+     Copyright 2026 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<!-- Illustrative demo data only. The concrete values below (a GREAT profile,
+     S-EV2/S-KS1 construct codes, a 4-level ICLAD scale, a TDK/PAR/EFF status
+     scale, a 5S school-culture arena) are examples drawn from a pilot and
+     are NOT part of the module's code. They demonstrate that scales,
+     constructs, and levels are fully configurable per school. -->
+<odoo>
+<!-- ===================== Scales & Levels ===================== -->
+<!-- ICLAD 4-level mastery progression -->
+<record id="scale_iclad_4level" model="school_character_scale">
+    <field name="name">ICLAD 4-Level Mastery</field>
+    <field name="code">SCALE-ICLAD-4L</field>
+</record>
+<record id="level_iclad_emerging" model="school_character_level">
+    <field name="name">Emerging</field>
+    <field name="code">ICLAD-L1-EMERGING</field>
+    <field name="scale_id" ref="scale_iclad_4level" />
+    <field name="sequence">10</field>
+    <field
+            name="description"
+        >The learner shows first signs of the construct, usually with prompting.</field>
+</record>
+<record id="level_iclad_developing" model="school_character_level">
+    <field name="name">Developing</field>
+    <field name="code">ICLAD-L2-DEVELOPING</field>
+    <field name="scale_id" ref="scale_iclad_4level" />
+    <field name="sequence">20</field>
+    <field
+            name="description"
+        >The learner shows the construct in familiar situations with occasional support.</field>
+</record>
+<record id="level_iclad_consistent" model="school_character_level">
+    <field name="name">Consistent</field>
+    <field name="code">ICLAD-L3-CONSISTENT</field>
+    <field name="scale_id" ref="scale_iclad_4level" />
+    <field name="sequence">30</field>
+    <field
+            name="description"
+        >The learner shows the construct independently and consistently across contexts.</field>
+</record>
+<record id="level_iclad_transfer" model="school_character_level">
+    <field name="name">Transfer</field>
+    <field name="code">ICLAD-L4-TRANSFER</field>
+    <field name="scale_id" ref="scale_iclad_4level" />
+    <field name="sequence">40</field>
+    <field
+            name="description"
+        >The learner transfers the construct to new, unfamiliar, or challenging situations.</field>
+</record>
+
+<!-- TDK/PAR/EFF status scale -->
+<record id="scale_status_tdk_par_eff" model="school_character_scale">
+    <field name="name">Status (Not Yet / Partial / Effective)</field>
+    <field name="code">SCALE-STATUS</field>
+</record>
+<record id="level_status_tdk" model="school_character_level">
+    <field name="name">Not Yet (TDK)</field>
+    <field name="code">STATUS-TDK</field>
+    <field name="scale_id" ref="scale_status_tdk_par_eff" />
+    <field name="sequence">10</field>
+    <field name="description">Not yet demonstrated.</field>
+</record>
+<record id="level_status_par" model="school_character_level">
+    <field name="name">Partial (PAR)</field>
+    <field name="code">STATUS-PAR</field>
+    <field name="scale_id" ref="scale_status_tdk_par_eff" />
+    <field name="sequence">20</field>
+    <field name="description">Partially demonstrated.</field>
+</record>
+<record id="level_status_eff" model="school_character_level">
+    <field name="name">Effective (EFF)</field>
+    <field name="code">STATUS-EFF</field>
+    <field name="scale_id" ref="scale_status_tdk_par_eff" />
+    <field name="sequence">30</field>
+    <field name="description">Effectively and reliably demonstrated.</field>
+</record>
+
+<!-- ===================== Families ===================== -->
+<record id="family_integrity" model="school_character_family">
+    <field name="name">Integrity &amp; Moral Courage</field>
+    <field name="code">FAM-INTEGRITY</field>
+    <field
+            name="description"
+        >Constructs about honesty, consistency between words and deeds, and the courage to do right.</field>
+</record>
+<record id="family_service" model="school_character_family">
+    <field name="name">Service &amp; Compassion</field>
+    <field name="code">FAM-SERVICE</field>
+    <field
+            name="description"
+        >Constructs about empathy, care for others, and service to the community.</field>
+</record>
+
+<!-- ===================== Methods ===================== -->
+<record id="method_modeling" model="school_character_method">
+    <field name="name">Modeling</field>
+    <field name="code">METHOD-MODELING</field>
+    <field
+            name="description"
+        >Teachers and staff model the construct in their own conduct.</field>
+    <field name="suitable_for">All constructs, all developmental stages.</field>
+</record>
+<record id="method_reflection" model="school_character_method">
+    <field name="name">Guided Reflection</field>
+    <field name="code">METHOD-REFLECTION</field>
+    <field
+            name="description"
+        >Structured reflection on experiences to internalise the construct.</field>
+    <field name="suitable_for">Constructs requiring self-awareness.</field>
+</record>
+<record id="method_service_learning" model="school_character_method">
+    <field name="name">Service Learning</field>
+    <field name="code">METHOD-SERVICE-LEARNING</field>
+    <field
+            name="description"
+        >Learning the construct by serving a real community need.</field>
+    <field name="suitable_for">Service and compassion constructs.</field>
+</record>
+
+<!-- ===================== Arenas ===================== -->
+<record id="arena_classroom" model="school_character_arena">
+    <field name="name">Classroom Learning</field>
+    <field name="code">ARENA-CLASSROOM</field>
+    <field name="arena_type">intracurricular</field>
+    <field
+            name="description"
+        >Character formed and observed within subject lessons.</field>
+</record>
+<record id="arena_school_culture_5s" model="school_character_arena">
+    <field name="name">School Culture (5S)</field>
+    <field name="code">ARENA-CULTURE-5S</field>
+    <field name="arena_type">school_culture</field>
+    <field
+            name="description"
+        >Character formed through the day-to-day 5S habits and norms of the school.</field>
+</record>
+
+<!-- ===================== Profile ===================== -->
+<record id="profile_great" model="school_character_profile">
+    <field name="name">GREAT Character Profile</field>
+    <field name="code">PROFILE-GREAT</field>
+    <field
+            name="description"
+        >Illustrative pilot profile grouping the school's core character values.</field>
+</record>
+
+<!-- ===================== Constructs ===================== -->
+<record id="construct_integrity" model="school_character_construct">
+    <field name="name">Integrity</field>
+    <field name="code">S-EV2</field>
+    <field name="profile_id" ref="profile_great" />
+    <field name="family_id" ref="family_integrity" />
+    <field name="scale_id" ref="scale_iclad_4level" />
+    <field
+            name="definition"
+        >Acting truthfully and consistently in line with moral values, even when unobserved.</field>
+    <field
+            name="boundary_statement"
+        >Integrity is NOT mere rule-compliance or obedience under supervision; it is not the same as politeness.</field>
+    <field
+            name="method_ids"
+            eval="[(6, 0, [ref('method_modeling'), ref('method_reflection')])]"
+        />
+</record>
+<record id="construct_service" model="school_character_construct">
+    <field name="name">Service to Others</field>
+    <field name="code">S-KS1</field>
+    <field name="profile_id" ref="profile_great" />
+    <field name="family_id" ref="family_service" />
+    <field name="scale_id" ref="scale_status_tdk_par_eff" />
+    <field
+            name="definition"
+        >Willingly helping and caring for others and the community without expecting reward.</field>
+    <field
+            name="boundary_statement"
+        >Service is NOT transactional helpfulness done only for recognition or grades.</field>
+    <field name="method_ids" eval="[(6, 0, [ref('method_service_learning')])]" />
+</record>
+
+<!-- ===================== Sub-construct ===================== -->
+<record id="subconstruct_honesty" model="school_character_subconstruct">
+    <field name="name">Honesty</field>
+    <field name="code">S-EV2-01</field>
+    <field name="construct_id" ref="construct_integrity" />
+    <field
+            name="definition"
+        >Telling the truth and not deceiving, including admitting one's own mistakes.</field>
+</record>
+
+<!-- ===================== Indicator ===================== -->
+<record id="indicator_admit_mistake" model="school_character_indicator">
+    <field name="name">Admits own mistakes without being confronted</field>
+    <field name="code">S-EV2-01-I1</field>
+    <field name="construct_id" ref="construct_integrity" />
+    <field name="subconstruct_id" ref="subconstruct_honesty" />
+    <field name="indicator_type">positive</field>
+    <field name="rbt_level">evaluate</field>
+    <field name="dok_level">3</field>
+    <field name="solo_level">relational</field>
+    <field
+            name="description"
+        >The learner voluntarily admits a mistake and takes responsibility, without being confronted.</field>
+</record>
+<record id="indicator_non_example" model="school_character_indicator">
+    <field name="name">Follows rules only when supervised</field>
+    <field name="code">S-EV2-01-N1</field>
+    <field name="construct_id" ref="construct_integrity" />
+    <field name="subconstruct_id" ref="subconstruct_honesty" />
+    <field name="indicator_type">non_indicator</field>
+    <field
+            name="description"
+        >Complying with rules only while watched must NOT be read as evidence of integrity.</field>
+</record>
+
+<!-- ===================== Rubric & Descriptors ===================== -->
+<record id="rubric_integrity" model="school_character_rubric">
+    <field name="name">Integrity Rubric</field>
+    <field name="code">RUBRIC-S-EV2</field>
+    <field name="construct_id" ref="construct_integrity" />
+    <field name="scale_id" ref="scale_iclad_4level" />
+</record>
+<record id="rubric_integrity_desc_emerging" model="school_character_rubric.descriptor">
+    <field name="rubric_id" ref="rubric_integrity" />
+    <field name="level_id" ref="level_iclad_emerging" />
+    <field
+            name="descriptor"
+        >Tells the truth when prompted; needs reminders to admit mistakes.</field>
+    <field name="criteria">Honesty shown only with adult prompting.</field>
+</record>
+<record
+        id="rubric_integrity_desc_developing"
+        model="school_character_rubric.descriptor"
+    >
+    <field name="rubric_id" ref="rubric_integrity" />
+    <field name="level_id" ref="level_iclad_developing" />
+    <field
+            name="descriptor"
+        >Tells the truth in familiar situations; admits mistakes with some support.</field>
+    <field name="criteria">Honesty shown in familiar settings.</field>
+</record>
+<record
+        id="rubric_integrity_desc_consistent"
+        model="school_character_rubric.descriptor"
+    >
+    <field name="rubric_id" ref="rubric_integrity" />
+    <field name="level_id" ref="level_iclad_consistent" />
+    <field
+            name="descriptor"
+        >Consistently truthful and admits mistakes independently across contexts.</field>
+    <field name="criteria">Honesty shown independently and consistently.</field>
+</record>
+<record id="rubric_integrity_desc_transfer" model="school_character_rubric.descriptor">
+    <field name="rubric_id" ref="rubric_integrity" />
+    <field name="level_id" ref="level_iclad_transfer" />
+    <field
+            name="descriptor"
+        >Upholds honesty even under pressure and encourages honesty in others.</field>
+    <field
+            name="criteria"
+        >Honesty transferred to new and challenging situations.</field>
+</record>
+
+<!-- ===================== Anchor ===================== -->
+<record id="anchor_integrity_consistent" model="school_character_anchor">
+    <field name="name">Returned found money to the office</field>
+    <field name="code">ANCHOR-S-EV2-C</field>
+    <field name="construct_id" ref="construct_integrity" />
+    <field name="level_id" ref="level_iclad_consistent" />
+    <field name="source_type">observation</field>
+    <field
+            name="sample_text"
+        >A learner found money in the hallway and handed it to the office unprompted, telling no one, calibrated as Consistent.</field>
+</record>
+
+</odoo>

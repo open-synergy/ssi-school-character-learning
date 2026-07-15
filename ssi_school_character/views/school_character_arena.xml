@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 OpenSynergy Indonesia
+     Copyright 2026 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+<record id="school_character_arena_view_search" model="ir.ui.view">
+    <field name="name">school_character_arena - search</field>
+    <field name="model">school_character_arena</field>
+    <field
+            name="inherit_id"
+            ref="ssi_master_data_mixin.mixin_master_data_view_search"
+        />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//search" position="inside">
+                <field name="arena_type" />
+                <group expand="0" string="Group By">
+                    <filter
+                            name="group_by_arena_type"
+                            string="Arena Type"
+                            context="{'group_by': 'arena_type'}"
+                        />
+                </group>
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="school_character_arena_view_tree" model="ir.ui.view">
+    <field name="name">school_character_arena - tree</field>
+    <field name="model">school_character_arena</field>
+    <field name="inherit_id" ref="ssi_master_data_mixin.mixin_master_data_view_tree" />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='code']" position="after">
+                <field name="arena_type" />
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="school_character_arena_view_form" model="ir.ui.view">
+    <field name="name">school_character_arena - form</field>
+    <field name="model">school_character_arena</field>
+    <field name="inherit_id" ref="ssi_master_data_mixin.mixin_master_data_view_form" />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//notebook/page[@name='note']" position="before">
+                <page name="arena" string="Arena">
+                    <group name="arena_group_1" string="Arena Configuration">
+                        <field name="arena_type" />
+                    </group>
+                    <group name="arena_group_2" string="Description">
+                        <field name="description" nolabel="1" />
+                    </group>
+                </page>
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="school_character_arena_action" model="ir.actions.act_window">
+    <field name="name">Character Arenas</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">school_character_arena</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+<menuitem
+        id="school_character_arena_menu"
+        name="Character Arenas"
+        parent="menu_character_configuration"
+        action="school_character_arena_action"
+        groups="school_character_user_group"
+        sequence="50"
+    />
+
+</odoo>
