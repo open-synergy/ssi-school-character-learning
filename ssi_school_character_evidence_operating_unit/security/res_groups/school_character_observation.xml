@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 OpenSynergy Indonesia
+     Copyright 2026 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+<!-- Single "Operating Unit" group shared by every character-evidence-family
+     transactional model (school_character_observation,
+     school_character_calibration). The base ssi_school_character_evidence
+     module builds a SEPARATE workflow tier hierarchy (User/Officer/Manager)
+     and a SEPARATE data ownership category for EACH of those two models, so
+     there is no single per-model "Company" group to hang this off of.
+     Per the backlog spec this one shared OU group is placed under the
+     Character Observation data ownership category, and BOTH model families
+     are wired into it below through their respective Manager tiers. -->
+<record id="school_character_observation_operating_unit_group" model="res.groups">
+    <field name="name">Operating Unit</field>
+    <field
+            name="category_id"
+            ref="ssi_school_character_evidence.school_character_observation_data_ownership_module_category"
+        />
+</record>
+
+<!-- Manager is the top workflow tier of the Character Observation document:
+     wire it into the new OU group so Observation Managers are also evaluated
+     against the OU-scoped ir.rule below. Uses (4, ...) to ADD to the existing
+     implied_ids (already pointing at the Officer group from the base module)
+     instead of (6, 0, ...), which would clobber that link. -->
+<record
+        id="ssi_school_character_evidence.school_character_observation_manager_group"
+        model="res.groups"
+    >
+    <field
+            name="implied_ids"
+            eval="[(4, ref('school_character_observation_operating_unit_group'))]"
+        />
+</record>
+
+<!-- Manager is the top workflow tier of the Character Teacher Calibration
+     document: wire it into the SAME shared OU group so Calibration Managers
+     are also evaluated against the OU-scoped ir.rule for calibration below.
+     Uses (4, ...) to ADD to the existing implied_ids (already pointing at the
+     Calibration Officer group from the base module). -->
+<record
+        id="ssi_school_character_evidence.school_character_calibration_manager_group"
+        model="res.groups"
+    >
+    <field
+            name="implied_ids"
+            eval="[(4, ref('school_character_observation_operating_unit_group'))]"
+        />
+</record>
+
+</odoo>
