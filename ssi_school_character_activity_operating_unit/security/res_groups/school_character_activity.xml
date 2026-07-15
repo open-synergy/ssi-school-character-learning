@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 OpenSynergy Indonesia
+     Copyright 2026 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+<!-- Single "Operating Unit" group for the character learning activity
+     family: the base ssi_school_character_activity module defines one shared
+     workflow tier hierarchy (User/Officer/Manager) and one shared data
+     ownership category, so this OU group is hung off that shared data
+     ownership category. -->
+<record id="school_character_activity_operating_unit_group" model="res.groups">
+    <field name="name">Operating Unit</field>
+    <field
+            name="category_id"
+            ref="ssi_school_character_activity.school_character_activity_data_ownership_module_category"
+        />
+</record>
+
+<!-- Manager is the top workflow tier: wire it into the new OU group so
+     Managers are also evaluated against the OU-scoped ir.rule below. Uses
+     (4, ...) to ADD to the existing implied_ids (already pointing at the
+     Officer group from the base module) instead of (6, 0, ...), which
+     would clobber that link. -->
+<record
+        id="ssi_school_character_activity.school_character_activity_manager_group"
+        model="res.groups"
+    >
+    <field
+            name="implied_ids"
+            eval="[(4, ref('school_character_activity_operating_unit_group'))]"
+        />
+</record>
+
+</odoo>
