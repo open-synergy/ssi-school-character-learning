@@ -19,6 +19,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [ssi_school_character](ssi_school_character/) | 14.0.1.0.0 |  | School Character Learning
+[ssi_school_character_activity](ssi_school_character_activity/) | 14.0.1.0.0 |  | Character Learning Activity
 [ssi_school_character_curriculum](ssi_school_character_curriculum/) | 14.0.1.0.0 |  | Character Curriculum Map / Annual Syllabus
 [ssi_school_character_curriculum_operating_unit](ssi_school_character_curriculum_operating_unit/) | 14.0.1.0.0 |  | Character Curriculum Map / Annual Syllabus - Operating Unit
 
