@@ -127,13 +127,22 @@ scenarios:
             check: "count"
             expected_count: 2
 
+      - step: "Fetch the first line by its construct"
+        action: "search"
+        model: "school_character_curriculum.line"
+        domain:
+          - ["curriculum_id", "=", "REC: curriculum.id"]
+          - ["construct_id", "=", "REC: construct_one.id"]
+        save_as: "first_line"
+        expect_count: 1
+
       - step: "Assert first line stored target level from construct scale"
         action: "assert"
-        target: "curriculum"
+        target: "first_line"
         asserts:
-          line_ids.0.target_level_id:
+          target_level_id:
             type: "m2o"
-            expected: "EVAL: registry['level'].id"
+            expected: "REC: level"
 
       - step: "Confirm curriculum"
         action: "call"
