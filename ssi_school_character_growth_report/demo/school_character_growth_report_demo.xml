@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 OpenSynergy Indonesia
+     Copyright 2026 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<!-- Illustrative demo data only. The concrete values below (a pilot student's
+     end-of-term character growth report with two per-construct growth lines)
+     are examples drawn from a pilot and are NOT part of the module's code.
+     They demonstrate that the growth report is compiled per school from
+     legitimate character evidence; nothing here is hardcoded in models or
+     views. The report is deliberately non-labeling and carries no moral score,
+     and it links no discipline, counseling, or psychological-test data. -->
+<odoo>
+<record id="demo_growth_report" model="school_character_growth_report">
+    <field name="date">2026-12-15</field>
+    <field name="student_id" ref="ssi_school.school_student_1" />
+    <field name="academic_year_id" ref="ssi_school.school_academic_year1" />
+    <field name="academic_term_id" ref="ssi_school.school_academic_term1" />
+    <field name="homeroom_teacher_id" ref="ssi_school.school_teacher_1" />
+    <field name="pathway">core</field>
+    <field name="calibration_id" ref="ssi_school_character_evidence.demo_calibration" />
+    <field
+            name="overall_narrative"
+        >Over this term the student grew steadily in integrity, moving from admitting mistakes when asked to reporting them unprompted, and began carrying that honesty into service settings. The growth is described formatively; there is no ranking or moral score.</field>
+</record>
+
+<record
+        id="demo_growth_report_line_integrity"
+        model="school_character_growth_report.line"
+    >
+    <field name="report_id" ref="demo_growth_report" />
+    <field name="construct_id" ref="ssi_school_character.construct_integrity" />
+    <field name="level_id" ref="ssi_school_character.level_iclad_consistent" />
+    <field
+            name="narrative"
+        >The student now consistently reports their own mistakes unprompted and proposes a fix, evidenced by classroom observation, a written self-reflection, and a transparent project progress log.</field>
+    <field
+            name="next_step"
+        >Encourage the student to help peers practise honest self-reporting in group work next term.</field>
+    <field
+            name="evidence_ids"
+            eval="[(6, 0, [
+                ref('ssi_school_character_evidence.demo_observation_evidence_observation'),
+                ref('ssi_school_character_evidence.demo_observation_evidence_reflection'),
+                ref('ssi_school_character_evidence.demo_observation_evidence_artifact'),
+            ])]"
+        />
+</record>
+
+<record
+        id="demo_growth_report_line_service"
+        model="school_character_growth_report.line"
+    >
+    <field name="report_id" ref="demo_growth_report" />
+    <field name="construct_id" ref="ssi_school_character.construct_service" />
+    <field name="level_id" ref="ssi_school_character.level_iclad_developing" />
+    <field
+            name="narrative"
+        >The student is beginning to volunteer for shared classroom tasks and to notice when peers need help, an emerging pattern of service.</field>
+    <field
+            name="next_step"
+        >Invite the student to take a small, sustained service role so the emerging habit can become consistent.</field>
+</record>
+</odoo>

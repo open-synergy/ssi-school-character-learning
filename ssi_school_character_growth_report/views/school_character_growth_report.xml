@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 OpenSynergy Indonesia
+     Copyright 2026 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+<record id="school_character_growth_report_view_search" model="ir.ui.view">
+    <field name="name">school_character_growth_report - search</field>
+    <field name="model">school_character_growth_report</field>
+    <field
+            name="inherit_id"
+            ref="ssi_transaction_mixin.mixin_transaction_view_search"
+        />
+    <field name="mode">primary</field>
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//search" position="inside">
+                <field name="student_id" />
+                <field name="academic_year_id" />
+                <field name="academic_term_id" />
+                <field name="homeroom_teacher_id" />
+                <field name="calibration_id" />
+                <group expand="0" string="Group By">
+                    <filter
+                            name="group_by_student_id"
+                            string="Student"
+                            context="{'group_by': 'student_id'}"
+                        />
+                    <filter
+                            name="group_by_academic_year_id"
+                            string="Academic Year"
+                            context="{'group_by': 'academic_year_id'}"
+                        />
+                    <filter
+                            name="group_by_academic_term_id"
+                            string="Academic Term"
+                            context="{'group_by': 'academic_term_id'}"
+                        />
+                    <filter
+                            name="group_by_homeroom_teacher_id"
+                            string="Homeroom Teacher"
+                            context="{'group_by': 'homeroom_teacher_id'}"
+                        />
+                    <filter
+                            name="group_by_pathway"
+                            string="Pathway"
+                            context="{'group_by': 'pathway'}"
+                        />
+                </group>
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="school_character_growth_report_view_tree" model="ir.ui.view">
+    <field name="name">school_character_growth_report - tree</field>
+    <field name="model">school_character_growth_report</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="ssi_transaction_mixin.mixin_transaction_view_tree" />
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='company_id']" position="after">
+                <field name="date" />
+                <field name="student_id" />
+                <field name="academic_year_id" />
+                <field name="academic_term_id" />
+                <field name="homeroom_teacher_id" />
+                <field name="pathway" />
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="school_character_growth_report_view_form" model="ir.ui.view">
+    <field name="name">school_character_growth_report - form</field>
+    <field name="model">school_character_growth_report</field>
+    <field name="mode">primary</field>
+    <field name="inherit_id" ref="ssi_transaction_mixin.mixin_transaction_view_form" />
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='user_id']" position="after">
+                <field name="student_id" />
+                <field name="academic_year_id" />
+                <field name="academic_term_id" />
+                <field name="homeroom_teacher_id" />
+                <field name="calibration_id" />
+            </xpath>
+            <xpath expr="//group[@name='header_right']" position="inside">
+                <field name="date" />
+                <field name="pathway" />
+            </xpath>
+            <xpath expr="//page[1]" position="before">
+                <page name="growth_lines" string="Growth Lines">
+                    <field name="line_ids">
+                        <tree editable="bottom">
+                            <field name="construct_id" />
+                            <field name="level_id" />
+                            <field name="narrative" />
+                            <field name="next_step" />
+                            <field name="evidence_ids" widget="many2many_tags" />
+                            <field name="evidence_count" />
+                        </tree>
+                    </field>
+                </page>
+                <page name="overall" string="Overall Narrative">
+                    <group name="overall_group" colspan="4" col="1">
+                        <field name="overall_narrative" nolabel="1" />
+                    </group>
+                </page>
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="school_character_growth_report_action" model="ir.actions.act_window">
+    <field name="name">Character Growth Reports</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">school_character_growth_report</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+<menuitem
+        id="school_character_growth_report_menu"
+        name="Character Growth Reports"
+        parent="menu_character_growth_report_root"
+        action="school_character_growth_report_action"
+        groups="school_character_growth_report_user_group"
+        sequence="10"
+    />
+
+</odoo>

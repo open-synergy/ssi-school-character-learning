@@ -1,0 +1,418 @@
+scenarios:
+  - name: "Growth Report Full Workflow With Two Lines"
+    steps:
+      - step: "Setup - create character profile"
+        action: "create"
+        model: "school_character_profile"
+        save_as: "profile"
+        values:
+          name: "Growth Profile A"
+          code: "GRP-PROF-A"
+
+      - step: "Setup - create first construct"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct_a"
+        values:
+          name: "Integrity Growth A"
+          code: "GRP-CON-A1"
+          profile_id: "REC: profile.id"
+
+      - step: "Setup - create second construct"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct_b"
+        values:
+          name: "Service Growth A"
+          code: "GRP-CON-A2"
+          profile_id: "REC: profile.id"
+
+      - step: "Setup - create scale"
+        action: "create"
+        model: "school_character_scale"
+        save_as: "scale"
+        values:
+          name: "Growth Scale A"
+          code: "GRP-SCL-A"
+
+      - step: "Setup - create lower level"
+        action: "create"
+        model: "school_character_level"
+        save_as: "level_low"
+        values:
+          name: "Developing Growth A"
+          code: "GRP-LVL-A1"
+          scale_id: "REC: scale.id"
+          sequence: 10
+
+      - step: "Setup - create higher level"
+        action: "create"
+        model: "school_character_level"
+        save_as: "level_high"
+        values:
+          name: "Consistent Growth A"
+          code: "GRP-LVL-A2"
+          scale_id: "REC: scale.id"
+          sequence: 20
+
+      - step: "Setup - create grade type"
+        action: "create"
+        model: "school_grade_type"
+        save_as: "grade_type"
+        values:
+          name: "Grade Type Growth A"
+          code: "GRP-GT-A"
+          sequence: 10
+
+      - step: "Setup - create school"
+        action: "create"
+        model: "school"
+        save_as: "school"
+        values:
+          name: "School Growth A"
+          code: "GRP-SCH-A"
+          grade_type_id: "REC: grade_type.id"
+
+      - step: "Setup - create student contact"
+        action: "create"
+        model: "res.partner"
+        save_as: "contact"
+        values:
+          name: "Growth Student Contact A"
+
+      - step: "Setup - create student"
+        action: "create"
+        model: "school_student"
+        save_as: "student"
+        values:
+          name: "Student Growth A"
+          code: "GRP-STU-A"
+          contact_id: "REC: contact.id"
+          school_id: "REC: school.id"
+
+      - step: "Setup - create academic year"
+        action: "create"
+        model: "school_academic_year"
+        save_as: "academic_year"
+        values:
+          name: "Academic Year Growth A"
+          code: "GRP-AY-A"
+          date_start: 2026-07-01
+          date_end: 2027-06-30
+
+      - step: "Setup - create academic term"
+        action: "create"
+        model: "school_academic_term"
+        save_as: "academic_term"
+        values:
+          name: "Academic Term Growth A"
+          code: "GRP-AT-A"
+          year_id: "REC: academic_year.id"
+          date_start: 2026-07-01
+          date_end: 2026-12-31
+
+      - step: "Setup - create homeroom employee"
+        action: "create"
+        model: "hr.employee"
+        save_as: "homeroom_employee"
+        values:
+          name: "Homeroom Employee A"
+
+      - step: "Setup - create homeroom teacher"
+        action: "create"
+        model: "school_teacher"
+        save_as: "homeroom_teacher"
+        values:
+          name: "Homeroom Teacher A"
+          code: "GRP-TCH-A"
+          employee_id: "REC: homeroom_employee.id"
+
+      - step: "Create growth report with two growth lines"
+        action: "create"
+        model: "school_character_growth_report"
+        save_as: "report"
+        values:
+          date: 2026-12-15
+          student_id: "REC: student.id"
+          academic_year_id: "REC: academic_year.id"
+          academic_term_id: "REC: academic_term.id"
+          homeroom_teacher_id: "REC: homeroom_teacher.id"
+          pathway: "core"
+          overall_narrative: "Steady growth in integrity and emerging service."
+          line_ids:
+            - - 0
+              - 0
+              - construct_id: "REC: construct_a.id"
+                level_id: "REC: level_high.id"
+                narrative: "Now reports own mistakes unprompted and proposes a fix."
+                next_step: "Help peers practise honest self-reporting next term."
+            - - 0
+              - 0
+              - construct_id: "REC: construct_b.id"
+                level_id: "REC: level_low.id"
+                narrative: "Beginning to volunteer for shared classroom tasks."
+                next_step: "Invite the student to take a small sustained service role."
+
+      - step: "Assert growth report created in draft with two lines"
+        action: "assert"
+        target: "report"
+        asserts:
+          id:
+            type: "value"
+            operator: "is_truthy"
+          state:
+            type: "value"
+            expected: "draft"
+          student_id:
+            type: "m2o"
+            expected: "REC: student"
+          pathway:
+            type: "value"
+            expected: "core"
+          line_ids:
+            type: "o2m"
+            check: "count"
+            expected_count: 2
+
+      - step: "Fetch the integrity growth line"
+        action: "search"
+        model: "school_character_growth_report.line"
+        domain:
+          - ["report_id", "=", "REC: report.id"]
+          - ["construct_id", "=", "REC: construct_a.id"]
+        save_as: "integrity_line"
+        expect_count: 1
+
+      - step: "Assert integrity line stored achieved level and construct"
+        action: "assert"
+        target: "integrity_line"
+        asserts:
+          construct_id:
+            type: "m2o"
+            expected: "REC: construct_a"
+          level_id:
+            type: "m2o"
+            expected: "REC: level_high"
+
+      - step: "Confirm growth report"
+        action: "call"
+        target: "report"
+        method: "action_confirm"
+        as_user: "base.user_admin"
+        asserts:
+          state:
+            type: "value"
+            expected: "confirm"
+
+      - step: "Invalidate report cache before approve"
+        action: "call"
+        target: "report"
+        method: "invalidate_cache"
+
+      - step: "Approve growth report"
+        action: "call"
+        target: "report"
+        method: "action_approve_approval"
+        as_user: "base.user_admin"
+        asserts:
+          state:
+            type: "value"
+            expected: "open"
+
+      - step: "Assert document number generated with GRP prefix"
+        action: "assert"
+        target: "report"
+        asserts:
+          name:
+            type: "value"
+            operator: "contains"
+            expected: "GRP"
+
+      - step: "Invalidate report cache before done"
+        action: "call"
+        target: "report"
+        method: "invalidate_cache"
+
+      - step: "Done growth report"
+        action: "call"
+        target: "report"
+        method: "action_done"
+        as_user: "base.user_admin"
+        asserts:
+          state:
+            type: "value"
+            expected: "done"
+
+  - name: "Growth Line Evidence Count And No Discipline Relation"
+    steps:
+      - step: "Setup - create character profile"
+        action: "create"
+        model: "school_character_profile"
+        save_as: "profile"
+        values:
+          name: "Growth Profile B"
+          code: "GRP-PROF-B"
+
+      - step: "Setup - create construct"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct"
+        values:
+          name: "Integrity Growth B"
+          code: "GRP-CON-B"
+          profile_id: "REC: profile.id"
+
+      - step: "Setup - create scale"
+        action: "create"
+        model: "school_character_scale"
+        save_as: "scale"
+        values:
+          name: "Growth Scale B"
+          code: "GRP-SCL-B"
+
+      - step: "Setup - create level"
+        action: "create"
+        model: "school_character_level"
+        save_as: "level"
+        values:
+          name: "Consistent Growth B"
+          code: "GRP-LVL-B1"
+          scale_id: "REC: scale.id"
+          sequence: 10
+
+      - step: "Setup - create arena"
+        action: "create"
+        model: "school_character_arena"
+        save_as: "arena"
+        values:
+          name: "Classroom Growth B"
+          code: "GRP-ARENA-B"
+
+      - step: "Setup - create grade type"
+        action: "create"
+        model: "school_grade_type"
+        save_as: "grade_type"
+        values:
+          name: "Grade Type Growth B"
+          code: "GRP-GT-B"
+          sequence: 10
+
+      - step: "Setup - create school"
+        action: "create"
+        model: "school"
+        save_as: "school"
+        values:
+          name: "School Growth B"
+          code: "GRP-SCH-B"
+          grade_type_id: "REC: grade_type.id"
+
+      - step: "Setup - create student contact"
+        action: "create"
+        model: "res.partner"
+        save_as: "contact"
+        values:
+          name: "Growth Student Contact B"
+
+      - step: "Setup - create student"
+        action: "create"
+        model: "school_student"
+        save_as: "student"
+        values:
+          name: "Student Growth B"
+          code: "GRP-STU-B"
+          contact_id: "REC: contact.id"
+          school_id: "REC: school.id"
+
+      - step: "Create observation with two evidence entries"
+        action: "create"
+        model: "school_character_observation"
+        save_as: "observation"
+        values:
+          date: 2026-09-30
+          student_id: "REC: student.id"
+          construct_id: "REC: construct.id"
+          summary: "Consistent honest self-reporting across the term."
+          evidence_ids:
+            - - 0
+              - 0
+              - date: 2026-08-15
+                arena_id: "REC: arena.id"
+                context: "Group work feedback session."
+                observed_behavior: "Acknowledged an error and corrected it."
+                source_type: "observation"
+                evidence_quality: "strong"
+                matched_level_id: "REC: level.id"
+            - - 0
+              - 0
+              - date: 2026-09-01
+                arena_id: "REC: arena.id"
+                context: "End-of-project self reflection."
+                observed_behavior: "Reflected on choosing to report a mistake."
+                source_type: "reflection"
+                evidence_quality: "good"
+                matched_level_id: "REC: level.id"
+
+      - step: "Fetch the two evidence entries of the observation"
+        action: "search"
+        model: "school_character_observation.evidence"
+        domain:
+          - ["observation_id", "=", "REC: observation.id"]
+        save_as: "evidence_entries"
+        expect_count: 2
+
+      - step: "Create growth report"
+        action: "create"
+        model: "school_character_growth_report"
+        save_as: "report"
+        values:
+          date: 2026-12-15
+          student_id: "REC: student.id"
+          pathway: "full"
+          overall_narrative: "Growth evidenced by legitimate character evidence only."
+
+      - step: "Create growth line linking the two evidence entries"
+        action: "create"
+        model: "school_character_growth_report.line"
+        save_as: "line"
+        values:
+          report_id: "REC: report.id"
+          construct_id: "REC: construct.id"
+          level_id: "REC: level.id"
+          narrative: "Consistently reports own mistakes, supported by evidence."
+          next_step: "Help peers practise honest self-reporting next term."
+          evidence_ids:
+            - - 6
+              - 0
+              - "EVAL: registry['evidence_entries'].ids"
+
+      - step: "Assert growth line evidence count equals number of entries"
+        action: "assert"
+        target: "line"
+        asserts:
+          evidence_ids:
+            type: "m2m"
+            check: "count"
+            expected_count: 2
+          evidence_count:
+            type: "value"
+            expected: 2
+
+      - step: "Data governance - no discipline/incident relation on growth line"
+        action: "create"
+        model: "school_character_growth_report.line"
+        expect_error:
+          type: "ValueError"
+        values:
+          report_id: "REC: report.id"
+          construct_id: "REC: construct.id"
+          incident_id: 1
+
+      - step: "Data governance - no counseling relation on growth report"
+        action: "create"
+        model: "school_character_growth_report"
+        expect_error:
+          type: "ValueError"
+        values:
+          date: 2026-12-16
+          student_id: "REC: student.id"
+          counseling_id: 1
