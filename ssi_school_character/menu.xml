@@ -12,9 +12,9 @@
 
 <menuitem
         id="menu_character_configuration"
-        name="Configuration"
-        parent="menu_character_root"
-        sequence="99"
+        name="Character Learning"
+        parent="ssi_school.menu_school_configuration"
+        sequence="160"
     />
 
 </odoo>
