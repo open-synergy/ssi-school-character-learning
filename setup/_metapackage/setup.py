@@ -16,6 +16,7 @@ setuptools.setup(
         'odoo14-addon-ssi_school_character_evidence',
         'odoo14-addon-ssi_school_character_evidence_operating_unit',
         'odoo14-addon-ssi_school_character_growth_report',
+        'odoo14-addon-ssi_school_character_growth_report_operating_unit',
     ],
     classifiers=[
         'Programming Language :: Python',
