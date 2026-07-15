@@ -249,6 +249,7 @@ msgid "Character Indicators"
 msgstr ""
 
 #. module: ssi_school_character
+#: model:ir.ui.menu,name:ssi_school_character.menu_character_configuration
 #: model:ir.ui.menu,name:ssi_school_character.menu_character_root
 msgid "Character Learning"
 msgstr ""
@@ -385,11 +386,6 @@ msgstr ""
 msgid ""
 "Concrete, observable criteria used to decide whether a learner is at this "
 "level."
-msgstr ""
-
-#. module: ssi_school_character
-#: model:ir.ui.menu,name:ssi_school_character.menu_character_configuration
-msgid "Configuration"
 msgstr ""
 
 #. module: ssi_school_character
