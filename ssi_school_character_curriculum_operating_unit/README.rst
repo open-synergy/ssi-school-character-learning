@@ -2,9 +2,9 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-===================================================
+===========================================================
 Character Curriculum Map / Annual Syllabus - Operating Unit
-===================================================
+===========================================================
 
 Operating Unit support for the SSI Character Curriculum Map / Annual
 Syllabus module. Adds operating unit access control to the transactional
