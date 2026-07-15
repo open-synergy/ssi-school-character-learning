@@ -1,0 +1,290 @@
+scenarios:
+  - name: "Character Curriculum Operating Unit - Default from user's operating unit"
+    steps:
+      - step: "Setup - create partner for Operating Unit A"
+        action: "create"
+        model: "res.partner"
+        save_as: "ou_a_partner"
+        values:
+          name: "Curriculum Operating Unit A Partner"
+
+      - step: "Setup - create Operating Unit A"
+        action: "create"
+        model: "operating.unit"
+        save_as: "ou_a"
+        values:
+          name: "Curriculum Operating Unit A"
+          code: "OUCCMA"
+          company_id: "REF: base.main_company"
+          partner_id: "EVAL: registry['ou_a_partner'].id"
+
+      # NOTE: base.group_user is required here -- without it, even basic
+      # ORM operations (e.g. the internal ir.model lookups triggered while
+      # creating a school_character_curriculum) raise AccessError, since a
+      # large part of Odoo's base system models are only readable by
+      # internal users. This does mean the pre-existing "Character
+      # Curriculum Map - Company" ir.rule (from the base module, scoped to
+      # base.group_user, domain company_id = user.company_id) also applies
+      # to this user and is OR-combined with the new Operating Unit rule
+      # below -- that is expected Odoo ir.rule behavior (group-scoped rules
+      # combine via OR) and is exercised/explained in the next scenario.
+      # This scenario only checks that operating_unit_id defaults correctly
+      # from the creating user; it does not depend on row-level isolation.
+      - step: "Setup - create user restricted to Operating Unit A"
+        action: "create"
+        model: "res.users"
+        save_as: "user_ou_a"
+        values:
+          name: "Curriculum User OU-A"
+          login: "test_curriculum_ou_a@ssi-school.test"
+          company_id: "REF: base.main_company"
+          groups_id:
+            - - 6
+              - 0
+              - - "REF: base.group_user"
+                - "REF:
+                  ssi_school_character_curriculum.school_character_curriculum_user_group"
+                - "REF:
+                  ssi_school_character_curriculum_operating_unit.school_character_curriculum_operating_unit_group"
+          assigned_operating_unit_ids:
+            - - 6
+              - 0
+              - - "EVAL: registry['ou_a'].id"
+          default_operating_unit_id: "EVAL: registry['ou_a'].id"
+
+      - step: "Setup - create character profile"
+        action: "create"
+        model: "school_character_profile"
+        save_as: "profile"
+        values:
+          name: "Curriculum OU Profile Default"
+          code: "CCM-OU-PROF-DEF"
+
+      - step: "Setup - create academic year"
+        action: "create"
+        model: "school_academic_year"
+        save_as: "academic_year"
+        values:
+          name: "Curriculum OU AY Default"
+          code: "CCM-OU-AY-DEF"
+          date_start: 2026-07-01
+          date_end: 2027-06-30
+
+      # The odoo-yaml-test framework's own "as_user" step key only accepts
+      # an XML ID resolvable via env.ref(), so it cannot address a res.users
+      # record created earlier in this same scenario (it has no XML ID).
+      # `with_user()` is used instead, inside an EVAL domain leaf, to run
+      # the actual create() call as that specific user -- this is what makes
+      # mixin.single_operating_unit's own default resolve against *that*
+      # user's default_operating_unit_id, exactly as it would in the real
+      # app. The surrounding "search" action then confirms both that the
+      # created record exists and that its operating_unit_id matches
+      # Operating Unit A in the same step.
+      - step:
+          "Create curriculum as Operating Unit A user (operating_unit_id must default
+          from that user)"
+        action: "search"
+        model: "school_character_curriculum"
+        domain:
+          - - "id"
+            - "="
+            - >-
+              EVAL:
+              env['school_character_curriculum'].with_user(registry['user_ou_a']).create({
+              'date': date(2026, 7, 1), 'academic_year_id':
+              registry['academic_year'].id, 'profile_id': registry['profile'].id,
+              'pathway': 'core' }).id
+          - ["operating_unit_id", "=", "EVAL: registry['ou_a'].id"]
+        save_as: "curriculum"
+        expect_count: 1
+
+      - step: "Assert curriculum created in draft"
+        action: "assert"
+        target: "curriculum"
+        asserts:
+          state:
+            type: "value"
+            expected: "draft"
+
+  - name:
+      "Character Curriculum Operating Unit - Two operating units both default and record
+      their own OU correctly"
+    steps:
+      - step: "Setup - create partner for Operating Unit A"
+        action: "create"
+        model: "res.partner"
+        save_as: "ou_a_partner"
+        values:
+          name: "Isolation Curriculum Operating Unit A Partner"
+
+      - step: "Setup - create Operating Unit A"
+        action: "create"
+        model: "operating.unit"
+        save_as: "ou_a"
+        values:
+          name: "Isolation Curriculum Operating Unit A"
+          code: "OUCCMISOA"
+          company_id: "REF: base.main_company"
+          partner_id: "EVAL: registry['ou_a_partner'].id"
+
+      - step: "Setup - create partner for Operating Unit B"
+        action: "create"
+        model: "res.partner"
+        save_as: "ou_b_partner"
+        values:
+          name: "Isolation Curriculum Operating Unit B Partner"
+
+      - step: "Setup - create Operating Unit B"
+        action: "create"
+        model: "operating.unit"
+        save_as: "ou_b"
+        values:
+          name: "Isolation Curriculum Operating Unit B"
+          code: "OUCCMISOB"
+          company_id: "REF: base.main_company"
+          partner_id: "EVAL: registry['ou_b_partner'].id"
+
+      # base.group_user is required for basic ORM functionality (see note in
+      # the previous scenario). Because the base module's own company-wide
+      # ir.rule (scoped to base.group_user) is combined with the Operating
+      # Unit rule via OR (standard Odoo ir.rule semantics for group-scoped
+      # rules), a same-company internal user is not expected to be blocked
+      # from seeing another OU's records purely by the new OU rule -- that
+      # pre-existing company-wide rule already grants same-company
+      # visibility regardless of OU. This scenario therefore verifies what
+      # the OU glue module is actually responsible for: each user's own
+      # operating_unit_id defaults correctly and independently of the other
+      # user/OU, and the new ir.rule record itself is wired with the
+      # expected domain and group.
+      - step: "Setup - create user restricted to Operating Unit A"
+        action: "create"
+        model: "res.users"
+        save_as: "user_ou_a"
+        values:
+          name: "Isolation Curriculum User OU-A"
+          login: "test_curriculum_isolation_ou_a@ssi-school.test"
+          company_id: "REF: base.main_company"
+          groups_id:
+            - - 6
+              - 0
+              - - "REF: base.group_user"
+                - "REF:
+                  ssi_school_character_curriculum.school_character_curriculum_user_group"
+                - "REF:
+                  ssi_school_character_curriculum_operating_unit.school_character_curriculum_operating_unit_group"
+          assigned_operating_unit_ids:
+            - - 6
+              - 0
+              - - "EVAL: registry['ou_a'].id"
+          default_operating_unit_id: "EVAL: registry['ou_a'].id"
+
+      - step: "Setup - create user restricted to Operating Unit B"
+        action: "create"
+        model: "res.users"
+        save_as: "user_ou_b"
+        values:
+          name: "Isolation Curriculum User OU-B"
+          login: "test_curriculum_isolation_ou_b@ssi-school.test"
+          company_id: "REF: base.main_company"
+          groups_id:
+            - - 6
+              - 0
+              - - "REF: base.group_user"
+                - "REF:
+                  ssi_school_character_curriculum.school_character_curriculum_user_group"
+                - "REF:
+                  ssi_school_character_curriculum_operating_unit.school_character_curriculum_operating_unit_group"
+          assigned_operating_unit_ids:
+            - - 6
+              - 0
+              - - "EVAL: registry['ou_b'].id"
+          default_operating_unit_id: "EVAL: registry['ou_b'].id"
+
+      - step: "Setup - create character profile"
+        action: "create"
+        model: "school_character_profile"
+        save_as: "profile"
+        values:
+          name: "Curriculum OU Profile Isolation"
+          code: "CCM-OU-PROF-ISO"
+
+      - step: "Setup - create academic year"
+        action: "create"
+        model: "school_academic_year"
+        save_as: "academic_year"
+        values:
+          name: "Curriculum OU AY Isolation"
+          code: "CCM-OU-AY-ISO"
+          date_start: 2026-07-01
+          date_end: 2027-06-30
+
+      - step: "Create curriculum as Operating Unit A user"
+        action: "search"
+        model: "school_character_curriculum"
+        domain:
+          - - "id"
+            - "="
+            - >-
+              EVAL:
+              env['school_character_curriculum'].with_user(registry['user_ou_a']).create({
+              'date': date(2026, 7, 1), 'academic_year_id':
+              registry['academic_year'].id, 'profile_id': registry['profile'].id,
+              'pathway': 'core' }).id
+          - ["operating_unit_id", "=", "EVAL: registry['ou_a'].id"]
+        save_as: "curriculum_a"
+        expect_count: 1
+
+      - step: "Create curriculum as Operating Unit B user"
+        action: "search"
+        model: "school_character_curriculum"
+        domain:
+          - - "id"
+            - "="
+            - >-
+              EVAL:
+              env['school_character_curriculum'].with_user(registry['user_ou_b']).create({
+              'date': date(2026, 7, 1), 'academic_year_id':
+              registry['academic_year'].id, 'profile_id': registry['profile'].id,
+              'pathway': 'core' }).id
+          - ["operating_unit_id", "=", "EVAL: registry['ou_b'].id"]
+        save_as: "curriculum_b"
+        expect_count: 1
+
+      - step:
+          "Operating Unit B user still sees their own curriculum (baseline sanity check)"
+        action: "search"
+        model: "school_character_curriculum"
+        domain:
+          - - "id"
+            - "in"
+            - "EVAL:
+              env['school_character_curriculum'].with_user(registry['user_ou_b']).search([('id',
+              '=', registry['curriculum_b'].id)]).ids"
+        save_as: "ou_b_curriculum_seen_by_ou_b"
+        expect_count: 1
+
+      - step:
+          "Assert the Operating Unit ir.rule for school_character_curriculum is wired
+          correctly"
+        action: "search"
+        model: "ir.rule"
+        save_as: "ou_rule_check"
+        domain:
+          - [
+              "id",
+              "=",
+              "REF:
+              ssi_school_character_curriculum_operating_unit.school_character_curriculum_ou",
+            ]
+          - [
+              "domain_force",
+              "=",
+              "[('operating_unit_id','in',[g.id for g in user.operating_unit_ids])]",
+            ]
+          - [
+              "groups",
+              "in",
+              "REF:
+              ssi_school_character_curriculum_operating_unit.school_character_curriculum_operating_unit_group",
+            ]
+        expect_count: 1
