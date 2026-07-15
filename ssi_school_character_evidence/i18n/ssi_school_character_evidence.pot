@@ -1,0 +1,1120 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ssi_school_character_evidence
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration_rating__calibration_id
+msgid "# Calibration"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__name
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__name
+msgid "# Document"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation_evidence__observation_id
+msgid "# Observation"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__summary
+msgid ""
+"A narrative summary of the character evidence gathered for this student and "
+"construct across the term."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__academic_term_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_evidence.school_character_observation_view_search
+msgid "Academic Term"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__academic_year_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_evidence.school_character_observation_view_search
+msgid "Academic Year"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__message_needaction
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__active_approval_ids
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__active_approval_ids
+msgid "Active Approvals"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__active_approver_partner_ids
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__active_approver_partner_ids
+msgid "Active Partners"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__active_approver_user_ids
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__active_approver_user_ids
+msgid "Active Users"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__activity_ids
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation_evidence__activity_id
+msgid "Activity"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__activity_exception_decoration
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__activity_state
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__activity_type_icon
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__agreement_result
+msgid "Agreement Result"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__allowed_policy_template_ids
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__allowed_policy_template_ids
+msgid "Allowed Policy Templates"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration_rating__anchor_id
+msgid "Anchor"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__anchor_ids
+msgid "Anchors"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__approval_template_id
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__approval_template_id
+msgid "Approval Configuration"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__approval_template_id
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__approval_template_id
+msgid "Approval Template"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__approval_ids
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__approval_ids
+msgid "Approvals"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__approve_ok
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__approve_ok
+msgid ""
+"Approve policy\n"
+"\n"
+"* If active user can see and execute 'Approve' button"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__approved
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__approved
+msgid "Approved"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation_evidence__arena_id
+msgid "Arena"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields.selection,name:ssi_school_character_evidence.selection__school_character_observation_evidence__source_type__artifact
+msgid "Artifact/Work Product"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration_rating__assigned_level_id
+msgid "Assigned Level"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__message_attachment_count
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation_evidence__attachment_ids
+msgid "Attachments"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__approve_ok
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__approve_ok
+msgid "Can Approve"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__cancel_ok
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__cancel_ok
+msgid "Can Cancel"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__confirm_ok
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__confirm_ok
+msgid "Can Confirm"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__done_ok
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__done_ok
+msgid "Can Finished"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__manual_number_ok
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__manual_number_ok
+msgid "Can Input Manual Document Number"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__reject_ok
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__reject_ok
+msgid "Can Reject"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__restart_ok
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__restart_ok
+msgid "Can Restart"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__restart_approval_ok
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__restart_approval_ok
+msgid "Can Restart Approval"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__open_ok
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__open_ok
+msgid "Can Start"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__cancel_reason_id
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__cancel_reason_id
+msgid "Cancel Reason"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__cancel_ok
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__cancel_ok
+msgid ""
+"Cancel policy\n"
+"\n"
+"* If active user can see and execute 'Cancel' button"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model,name:ssi_school_character_evidence.model_school_character_observation
+msgid "Character Observation"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.module.category,name:ssi_school_character_evidence.school_character_observation_data_ownership_module_category
+msgid "Character Observation - Data Ownership"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.module.category,name:ssi_school_character_evidence.school_character_observation_workflow_module_category
+msgid "Character Observation - Workflow"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model,name:ssi_school_character_evidence.model_school_character_observation_evidence
+msgid "Character Observation Evidence Entry"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.actions.act_window,name:ssi_school_character_evidence.school_character_observation_action
+#: model:ir.ui.menu,name:ssi_school_character_evidence.school_character_observation_menu
+msgid "Character Observations"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model,name:ssi_school_character_evidence.model_school_character_calibration
+msgid "Character Teacher Calibration"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.module.category,name:ssi_school_character_evidence.school_character_calibration_data_ownership_module_category
+msgid "Character Teacher Calibration - Data Ownership"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.module.category,name:ssi_school_character_evidence.school_character_calibration_workflow_module_category
+msgid "Character Teacher Calibration - Workflow"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model,name:ssi_school_character_evidence.model_school_character_calibration_rating
+msgid "Character Teacher Calibration Rating"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.actions.act_window,name:ssi_school_character_evidence.school_character_calibration_action
+#: model:ir.ui.menu,name:ssi_school_character_evidence.school_character_calibration_menu
+msgid "Character Teacher Calibrations"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields.selection,name:ssi_school_character_evidence.selection__school_character_observation_evidence__source_type__community
+msgid "Community Report"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__company_id
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__company_id
+msgid "Company"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__company_partner_id
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__company_partner_id
+msgid "Company Partner"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__company_id
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__company_id
+msgid ""
+"Company that own the document\n"
+"\n"
+"* Automatically filled with user's company.\n"
+"  Default company can be changed"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__confirm_ok
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__confirm_ok
+msgid ""
+"Confirm policy\n"
+"\n"
+"* If active user can see and execute 'Confirm' button"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__construct_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_evidence.school_character_observation_view_search
+msgid "Construct"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__construct_ids
+msgid "Constructs"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation_evidence__context
+msgid "Context"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__create_uid
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration_rating__create_uid
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__create_uid
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation_evidence__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__create_date
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration_rating__create_date
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__create_date
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation_evidence__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation_evidence__date
+msgid "Date"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation_evidence__observed_behavior
+msgid ""
+"Description of the concrete behaviour that was actually observed -- what the"
+" student did, phrased factually."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__display_name
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration_rating__display_name
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__display_name
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation_evidence__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__date
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__date
+msgid "Document Date"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__done_ok
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__done_ok
+msgid ""
+"Done policy\n"
+"\n"
+"* If active user can see and execute 'Done' button"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__evidence_count
+msgid "Evidence Count"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__evidence_ids
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_evidence.school_character_observation_view_form
+msgid "Evidence Entries"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation_evidence__evidence_quality
+msgid "Evidence Quality"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__message_follower_ids
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__message_channel_ids
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__message_partner_ids
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__activity_type_icon
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__notes
+msgid "Free-text notes and follow-up agreements from this session."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields.selection,name:ssi_school_character_evidence.selection__school_character_observation_evidence__evidence_quality__good
+msgid "Good"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_evidence.school_character_observation_view_search
+msgid "Group By"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__id
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration_rating__id
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__id
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation_evidence__id
+msgid "ID"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__activity_exception_icon
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__activity_exception_icon
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__message_needaction
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__message_unread
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__message_needaction
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__message_has_error
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation_evidence__indicator_id
+msgid "Indicator"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:school_character_anchor,name:ssi_school_character_evidence.demo_anchor_integrity_consistent
+msgid "Integrity - Consistent Anchor"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:school_character_anchor,name:ssi_school_character_evidence.demo_anchor_integrity_developing
+msgid "Integrity - Developing Anchor"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields.selection,name:ssi_school_character_evidence.selection__school_character_observation_evidence__evidence_quality__invalid
+msgid "Invalid (Not Admissible)"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__message_is_follower
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration____last_update
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration_rating____last_update
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation____last_update
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation_evidence____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__write_uid
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration_rating__write_uid
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__write_uid
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation_evidence__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__write_date
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration_rating__write_date
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__write_date
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation_evidence__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__message_main_attachment_id
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:res.groups,name:ssi_school_character_evidence.school_character_calibration_manager_group
+#: model:res.groups,name:ssi_school_character_evidence.school_character_observation_manager_group
+msgid "Manager"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__manual_number_ok
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__manual_number_ok
+msgid ""
+"Manual number assignment policy\n"
+"\n"
+"* If active user can edit document number"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation_evidence__matched_level_id
+msgid "Matched Level"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.ui.menu,name:ssi_school_character_evidence.menu_character_measurement_root
+msgid "Measurement"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__message_has_error
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__message_ids
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__need_validation
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__need_validation
+msgid "Need Validation"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__activity_summary
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__activity_type_id
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__next_approval_ids
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__next_approval_ids
+msgid "Next Approvals"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__note
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__note
+msgid "Note"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__notes
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_evidence.school_character_calibration_view_form
+msgid "Notes"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__message_needaction_counter
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__message_has_error_counter
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__evidence_count
+msgid "Number of evidence entries recorded on this observation."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__message_needaction_counter
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__message_has_error_counter
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__rating_count
+msgid "Number of rating lines recorded in this session."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__message_unread_counter
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields.selection,name:ssi_school_character_evidence.selection__school_character_observation_evidence__source_type__observation
+msgid "Observation"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation_evidence__observed_behavior
+msgid "Observed Behavior"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation_evidence__observer_id
+msgid "Observer"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:res.groups,name:ssi_school_character_evidence.school_character_calibration_officer_group
+#: model:res.groups,name:ssi_school_character_evidence.school_character_observation_officer_group
+msgid "Officer"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields.selection,name:ssi_school_character_evidence.selection__school_character_observation_evidence__source_type__parent
+msgid "Parent Report"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration_rating__participant_id
+msgid "Participant"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__participant_ids
+msgid "Participants"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields.selection,name:ssi_school_character_evidence.selection__school_character_observation_evidence__source_type__peer
+msgid "Peer Report"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__policy_template_id
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__policy_template_id
+msgid "Policy Template"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__provisional_level_id
+msgid "Provisional Level"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__rating_count
+msgid "Rating Count"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__rating_ids
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_evidence.school_character_calibration_view_form
+msgid "Ratings"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields.selection,name:ssi_school_character_evidence.selection__school_character_observation_evidence__source_type__reflection
+msgid "Reflection"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__reject_ok
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__reject_ok
+msgid ""
+"Reject policy\n"
+"\n"
+"* If active user can see and execute 'Reject' button"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__rejected
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__rejected
+msgid "Rejected"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__user_id
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__user_id
+msgid "Responsible"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__activity_user_id
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__restart_approval_ok
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__restart_approval_ok
+msgid ""
+"Restart approval policy\n"
+"\n"
+"* If active user can see and execute 'Restart Approval' button"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__restart_ok
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__restart_ok
+msgid ""
+"Restart policy\n"
+"\n"
+"* If active user can see and execute 'Restart' button"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__reviewer_id
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__reviewer_id
+msgid "Reviewer"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_evidence.school_character_calibration_view_form
+msgid "Scope"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields.selection,name:ssi_school_character_evidence.selection__school_character_observation_evidence__source_type__self
+msgid "Self Report"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation_evidence__context
+msgid "Short note on the situation/context in which the behaviour occurred."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation_evidence__source_type
+msgid "Source Type"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__open_ok
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__open_ok
+msgid ""
+"Start policy\n"
+"\n"
+"* If active user can see and execute 'Start' button"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__state
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__state
+msgid "State"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__activity_state
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields.selection,name:ssi_school_character_evidence.selection__school_character_observation_evidence__evidence_quality__strong
+msgid "Strong"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__student_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_evidence.school_character_observation_view_search
+msgid "Student"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__subconstruct_id
+msgid "Sub-construct"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields.selection,name:ssi_school_character_evidence.selection__school_character_observation_evidence__evidence_quality__sufficient
+msgid "Sufficient"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__summary
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_evidence.school_character_observation_view_form
+msgid "Summary"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation_evidence__attachment_ids
+msgid ""
+"Supporting artifacts for this evidence entry (work products, photos of the "
+"behaviour's output, etc.)."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__academic_term_id
+msgid "The academic term this observation belongs to."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__academic_year_id
+msgid "The academic year this observation belongs to."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation_evidence__arena_id
+msgid ""
+"The arena/program (e.g. classroom, project, live-in) in which the behaviour "
+"was observed."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation_evidence__indicator_id
+msgid ""
+"The behavioural indicator that this evidence entry provides evidence for."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration_rating__anchor_id
+msgid "The calibrated anchor example that was rated."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__anchor_ids
+msgid ""
+"The calibrated anchor examples that participants rated during this session."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration_rating__calibration_id
+msgid "The calibration session this rating line belongs to."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__construct_id
+msgid "The character construct being observed and evidenced."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__construct_ids
+msgid "The character constructs whose scoring this session calibrates."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation_evidence__activity_id
+msgid ""
+"The character learning activity during which the behaviour was observed, "
+"when the evidence comes from a designed activity."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation_evidence__observation_id
+msgid "The character observation document this evidence entry belongs to."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation_evidence__date
+msgid "The date on which the behaviour was observed."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__date
+msgid "The date this Character Observation document was drawn up."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__date
+msgid "The date this teacher calibration session took place."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__evidence_ids
+msgid ""
+"The individual evidence entries that make up this observation: each is a "
+"single observed behaviour with its source type, evidence quality, and "
+"matched scale level."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation_evidence__source_type
+msgid ""
+"The kind of legitimate source this evidence was drawn from. A student's own "
+"reflection is recorded as 'Reflection'. Only these sources are admissible as"
+" character evidence (ICLAD Bab 17)."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__agreement_result
+msgid ""
+"The overall agreement result of this session, e.g. the percentage of ratings"
+" within one level of each other (inter-rater reliability)."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__provisional_level_id
+msgid ""
+"The provisional scale level assigned to the student for this construct on "
+"the basis of the evidence gathered. Taken from the configured character "
+"scale; never hardcoded."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation_evidence__evidence_quality
+msgid ""
+"The quality tier of this evidence. The 'Invalid (Not Admissible)' tier "
+"documents that the material -- e.g. rumor, impression, counseling notes, "
+"psychological test results, or punishment data -- must NOT be used as "
+"character evidence (ICLAD Bab 17); it may be recorded only to make that "
+"exclusion explicit."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__rating_ids
+msgid ""
+"The rating lines of this session: the level each participant assigned to "
+"each anchor example."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration_rating__assigned_level_id
+msgid ""
+"The scale level this participant assigned to the anchor example, from the "
+"configured character scale."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation_evidence__matched_level_id
+msgid ""
+"The scale level this piece of evidence is matched to, from the configured "
+"character scale. Never hardcoded."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__subconstruct_id
+msgid ""
+"The specific sub-construct being observed, when the observation targets a "
+"facet more granular than the construct itself."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__student_id
+msgid "The student whose character this observation is about."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration_rating__participant_id
+msgid "The teacher who gave this rating."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation_evidence__observer_id
+msgid "The teacher who observed and recorded this behaviour."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__participant_ids
+msgid "The teachers who took part in this calibration session."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__name
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__name
+msgid ""
+"Transaction/document number\n"
+"\n"
+"* Unique indentifer of transaction\n"
+"* Leave '/' to automatically generate number\n"
+"* Change '/' into any number/identifier to manually assign number.\n"
+"  Manual number assignment can be done in 'Draft' state\n"
+"  Only user with 'Can Manualy Assign Number' policy can manually assign number.\n"
+"* Transaction with number other than '/' can not be deleted."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__activity_exception_decoration
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__message_unread
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__message_unread_counter
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:res.groups,name:ssi_school_character_evidence.school_character_calibration_user_group
+#: model:res.groups,name:ssi_school_character_evidence.school_character_observation_user_group
+msgid "User"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__user_id
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__user_id
+msgid ""
+"User that responsible for document\n"
+"\n"
+"* Create user can be different with responsible user\n"
+"* Automatically filled with user that initiate document creation.\n"
+"  Default responsible can be changed."
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__reviewer_id
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__reviewer_id
+msgid ""
+"User that responsible to review document\n"
+"\n"
+"* Unless it configured to approve reviewer does not equal to approver"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__active_approver_user_ids
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__active_approver_user_ids
+msgid "Users that can approve/reject document"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields.selection,name:ssi_school_character_evidence.selection__school_character_observation_evidence__evidence_quality__weak
+msgid "Weak"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__website_message_ids
+#: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: ssi_school_character_evidence
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__website_message_ids
+#: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__website_message_ids
+msgid "Website communication history"
+msgstr ""
