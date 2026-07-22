@@ -216,6 +216,11 @@ msgid "Character Arenas"
 msgstr ""
 
 #. module: ssi_school_character
+#: model:ir.model,name:ssi_school_character.model_school_character_code_constraint_mixin
+msgid "Character Code Constraint Mixin"
+msgstr ""
+
+#. module: ssi_school_character
 #: model:ir.model,name:ssi_school_character.model_school_character_construct
 msgid "Character Construct"
 msgstr ""
@@ -557,6 +562,7 @@ msgstr ""
 #. module: ssi_school_character
 #: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__display_name
 #: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__display_name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_code_constraint_mixin__display_name
 #: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__display_name
 #: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__display_name
 #: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__display_name
@@ -738,6 +744,7 @@ msgstr ""
 #. module: ssi_school_character
 #: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__id
 #: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_code_constraint_mixin__id
 #: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__id
 #: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__id
 #: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__id
@@ -889,6 +896,7 @@ msgstr ""
 #. module: ssi_school_character
 #: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor____last_update
 #: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena____last_update
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_code_constraint_mixin____last_update
 #: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct____last_update
 #: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family____last_update
 #: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator____last_update
