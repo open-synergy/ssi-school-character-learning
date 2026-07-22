@@ -15,7 +15,10 @@ class SchoolCharacterFamily(models.Model):  # pylint: disable=too-few-public-met
     """
 
     _name = "school_character_family"
-    _inherit = ["mixin.master_data"]
+    _inherit = [
+        "mixin.master_data",
+        "school_character_code_constraint_mixin",
+    ]
     _description = "Character Family"
 
     description = fields.Text(

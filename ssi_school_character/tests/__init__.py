@@ -6,4 +6,5 @@ from . import (  # noqa: F401
     test_school_character_scale,
     test_school_character_construct,
     test_school_character_rubric,
+    test_school_character_code_constraint,
 )

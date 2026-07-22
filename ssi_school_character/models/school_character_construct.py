@@ -17,7 +17,10 @@ class SchoolCharacterConstruct(models.Model):  # pylint: disable=too-few-public-
     """
 
     _name = "school_character_construct"
-    _inherit = ["mixin.master_data"]
+    _inherit = [
+        "mixin.master_data",
+        "school_character_code_constraint_mixin",
+    ]
     _description = "Character Construct"
 
     profile_id = fields.Many2one(
