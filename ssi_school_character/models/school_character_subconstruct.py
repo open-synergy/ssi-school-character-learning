@@ -16,7 +16,10 @@ class SchoolCharacterSubconstruct(
     """
 
     _name = "school_character_subconstruct"
-    _inherit = ["mixin.master_data"]
+    _inherit = [
+        "mixin.master_data",
+        "school_character_code_constraint_mixin",
+    ]
     _description = "Character Sub-construct"
 
     construct_id = fields.Many2one(

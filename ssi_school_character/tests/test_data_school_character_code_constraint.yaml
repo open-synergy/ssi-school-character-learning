@@ -1,0 +1,225 @@
+scenarios:
+  - name: "Create Family with a meaningful code succeeds"
+    steps:
+      - step: "Create family with meaningful code"
+        action: "create"
+        model: "school_character_family"
+        save_as: "family"
+        values:
+          name: "Positive Family"
+          code: "FAM-POS-A"
+      - step: "Assert code was stored as given"
+        action: "assert"
+        target: "family"
+        asserts:
+          code:
+            type: "value"
+            expected: "FAM-POS-A"
+
+  - name: "Create Construct with a meaningful code succeeds"
+    steps:
+      - step: "Create construct with meaningful code"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct"
+        values:
+          name: "Positive Construct"
+          code: "CONS-POS-A"
+      - step: "Assert code was stored as given"
+        action: "assert"
+        target: "construct"
+        asserts:
+          code:
+            type: "value"
+            expected: "CONS-POS-A"
+
+  - name: "Create Sub-construct with a meaningful code succeeds"
+    steps:
+      - step: "Create parent construct"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct"
+        values:
+          name: "Parent Construct For Sub-construct Positive"
+          code: "CONS-POS-B"
+      - step: "Create sub-construct with meaningful code"
+        action: "create"
+        model: "school_character_subconstruct"
+        save_as: "subconstruct"
+        values:
+          name: "Positive Sub-construct"
+          code: "SUB-POS-A"
+          construct_id: "REC: construct.id"
+      - step: "Assert code was stored as given"
+        action: "assert"
+        target: "subconstruct"
+        asserts:
+          code:
+            type: "value"
+            expected: "SUB-POS-A"
+
+  - name: "Create Indicator with a meaningful code succeeds"
+    steps:
+      - step: "Create parent construct"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct"
+        values:
+          name: "Parent Construct For Indicator Positive"
+          code: "CONS-POS-C"
+      - step: "Create indicator with meaningful code"
+        action: "create"
+        model: "school_character_indicator"
+        save_as: "indicator"
+        values:
+          name: "Positive Indicator"
+          code: "IND-POS-A"
+          construct_id: "REC: construct.id"
+      - step: "Assert code was stored as given"
+        action: "assert"
+        target: "indicator"
+        asserts:
+          code:
+            type: "value"
+            expected: "IND-POS-A"
+
+  - name: "Write code from one meaningful value to another succeeds"
+    steps:
+      - step: "Create family with initial meaningful code"
+        action: "create"
+        model: "school_character_family"
+        save_as: "family"
+        values:
+          name: "Family To Be Renamed"
+          code: "FAM-WRITE-OLD"
+      - step: "Write a different meaningful code"
+        action: "write"
+        target: "family"
+        values:
+          code: "FAM-WRITE-NEW"
+      - step: "Assert new code was stored"
+        action: "assert"
+        target: "family"
+        asserts:
+          code:
+            type: "value"
+            expected: "FAM-WRITE-NEW"
+
+  - name: "Create Family with '/' placeholder code must fail"
+    steps:
+      - step: "Try to create family with '/' code"
+        action: "create"
+        model: "school_character_family"
+        expect_error:
+          type: "UserError"
+          message_contains: "placeholder"
+        values:
+          name: "Slash Family"
+          code: "/"
+
+  - name: "Create Construct with '/' placeholder code must fail"
+    steps:
+      - step: "Try to create construct with '/' code"
+        action: "create"
+        model: "school_character_construct"
+        expect_error:
+          type: "UserError"
+          message_contains: "placeholder"
+        values:
+          name: "Slash Construct"
+          code: "/"
+
+  - name: "Create Sub-construct with '/' placeholder code must fail"
+    steps:
+      - step: "Create parent construct"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct"
+        values:
+          name: "Parent Construct For Sub-construct Negative"
+          code: "CONS-NEG-SUB"
+      - step: "Try to create sub-construct with '/' code"
+        action: "create"
+        model: "school_character_subconstruct"
+        expect_error:
+          type: "UserError"
+          message_contains: "placeholder"
+        values:
+          name: "Slash Sub-construct"
+          code: "/"
+          construct_id: "REC: construct.id"
+
+  - name: "Create Indicator with '/' placeholder code must fail"
+    steps:
+      - step: "Create parent construct"
+        action: "create"
+        model: "school_character_construct"
+        save_as: "construct"
+        values:
+          name: "Parent Construct For Indicator Negative"
+          code: "CONS-NEG-IND"
+      - step: "Try to create indicator with '/' code"
+        action: "create"
+        model: "school_character_indicator"
+        expect_error:
+          type: "UserError"
+          message_contains: "placeholder"
+        values:
+          name: "Slash Indicator"
+          code: "/"
+          construct_id: "REC: construct.id"
+
+  - name: "Create Family with empty code must fail"
+    steps:
+      - step: "Try to create family with empty code"
+        action: "create"
+        model: "school_character_family"
+        expect_error:
+          type: "UserError"
+          message_contains: "placeholder"
+        values:
+          name: "Empty Code Family"
+          code: ""
+
+  - name: "Create Family with whitespace-only code must fail"
+    steps:
+      - step: "Try to create family with whitespace-only code"
+        action: "create"
+        model: "school_character_family"
+        expect_error:
+          type: "UserError"
+          message_contains: "placeholder"
+        values:
+          name: "Whitespace Code Family"
+          code: "   "
+
+  - name: "Write existing record's code to '/' must fail"
+    steps:
+      - step: "Create family with a meaningful code"
+        action: "create"
+        model: "school_character_family"
+        save_as: "family"
+        values:
+          name: "Family To Be Slashed"
+          code: "FAM-WRITE-SLASH-BASE"
+      - step: "Try to write '/' onto the existing record"
+        action: "write"
+        target: "family"
+        expect_error:
+          type: "UserError"
+          message_contains: "placeholder"
+        values:
+          code: "/"
+
+  - name: "Create inactive Family with '/' placeholder code must still fail"
+    steps:
+      - step: "Try to create an inactive family with '/' code"
+        action: "create"
+        model: "school_character_family"
+        expect_error:
+          type: "UserError"
+          message_contains: "placeholder"
+        values:
+          name: "Inactive Slash Family"
+          code: "/"
+          active: false
