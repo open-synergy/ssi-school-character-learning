@@ -26,6 +26,20 @@ Design Cycle, Bab 8 & Bab 10).
   data (data governance boundary).
 
 
+Work Instruction
+================
+
+* `Create Character Learning Activity <docs/school_character_activity/index.html>`_
+* `Edit Character Learning Activity <docs/school_character_activity/index.html>`_
+* `Delete Character Learning Activity <docs/school_character_activity/index.html>`_
+* `Confirm Character Learning Activity <docs/school_character_activity/index.html>`_
+* `Approve Character Learning Activity <docs/school_character_activity/index.html>`_
+* `Reject Character Learning Activity <docs/school_character_activity/index.html>`_
+* `Finish Character Learning Activity <docs/school_character_activity/index.html>`_
+* `Cancel Character Learning Activity <docs/school_character_activity/index.html>`_
+* `Restart Character Learning Activity <docs/school_character_activity/index.html>`_
+
+
 Installation
 ============
 

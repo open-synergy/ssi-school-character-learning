@@ -1,3 +1,5 @@
+options:
+  auto_refresh: true
 scenarios:
   - name: "Activity Full Workflow Create Confirm Approve Done"
     steps:
@@ -113,11 +115,6 @@ scenarios:
             type: "value"
             expected: "confirm"
 
-      - step: "Invalidate activity cache before approve"
-        action: "call"
-        target: "activity"
-        method: "invalidate_cache"
-
       - step: "Approve activity"
         action: "call"
         target: "activity"
@@ -136,11 +133,6 @@ scenarios:
             type: "value"
             operator: "contains"
             expected: "CLA"
-
-      - step: "Invalidate activity cache before done"
-        action: "call"
-        target: "activity"
-        method: "invalidate_cache"
 
       - step: "Done activity"
         action: "call"
