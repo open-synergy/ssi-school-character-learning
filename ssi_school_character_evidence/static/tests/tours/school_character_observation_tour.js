@@ -17,11 +17,12 @@ odoo.define(
                     trigger:
                         '.o_menu_sections [data-menu-xmlid="ssi_school_character.menu_character_root"]',
                 },
-                {
-                    content: "Open the Measurement menu",
-                    trigger:
-                        '.o_menu_sections [data-menu-xmlid="ssi_school_character_evidence.menu_character_measurement_root"]',
-                },
+                // "Measurement" (menu_character_measurement_root) has
+                // children (this menu and Calibration), so Odoo 14
+                // renders it as a non-clickable
+                // <div class="dropdown-header"> with no data-menu-xmlid
+                // -- it never gets its own tour step (odoo-development-ui-test,
+                // patterns.md "Jumlah level menu di IK != jumlah step").
                 {
                     content: "Open the Character Observations menu",
                     trigger:
@@ -109,9 +110,23 @@ odoo.define(
                     trigger: ".o_form_button_edit",
                 },
                 {
+                    content: "Form is now editable",
+                    trigger: ".o_form_view.o_form_editable",
+                    run: function () {
+                        // Assertion only; let the edit-mode re-render
+                        // settle before switching tabs, so the tab click
+                        // below lands on the stable post-edit notebook
+                        // rather than a transient node about to be
+                        // replaced.
+                    },
+                },
+                {
+                    content: "Open the Summary tab",
+                    trigger: ".o_notebook .nav-link:contains(Summary)",
+                },
+                {
                     content: "Change the Summary",
-                    trigger: ".o_field_widget[name='summary'] textarea",
-                    extra_trigger: ".o_form_view.o_form_editable",
+                    trigger: "textarea.o_field_widget[name='summary']",
                     run: "text Edited summary via tour.",
                 },
                 {

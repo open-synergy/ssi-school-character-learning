@@ -53,7 +53,11 @@ class TestUiSchoolCharacterObservation(HttpSavepointCase):
         super().setUpClass()
         cls.admin = cls.env.ref("base.user_admin")
         cls.grade_type = cls.env["school_grade_type"].create(
-            {"name": "TOUR Observation Grade Type", "sequence": 10}
+            {
+                "name": "TOUR Observation Grade Type",
+                "code": "TOUR-OBS-GRADE",
+                "sequence": 10,
+            }
         )
         cls.school = cls.env["school"].create(
             {
@@ -92,8 +96,18 @@ class TestUiSchoolCharacterObservation(HttpSavepointCase):
         cls.obs_reject.with_user(cls.admin).action_confirm()
 
         # 09-finish: pre-drive all the way to "open".
+        #
+        # Between action_confirm() and action_approve_approval() the
+        # record is flushed and its cache invalidated (scoped to its
+        # own ids) -- without the refresh, action_approve_approval()
+        # reads a stale cached approve_ok and raises "Document is not
+        # allowed to approve" nondeterministically (mirrors
+        # opnsynid-hr-expense/ssi_hr_cash_advance's
+        # _create_open_cash_advance).
         cls.obs_finish = cls._create_observation("09")
         cls.obs_finish.with_user(cls.admin).action_confirm()
+        cls.obs_finish.flush()
+        cls.obs_finish.invalidate_cache(ids=cls.obs_finish.ids)
         cls.obs_finish.with_user(cls.admin).action_approve_approval()
 
         # 12-restart: pre-drive to "cancel".

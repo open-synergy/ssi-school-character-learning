@@ -52,7 +52,11 @@ class TestUiSchoolCharacterCalibration(HttpSavepointCase):
             }
         )
         cls.anchor = cls.env["school_character_anchor"].create(
-            {"name": "TOUR Calibration Anchor", "code": "TOUR-CAL-ANCHOR"}
+            {
+                "name": "TOUR Calibration Anchor",
+                "code": "TOUR-CAL-ANCHOR",
+                "construct_id": cls.construct.id,
+            }
         )
         scale = cls.env["school_character_scale"].create(
             {"name": "TOUR Calibration Scale", "code": "TOUR-CAL-SCALE"}
@@ -88,8 +92,18 @@ class TestUiSchoolCharacterCalibration(HttpSavepointCase):
         cls.cal_reject.with_user(cls.admin).action_confirm()
 
         # 09-finish: pre-drive all the way to "open".
+        #
+        # Between action_confirm() and action_approve_approval() the
+        # record is flushed and its cache invalidated (scoped to its
+        # own ids) -- without the refresh, action_approve_approval()
+        # reads a stale cached approve_ok and raises "Document is not
+        # allowed to approve" nondeterministically (mirrors
+        # opnsynid-hr-expense/ssi_hr_cash_advance's
+        # _create_open_cash_advance).
         cls.cal_finish = cls._create_calibration("09")
         cls.cal_finish.with_user(cls.admin).action_confirm()
+        cls.cal_finish.flush()
+        cls.cal_finish.invalidate_cache(ids=cls.cal_finish.ids)
         cls.cal_finish.with_user(cls.admin).action_approve_approval()
 
         # 12-restart: pre-drive to "cancel".
