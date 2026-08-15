@@ -17,6 +17,7 @@
     "depends": [
         "ssi_school_character_activity",
         "ssi_operating_unit_mixin",
+        "web_tour",
     ],
     "data": [
         # Security - shared "Operating Unit" group + Manager tier wiring
@@ -25,6 +26,7 @@
         "security/ir_rule/school_character_activity.xml",
         # Views
         "views/school_character_activity.xml",
+        "views/assets.xml",
     ],
     "demo": [],
 }

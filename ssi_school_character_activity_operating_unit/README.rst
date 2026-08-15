@@ -12,6 +12,12 @@ school_character_activity, restricting each character learning activity
 document to one operating unit.
 
 
+Work Instruction
+================
+
+* `Create Character Learning Activity <docs/school_character_activity/index.html>`_
+
+
 Bug Tracker
 ===========
 
