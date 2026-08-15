@@ -84,6 +84,13 @@
                             <field name="code" />
                             <field name="name" />
                         </tree>
+                        <form>
+                            <group>
+                                <field name="code" />
+                                <field name="name" />
+                                <field name="definition" nolabel="1" />
+                            </group>
+                        </form>
                     </field>
                 </page>
             </xpath>

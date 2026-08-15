@@ -16,6 +16,7 @@
         "ssi_master_data_mixin",
         "ssi_m2o_configurator_mixin",
         "ssi_localdict_mixin",
+        "web_tour",
     ],
     "data": [
         "security/ir_module_category_data.xml",
@@ -43,6 +44,7 @@
         "views/school_character_indicator.xml",
         "views/school_character_rubric.xml",
         "views/school_character_anchor.xml",
+        "views/assets.xml",
     ],
     "demo": [
         "demo/school_character_demo.xml",

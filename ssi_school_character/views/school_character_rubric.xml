@@ -69,6 +69,13 @@
                             <field name="descriptor" />
                             <field name="criteria" />
                         </tree>
+                        <form>
+                            <group>
+                                <field name="level_id" />
+                                <field name="descriptor" />
+                                <field name="criteria" />
+                            </group>
+                        </form>
                     </field>
                 </page>
             </xpath>

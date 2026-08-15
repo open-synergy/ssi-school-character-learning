@@ -38,6 +38,31 @@ Master data provided:
   observed.
 
 
+Work Instruction
+================
+
+* `Create Character Anchor <docs/school_character_anchor/index.html>`_
+* `Edit Character Anchor <docs/school_character_anchor/index.html>`_
+* `Delete Character Anchor <docs/school_character_anchor/index.html>`_
+* `Deactivate Character Anchor <docs/school_character_anchor/index.html>`_
+* `Activate Character Anchor <docs/school_character_anchor/index.html>`_
+* `Create Character Arena <docs/school_character_arena/index.html>`_
+* `Edit Character Arena <docs/school_character_arena/index.html>`_
+* `Delete Character Arena <docs/school_character_arena/index.html>`_
+* `Deactivate Character Arena <docs/school_character_arena/index.html>`_
+* `Activate Character Arena <docs/school_character_arena/index.html>`_
+* `Create Character Family <docs/school_character_family/index.html>`_
+* `Edit Character Family <docs/school_character_family/index.html>`_
+* `Delete Character Family <docs/school_character_family/index.html>`_
+* `Deactivate Character Family <docs/school_character_family/index.html>`_
+* `Activate Character Family <docs/school_character_family/index.html>`_
+* `Create Character Method <docs/school_character_method/index.html>`_
+* `Edit Character Method <docs/school_character_method/index.html>`_
+* `Delete Character Method <docs/school_character_method/index.html>`_
+* `Deactivate Character Method <docs/school_character_method/index.html>`_
+* `Activate Character Method <docs/school_character_method/index.html>`_
+
+
 Installation
 ============
 

@@ -9,5 +9,8 @@ from odoo.tests import tagged
 
 @tagged("post_install", "-at_install")
 class TestSchoolCharacterConstruct(YamlTransactionCase):
+    """YAML scenario runner for ``school_character_construct``."""
+
     def test_school_character_construct(self):
+        """Run the ``school_character_construct`` YAML scenario."""
         self.run_yaml_scenario("test_data_school_character_construct.yaml")
