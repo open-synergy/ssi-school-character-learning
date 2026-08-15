@@ -19,11 +19,12 @@ odoo.define(
                     trigger:
                         '.o_menu_sections [data-menu-xmlid="ssi_school_character.menu_character_root"]',
                 },
-                {
-                    content: "Open the Growth Report menu",
-                    trigger:
-                        '.o_menu_sections [data-menu-xmlid="ssi_school_character_growth_report.menu_character_growth_report_root"]',
-                },
+                // "Growth Report" (menu_character_growth_report_root)
+                // has a child (this menu), so Odoo 14 renders it as a
+                // non-clickable <div class="dropdown-header"> with no
+                // data-menu-xmlid -- it never gets its own tour step
+                // (odoo-development-ui-test, patterns.md "Jumlah level
+                // menu di IK != jumlah step").
                 {
                     content: "Open the Character Growth Reports menu",
                     trigger:
@@ -100,13 +101,23 @@ odoo.define(
                     trigger: ".o_form_button_edit",
                 },
                 {
-                    content: "Change the Overall Narrative",
+                    content: "Form is now editable",
+                    trigger: ".o_form_view.o_form_editable",
+                    run: function () {
+                        // Assertion only; let the edit-mode re-render
+                        // settle before switching tabs, so the tab click
+                        // below lands on the stable post-edit notebook
+                        // rather than a transient node about to be
+                        // replaced.
+                    },
+                },
+                {
+                    content: "Open the Overall Narrative tab",
                     trigger: "a.nav-link:contains(Overall Narrative)",
-                    extra_trigger: ".o_form_view.o_form_editable",
                 },
                 {
                     content: "Fill in Overall Narrative",
-                    trigger: ".o_field_widget[name='overall_narrative'] textarea",
+                    trigger: "textarea.o_field_widget[name='overall_narrative']",
                     run: "text Edited narrative via tour.",
                 },
                 {
