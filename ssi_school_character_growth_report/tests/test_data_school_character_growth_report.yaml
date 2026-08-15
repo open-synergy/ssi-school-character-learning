@@ -1,3 +1,5 @@
+options:
+  auto_refresh: true
 scenarios:
   - name: "Growth Report Full Workflow With Two Lines"
     steps:
@@ -204,11 +206,6 @@ scenarios:
             type: "value"
             expected: "confirm"
 
-      - step: "Invalidate report cache before approve"
-        action: "call"
-        target: "report"
-        method: "invalidate_cache"
-
       - step: "Approve growth report"
         action: "call"
         target: "report"
@@ -227,11 +224,6 @@ scenarios:
             type: "value"
             operator: "contains"
             expected: "GRP"
-
-      - step: "Invalidate report cache before done"
-        action: "call"
-        target: "report"
-        method: "invalidate_cache"
 
       - step: "Done growth report"
         action: "call"

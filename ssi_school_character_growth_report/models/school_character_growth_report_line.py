@@ -84,5 +84,9 @@ class SchoolCharacterGrowthReportLine(models.Model):
 
     @api.depends("evidence_ids")
     def _compute_evidence_count(self):
+        """Count the evidence entries linked to this growth line.
+
+        :return: nothing; sets ``evidence_count`` on each record
+        """
         for record in self:
             record.evidence_count = len(record.evidence_ids)
