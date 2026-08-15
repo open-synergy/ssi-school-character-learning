@@ -12,6 +12,12 @@ model school_character_curriculum, restricting each character curriculum
 map document to one operating unit.
 
 
+Work Instruction
+================
+
+* `Create Character Curriculum Map <docs/school_character_curriculum/index.html>`_
+
+
 Bug Tracker
 ===========
 
