@@ -397,7 +397,7 @@ odoo.define("ssi_school_character_activity.school_character_activity_tour", func
                     return true;
                 },
             },
-            // cancel_reason_id is rendered widget="radio"
+            // Cancel_reason_id is rendered widget="radio"
             // (base_select_cancel_reason_view_form) -- not a many2one
             // autocomplete input, so it's a single click on the
             // matching radio option's label, not type-then-pick.
@@ -406,10 +406,21 @@ odoo.define("ssi_school_character_activity.school_character_activity_tour", func
                 trigger:
                     ".o_field_widget[name='cancel_reason_id'] .o_radio_item label:contains('TOUR Activity Cancel Reason')",
             },
-            // Flow 5 — Click Confirm.
+            // Flow 5 — Click Confirm. The wizard's Confirm button
+            // carries confirm="Are you sure?" (base_select_cancel_
+            // reason_view_form), which opens a SECOND, stacked
+            // Dialog.confirm() -- action_confirm() only actually runs
+            // once that dialog's own "Ok" button (class btn-primary)
+            // is clicked too (same shape as the record-delete confirm
+            // dialog used elsewhere in this repo's tours).
             {
                 content: "Confirm the wizard",
                 trigger: ".modal-footer button[name='action_confirm']",
+            },
+            {
+                content: 'Confirm the "Are you sure?" dialog',
+                trigger: ".modal-footer button.btn-primary",
+                in_modal: true,
             },
             // Post-Condition — status is Cancel.
             {
