@@ -371,7 +371,7 @@ odoo.define(
                         return true;
                     },
                 },
-                // cancel_reason_id is rendered widget="radio"
+                // Cancel_reason_id is rendered widget="radio"
                 // (base_select_cancel_reason_view_form) -- not a
                 // many2one autocomplete input, so it's a single click
                 // on the matching radio option's label, not
@@ -381,9 +381,20 @@ odoo.define(
                     trigger:
                         ".o_field_widget[name='cancel_reason_id'] .o_radio_item label:contains('TOUR Growth Cancel Reason')",
                 },
+                // The wizard's Confirm button carries confirm="Are
+                // you sure?" (base_select_cancel_reason_view_form),
+                // which opens a SECOND, stacked Dialog.confirm() --
+                // action_confirm() only actually runs once that
+                // dialog's own "Ok" button (class btn-primary) is
+                // clicked too.
                 {
                     content: "Confirm the wizard",
                     trigger: ".modal-footer button[name='action_confirm']",
+                },
+                {
+                    content: 'Confirm the "Are you sure?" dialog',
+                    trigger: ".modal-footer button.btn-primary",
+                    in_modal: true,
                 },
                 {
                     content: "Status is Cancel",
