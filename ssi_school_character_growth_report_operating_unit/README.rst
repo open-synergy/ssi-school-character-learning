@@ -12,6 +12,12 @@ school_character_growth_report, restricting each character growth report
 document to one operating unit.
 
 
+Work Instruction
+================
+
+* `Create Character Growth Report <docs/school_character_growth_report/index.html>`_
+
+
 Bug Tracker
 ===========
 

@@ -30,6 +30,20 @@ Growth Profile, Bab 21).
   safeguarding record (ICLAD Bab 17 & Bab 14).
 
 
+Work Instruction
+================
+
+* `Create Character Growth Report <docs/school_character_growth_report/index.html>`_
+* `Edit Character Growth Report <docs/school_character_growth_report/index.html>`_
+* `Delete Character Growth Report <docs/school_character_growth_report/index.html>`_
+* `Confirm Character Growth Report <docs/school_character_growth_report/index.html>`_
+* `Approve Character Growth Report <docs/school_character_growth_report/index.html>`_
+* `Reject Character Growth Report <docs/school_character_growth_report/index.html>`_
+* `Finish Character Growth Report <docs/school_character_growth_report/index.html>`_
+* `Cancel Character Growth Report <docs/school_character_growth_report/index.html>`_
+* `Restart Character Growth Report <docs/school_character_growth_report/index.html>`_
+
+
 Installation
 ============
 

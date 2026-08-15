@@ -3,3 +3,4 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 from . import test_school_character_growth_report_operating_unit  # noqa: F401
+from . import test_ui_school_character_growth_report  # noqa: F401

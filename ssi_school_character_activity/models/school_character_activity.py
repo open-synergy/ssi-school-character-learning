@@ -4,7 +4,7 @@
 
 from datetime import date as datetime_date
 
-from odoo import fields, models
+from odoo import api, fields, models
 
 from odoo.addons.ssi_decorator import ssi_decorator
 
@@ -306,3 +306,28 @@ class SchoolCharacterActivity(models.Model):
         if self._automatically_insert_view_element:
             view_arch = self._reconfigure_statusbar_visible(view_arch)
         return view_arch
+
+    @api.model
+    def _get_policy_field(self):
+        """Register this model's policy fields for ``mixin.policy``.
+
+        ``open_ok`` (from ``mixin.transaction_open``) must be listed
+        here too, alongside the existing ``_policy_field_order``.
+
+        :return: the base policy fields of the standard four-mixin
+            workflow combo
+        """
+        res = super()._get_policy_field()
+        policy_field = [
+            "confirm_ok",
+            "approve_ok",
+            "reject_ok",
+            "restart_approval_ok",
+            "done_ok",
+            "cancel_ok",
+            "restart_ok",
+            "manual_number_ok",
+            "open_ok",
+        ]
+        res += policy_field
+        return res

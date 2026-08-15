@@ -118,6 +118,20 @@
                                     domain="[('construct_id', '=', activity_construct_id)]"
                                 />
                         </tree>
+                        <form>
+                            <group>
+                                <field name="activity_construct_id" invisible="1" />
+                                <field
+                                        name="indicator_id"
+                                        domain="[('construct_id', '=', activity_construct_id)]"
+                                    />
+                                <field name="objective_rbt" />
+                                <field name="activity_dok" />
+                                <field name="planned_evidence" />
+                                <field name="solo_rubric" />
+                                <field name="feedback_plan" />
+                            </group>
+                        </form>
                     </field>
                 </page>
             </xpath>

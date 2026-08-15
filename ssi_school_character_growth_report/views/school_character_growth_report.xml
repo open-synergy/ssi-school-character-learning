@@ -99,6 +99,15 @@
                             <field name="evidence_ids" widget="many2many_tags" />
                             <field name="evidence_count" />
                         </tree>
+                        <form>
+                            <group>
+                                <field name="construct_id" />
+                                <field name="level_id" />
+                                <field name="narrative" />
+                                <field name="next_step" />
+                                <field name="evidence_ids" widget="many2many_tags" />
+                            </group>
+                        </form>
                     </field>
                 </page>
                 <page name="overall" string="Overall Narrative">

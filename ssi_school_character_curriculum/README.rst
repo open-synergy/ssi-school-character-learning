@@ -24,6 +24,20 @@ pathway).
   counseling data (data governance boundary).
 
 
+Work Instruction
+================
+
+* `Create Character Curriculum Map <docs/school_character_curriculum/index.html>`_
+* `Edit Character Curriculum Map <docs/school_character_curriculum/index.html>`_
+* `Delete Character Curriculum Map <docs/school_character_curriculum/index.html>`_
+* `Confirm Character Curriculum Map <docs/school_character_curriculum/index.html>`_
+* `Approve Character Curriculum Map <docs/school_character_curriculum/index.html>`_
+* `Reject Character Curriculum Map <docs/school_character_curriculum/index.html>`_
+* `Finish Character Curriculum Map <docs/school_character_curriculum/index.html>`_
+* `Cancel Character Curriculum Map <docs/school_character_curriculum/index.html>`_
+* `Restart Character Curriculum Map <docs/school_character_curriculum/index.html>`_
+
+
 Installation
 ============
 

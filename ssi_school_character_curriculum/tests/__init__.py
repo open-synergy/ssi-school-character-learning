@@ -4,4 +4,5 @@
 
 from . import (  # noqa: F401
     test_school_character_curriculum,
+    test_ui_school_character_curriculum,
 )

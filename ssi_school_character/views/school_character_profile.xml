@@ -65,6 +65,15 @@
                             <field name="family_id" />
                             <field name="scale_id" />
                         </tree>
+                        <form>
+                            <group>
+                                <field name="code" />
+                                <field name="name" />
+                                <field name="family_id" />
+                                <field name="scale_id" />
+                                <field name="definition" nolabel="1" />
+                            </group>
+                        </form>
                     </field>
                 </page>
             </xpath>

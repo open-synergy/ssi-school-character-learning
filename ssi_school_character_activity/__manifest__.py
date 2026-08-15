@@ -20,6 +20,7 @@
         "ssi_transaction_cancel_mixin",
         "ssi_m2o_configurator_mixin",
         "ssi_localdict_mixin",
+        "web_tour",
     ],
     "data": [
         "security/ir_module_category_data.xml",
@@ -29,10 +30,11 @@
         "security/ir_rule/school_character_activity.xml",
         "ir_sequence/school_character_activity.xml",
         "sequence_template/school_character_activity.xml",
-        "policy_template/school_character_activity.xml",
         "approval_template/school_character_activity.xml",
+        "policy_template/school_character_activity.xml",
         "menu.xml",
         "views/school_character_activity.xml",
+        "views/assets.xml",
     ],
     "demo": [
         "demo/school_character_activity_demo.xml",

@@ -11,7 +11,10 @@ from odoo.tests import tagged
 class TestSchoolCharacterActivityOperatingUnit(
     YamlTransactionCase
 ):  # pylint: disable=too-few-public-methods
+    """Test the Operating Unit field on Character Learning Activity."""
+
     def test_school_character_activity_operating_unit(self):
+        """Run the operating unit scenario YAML for the activity."""
         self.run_yaml_scenario(
             "test_data_school_character_activity_operating_unit.yaml"
         )

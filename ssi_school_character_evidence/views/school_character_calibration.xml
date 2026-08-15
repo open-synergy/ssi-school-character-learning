@@ -67,6 +67,13 @@
                             <field name="anchor_id" />
                             <field name="assigned_level_id" />
                         </tree>
+                        <form>
+                            <group>
+                                <field name="participant_id" />
+                                <field name="anchor_id" />
+                                <field name="assigned_level_id" />
+                            </group>
+                        </form>
                     </field>
                 </page>
                 <page name="notes" string="Notes">

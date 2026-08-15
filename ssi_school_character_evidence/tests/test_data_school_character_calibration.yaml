@@ -1,3 +1,5 @@
+options:
+  auto_refresh: true
 scenarios:
   - name: "Calibration Full Workflow With Ratings Per Participant And Anchor"
     steps:
@@ -243,11 +245,6 @@ scenarios:
             type: "value"
             expected: "confirm"
 
-      - step: "Invalidate calibration cache before approve"
-        action: "call"
-        target: "calibration"
-        method: "invalidate_cache"
-
       - step: "Approve calibration"
         action: "call"
         target: "calibration"
@@ -266,11 +263,6 @@ scenarios:
             type: "value"
             operator: "contains"
             expected: "CAL"
-
-      - step: "Invalidate calibration cache before done"
-        action: "call"
-        target: "calibration"
-        method: "invalidate_cache"
 
       - step: "Done calibration"
         action: "call"
