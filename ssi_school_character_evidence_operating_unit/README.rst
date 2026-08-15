@@ -13,6 +13,13 @@ school_character_calibration, restricting each character observation
 document and each teacher calibration session to one operating unit.
 
 
+Work Instruction
+================
+
+* `Create Character Observation <docs/school_character_observation/index.html>`_
+* `Create Character Teacher Calibration <docs/school_character_calibration/index.html>`_
+
+
 Bug Tracker
 ===========
 
