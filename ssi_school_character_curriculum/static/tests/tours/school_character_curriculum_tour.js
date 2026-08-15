@@ -17,11 +17,12 @@ odoo.define(
                     trigger:
                         '.o_menu_sections [data-menu-xmlid="ssi_school_character.menu_character_root"]',
                 },
-                {
-                    content: "Open the Curriculum menu",
-                    trigger:
-                        '.o_menu_sections [data-menu-xmlid="ssi_school_character_curriculum.menu_character_curriculum_root"]',
-                },
+                // "Curriculum" (menu_character_curriculum_root) has a
+                // child (this menu), so Odoo 14 renders it as a
+                // non-clickable <div class="dropdown-header"> with no
+                // data-menu-xmlid -- it never gets its own tour step
+                // (odoo-development-ui-test, patterns.md "Jumlah level
+                // menu di IK != jumlah step").
                 {
                     content: "Open the Character Curriculum Maps menu",
                     trigger:
