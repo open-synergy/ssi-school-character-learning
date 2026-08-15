@@ -1,17 +1,17 @@
 # Finish Character Learning Activity
 
-> **Module:** ssi_school_character_activity
-> **Model:** `school_character_activity`
-> **Menu:** School ‣ Character Learning ‣ Activity ‣ Character Learning Activities
-> **Actor:** Character Activity User
-> **State:** `open` → `done`
-> **Requires:** `05-approve`
+> **Module:** ssi_school_character_activity\
+> **Model:** `school_character_activity`\
+> **Menu:** School ‣ Character Learning ‣ Activity ‣ Character Learning Activities\
+> **Actor:** Character Activity User\
+> **State:** `open` → `done`\
+> **Requires:** > `05-approve`
 
 ## Pre-Condition
 
 - **Record:** Status is **Open**.
-- **Config:** An active `policy.template` grants `done_ok` for state `open` to
-  the actor's group.
+- **Config:** An active `policy.template` grants `done_ok` for state `open` to the
+  actor's group.
 - **Access:** User is in group **Character Activity User**.
 
 ## Flow

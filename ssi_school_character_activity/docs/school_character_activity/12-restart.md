@@ -1,17 +1,17 @@
 # Restart Character Learning Activity
 
-> **Module:** ssi_school_character_activity
-> **Model:** `school_character_activity`
-> **Menu:** School ‣ Character Learning ‣ Activity ‣ Character Learning Activities
-> **Actor:** Character Activity User
-> **State:** `cancel` → `draft`
-> **Requires:** `10-cancel`
+> **Module:** ssi_school_character_activity\
+> **Model:** `school_character_activity`\
+> **Menu:** School ‣ Character Learning ‣ Activity ‣ Character Learning Activities\
+> **Actor:** Character Activity User\
+> **State:** `cancel` → `draft`\
+> **Requires:** > `10-cancel`
 
 ## Pre-Condition
 
 - **Record:** Status is **Cancel**.
-- **Config:** An active `policy.template` grants `restart_ok` for state `cancel`
-  to the actor's group.
+- **Config:** An active `policy.template` grants `restart_ok` for state `cancel` to the
+  actor's group.
 - **Access:** User is in group **Character Activity User**.
 
 ## Flow

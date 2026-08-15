@@ -1,9 +1,9 @@
 # Delete Character Learning Activity
 
-> **Module:** ssi_school_character_activity
-> **Model:** `school_character_activity`
-> **Menu:** School ‣ Character Learning ‣ Activity ‣ Character Learning Activities
-> **Actor:** Character Activity User
+> **Module:** ssi_school_character_activity\
+> **Model:** `school_character_activity`\
+> **Menu:** School ‣ Character Learning ‣ Activity ‣ Character Learning Activities\
+> **Actor:** Character Activity User\
 > **Requires:** `01-create`
 
 ## Pre-Condition

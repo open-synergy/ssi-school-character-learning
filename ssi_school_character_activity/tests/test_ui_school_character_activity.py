@@ -84,78 +84,60 @@ class TestUiSchoolCharacterActivity(HttpSavepointCase):
 
         IK: docs/school_character_activity/01-create.md
         """
-        self.start_tour(
-            "/web", "ssi_school_character_activity_create", login="admin"
-        )
+        self.start_tour("/web", "ssi_school_character_activity_create", login="admin")
 
     def test_edit(self):
         """Run the edit tour for ``school_character_activity``.
 
         IK: docs/school_character_activity/02-edit.md
         """
-        self.start_tour(
-            "/web", "ssi_school_character_activity_edit", login="admin"
-        )
+        self.start_tour("/web", "ssi_school_character_activity_edit", login="admin")
 
     def test_delete(self):
         """Run the delete tour for ``school_character_activity``.
 
         IK: docs/school_character_activity/03-delete.md
         """
-        self.start_tour(
-            "/web", "ssi_school_character_activity_delete", login="admin"
-        )
+        self.start_tour("/web", "ssi_school_character_activity_delete", login="admin")
 
     def test_confirm(self):
         """Run the confirm tour for ``school_character_activity``.
 
         IK: docs/school_character_activity/04-confirm.md
         """
-        self.start_tour(
-            "/web", "ssi_school_character_activity_confirm", login="admin"
-        )
+        self.start_tour("/web", "ssi_school_character_activity_confirm", login="admin")
 
     def test_approve(self):
         """Run the approve tour for ``school_character_activity``.
 
         IK: docs/school_character_activity/05-approve.md
         """
-        self.start_tour(
-            "/web", "ssi_school_character_activity_approve", login="admin"
-        )
+        self.start_tour("/web", "ssi_school_character_activity_approve", login="admin")
 
     def test_reject(self):
         """Run the reject tour for ``school_character_activity``.
 
         IK: docs/school_character_activity/06-reject.md
         """
-        self.start_tour(
-            "/web", "ssi_school_character_activity_reject", login="admin"
-        )
+        self.start_tour("/web", "ssi_school_character_activity_reject", login="admin")
 
     def test_finish(self):
         """Run the finish (Done) tour for ``school_character_activity``.
 
         IK: docs/school_character_activity/09-finish.md
         """
-        self.start_tour(
-            "/web", "ssi_school_character_activity_finish", login="admin"
-        )
+        self.start_tour("/web", "ssi_school_character_activity_finish", login="admin")
 
     def test_cancel(self):
         """Run the cancel tour for ``school_character_activity``.
 
         IK: docs/school_character_activity/10-cancel.md
         """
-        self.start_tour(
-            "/web", "ssi_school_character_activity_cancel", login="admin"
-        )
+        self.start_tour("/web", "ssi_school_character_activity_cancel", login="admin")
 
     def test_restart(self):
         """Run the restart tour for ``school_character_activity``.
 
         IK: docs/school_character_activity/12-restart.md
         """
-        self.start_tour(
-            "/web", "ssi_school_character_activity_restart", login="admin"
-        )
+        self.start_tour("/web", "ssi_school_character_activity_restart", login="admin")

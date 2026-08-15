@@ -1,17 +1,17 @@
 # Confirm Character Learning Activity
 
-> **Module:** ssi_school_character_activity
-> **Model:** `school_character_activity`
-> **Menu:** School ‣ Character Learning ‣ Activity ‣ Character Learning Activities
-> **Actor:** Character Activity User
-> **State:** `draft` → `confirm`
-> **Requires:** `01-create`
+> **Module:** ssi_school_character_activity\
+> **Model:** `school_character_activity`\
+> **Menu:** School ‣ Character Learning ‣ Activity ‣ Character Learning Activities\
+> **Actor:** Character Activity User\
+> **State:** `draft` → `confirm`\
+> **Requires:** > `01-create`
 
 ## Pre-Condition
 
 - **Record:** Status is **Draft**.
-- **Config:** An active `policy.template` for this model grants `confirm_ok` for
-  state `draft` to the actor's group.
+- **Config:** An active `policy.template` for this model grants `confirm_ok` for state
+  `draft` to the actor's group.
 - **Access:** User is in group **Character Activity User**.
 
 ## Flow
