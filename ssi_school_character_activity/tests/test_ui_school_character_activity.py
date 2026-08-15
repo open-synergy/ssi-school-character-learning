@@ -71,8 +71,18 @@ class TestUiSchoolCharacterActivity(HttpSavepointCase):
         cls.act_reject.with_user(cls.admin).action_confirm()
 
         # 09-finish: pre-drive all the way to "open".
+        #
+        # Between action_confirm() and action_approve_approval() the
+        # record is flushed and its cache invalidated (scoped to its
+        # own ids) -- without the refresh, action_approve_approval()
+        # reads a stale cached approve_ok and raises "Document is not
+        # allowed to approve" nondeterministically (mirrors
+        # opnsynid-hr-expense/ssi_hr_cash_advance's
+        # _create_open_cash_advance).
         cls.act_finish = cls._create_activity("09", "TOUR Activity Construct 09")
         cls.act_finish.with_user(cls.admin).action_confirm()
+        cls.act_finish.flush()
+        cls.act_finish.invalidate_cache(ids=cls.act_finish.ids)
         cls.act_finish.with_user(cls.admin).action_approve_approval()
 
         # 12-restart: pre-drive to "cancel".
