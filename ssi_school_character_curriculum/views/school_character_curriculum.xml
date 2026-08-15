@@ -107,6 +107,22 @@
                             <field name="capaian" />
                             <field name="indicator_ids" widget="many2many_tags" />
                         </tree>
+                        <form>
+                            <group>
+                                <field name="construct_id" />
+                                <field name="subconstruct_id" />
+                                <field name="arena_id" />
+                                <field name="method_id" />
+                                <field name="track" />
+                                <field name="construct_scale_id" invisible="1" />
+                                <field
+                                        name="target_level_id"
+                                        domain="[('scale_id', '=', construct_scale_id)]"
+                                    />
+                                <field name="capaian" />
+                                <field name="indicator_ids" widget="many2many_tags" />
+                            </group>
+                        </form>
                     </field>
                 </page>
             </xpath>

@@ -1,3 +1,5 @@
+options:
+  auto_refresh: true
 scenarios:
   - name: "Curriculum Full Workflow Create Confirm Approve Done"
     steps:
@@ -154,11 +156,6 @@ scenarios:
             type: "value"
             expected: "confirm"
 
-      - step: "Invalidate curriculum cache before approve"
-        action: "call"
-        target: "curriculum"
-        method: "invalidate_cache"
-
       - step: "Approve curriculum"
         action: "call"
         target: "curriculum"
@@ -177,11 +174,6 @@ scenarios:
             type: "value"
             operator: "contains"
             expected: "CCM"
-
-      - step: "Invalidate curriculum cache before done"
-        action: "call"
-        target: "curriculum"
-        method: "invalidate_cache"
 
       - step: "Done curriculum"
         action: "call"
