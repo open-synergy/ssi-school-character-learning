@@ -371,16 +371,15 @@ odoo.define(
                         return true;
                     },
                 },
+                // cancel_reason_id is rendered widget="radio"
+                // (base_select_cancel_reason_view_form) -- not a
+                // many2one autocomplete input, so it's a single click
+                // on the matching radio option's label, not
+                // type-then-pick.
                 {
                     content: "Select the cancellation reason",
-                    trigger: ".o_field_many2one[name='cancel_reason_id'] input",
-                    run: "text TOUR Growth Cancel Reason",
-                },
-                {
-                    content: "Pick the reason",
                     trigger:
-                        ".ui-autocomplete .ui-menu-item a:contains(TOUR Growth Cancel Reason)",
-                    in_modal: false,
+                        ".o_field_widget[name='cancel_reason_id'] .o_radio_item label:contains('TOUR Growth Cancel Reason')",
                 },
                 {
                     content: "Confirm the wizard",
