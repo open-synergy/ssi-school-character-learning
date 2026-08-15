@@ -34,11 +34,12 @@ odoo.define(
                     trigger:
                         '.o_menu_sections [data-menu-xmlid="ssi_school_character.menu_character_root"]',
                 },
-                {
-                    content: "Open the Measurement menu",
-                    trigger:
-                        '.o_menu_sections [data-menu-xmlid="ssi_school_character_evidence.menu_character_measurement_root"]',
-                },
+                // "Measurement" (menu_character_measurement_root) has
+                // children (this menu and Calibration), so Odoo 14
+                // renders it as a non-clickable
+                // <div class="dropdown-header"> with no data-menu-xmlid
+                // -- it never gets its own tour step (odoo-development-ui-test,
+                // patterns.md "Jumlah level menu di IK != jumlah step").
                 {
                     content: "Open the Character Observations menu",
                     trigger:
