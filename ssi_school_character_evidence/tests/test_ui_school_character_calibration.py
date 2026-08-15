@@ -51,13 +51,6 @@ class TestUiSchoolCharacterCalibration(HttpSavepointCase):
                 "employee_id": employee.id,
             }
         )
-        cls.anchor = cls.env["school_character_anchor"].create(
-            {
-                "name": "TOUR Calibration Anchor",
-                "code": "TOUR-CAL-ANCHOR",
-                "construct_id": cls.construct.id,
-            }
-        )
         scale = cls.env["school_character_scale"].create(
             {"name": "TOUR Calibration Scale", "code": "TOUR-CAL-SCALE"}
         )
@@ -67,6 +60,14 @@ class TestUiSchoolCharacterCalibration(HttpSavepointCase):
                 "code": "TOUR-CAL-LVL",
                 "scale_id": scale.id,
                 "sequence": 10,
+            }
+        )
+        cls.anchor = cls.env["school_character_anchor"].create(
+            {
+                "name": "TOUR Calibration Anchor",
+                "code": "TOUR-CAL-ANCHOR",
+                "construct_id": cls.construct.id,
+                "level_id": cls.level.id,
             }
         )
         cls.cancel_reason = cls.env["base.cancel_reason"].create(
