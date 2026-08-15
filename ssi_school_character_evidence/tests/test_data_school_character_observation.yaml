@@ -1,3 +1,5 @@
+options:
+  auto_refresh: true
 scenarios:
   - name: "Observation Full Workflow With Three Evidence Entries"
     steps:
@@ -247,11 +249,6 @@ scenarios:
             type: "value"
             expected: "confirm"
 
-      - step: "Invalidate observation cache before approve"
-        action: "call"
-        target: "observation"
-        method: "invalidate_cache"
-
       - step: "Approve observation"
         action: "call"
         target: "observation"
@@ -270,11 +267,6 @@ scenarios:
             type: "value"
             operator: "contains"
             expected: "OBS"
-
-      - step: "Invalidate observation cache before done"
-        action: "call"
-        target: "observation"
-        method: "invalidate_cache"
 
       - step: "Done observation"
         action: "call"

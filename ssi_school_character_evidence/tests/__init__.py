@@ -5,4 +5,6 @@
 from . import (  # noqa: F401
     test_school_character_observation,
     test_school_character_calibration,
+    test_ui_school_character_observation,
+    test_ui_school_character_calibration,
 )

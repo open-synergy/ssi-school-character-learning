@@ -58,6 +58,29 @@ To install this module, you need to:
 6.  Install the module
 
 
+Work Instruction
+================
+
+* `Create Character Observation <docs/school_character_observation/index.html>`_
+* `Edit Character Observation <docs/school_character_observation/index.html>`_
+* `Delete Character Observation <docs/school_character_observation/index.html>`_
+* `Confirm Character Observation <docs/school_character_observation/index.html>`_
+* `Approve Character Observation <docs/school_character_observation/index.html>`_
+* `Reject Character Observation <docs/school_character_observation/index.html>`_
+* `Finish Character Observation <docs/school_character_observation/index.html>`_
+* `Cancel Character Observation <docs/school_character_observation/index.html>`_
+* `Restart Character Observation <docs/school_character_observation/index.html>`_
+* `Create Character Teacher Calibration <docs/school_character_calibration/index.html>`_
+* `Edit Character Teacher Calibration <docs/school_character_calibration/index.html>`_
+* `Delete Character Teacher Calibration <docs/school_character_calibration/index.html>`_
+* `Confirm Character Teacher Calibration <docs/school_character_calibration/index.html>`_
+* `Approve Character Teacher Calibration <docs/school_character_calibration/index.html>`_
+* `Reject Character Teacher Calibration <docs/school_character_calibration/index.html>`_
+* `Finish Character Teacher Calibration <docs/school_character_calibration/index.html>`_
+* `Cancel Character Teacher Calibration <docs/school_character_calibration/index.html>`_
+* `Restart Character Teacher Calibration <docs/school_character_calibration/index.html>`_
+
+
 Bug Tracker
 ===========
 

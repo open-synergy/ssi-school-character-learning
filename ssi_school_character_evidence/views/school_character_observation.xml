@@ -106,6 +106,24 @@
                             <field name="matched_level_id" />
                             <field name="attachment_ids" widget="many2many_tags" />
                         </tree>
+                        <form>
+                            <group>
+                                <field name="date" />
+                                <field name="activity_id" />
+                                <field name="arena_id" />
+                                <field
+                                        name="indicator_id"
+                                        domain="[('construct_id', '=', parent.construct_id)]"
+                                    />
+                                <field name="observer_id" />
+                                <field name="context" />
+                                <field name="observed_behavior" />
+                                <field name="source_type" />
+                                <field name="evidence_quality" />
+                                <field name="matched_level_id" />
+                                <field name="attachment_ids" widget="many2many_tags" />
+                            </group>
+                        </form>
                     </field>
                 </page>
                 <page name="summary" string="Summary">
