@@ -99,7 +99,7 @@ odoo.define("ssi_school_character.school_character_arena_tour", function (requir
             },
             {
                 content: "Change the Description",
-                trigger: ".o_field_widget[name='description'] textarea",
+                trigger: "textarea.o_field_widget[name='description']",
                 extra_trigger: ".o_form_view.o_form_editable",
                 run: "text Updated by tour.",
             },

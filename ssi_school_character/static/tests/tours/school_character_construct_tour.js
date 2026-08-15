@@ -95,7 +95,7 @@ odoo.define("ssi_school_character.school_character_construct_tour", function (re
             },
             {
                 content: "Fill in the Definition",
-                trigger: ".o_field_widget[name='definition'] textarea",
+                trigger: "textarea.o_field_widget[name='definition']",
                 extra_trigger: ".o_form_view.o_form_editable",
                 run: "text Edited definition via tour.",
             },

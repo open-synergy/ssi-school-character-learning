@@ -55,7 +55,7 @@ odoo.define("ssi_school_character.school_character_family_tour", function (requi
             {
                 content: "Fill in Name",
                 trigger: ".o_field_widget[name='name']",
-                run: "text Tour Character Familie New",
+                run: "text Tour Family New",
             },
             {
                 content: "Fill in Code",
@@ -64,7 +64,7 @@ odoo.define("ssi_school_character.school_character_family_tour", function (requi
             },
             {
                 content: "Fill in description",
-                trigger: ".o_field_widget[name='description'] textarea",
+                trigger: "textarea.o_field_widget[name='description']",
                 run: "text Updated by tour.",
             },
             {
@@ -90,7 +90,7 @@ odoo.define("ssi_school_character.school_character_family_tour", function (requi
             ...openMenuSteps(),
             {
                 content: "Open the record to edit",
-                trigger: ".o_data_row:contains(Tour Character Familie Edit)",
+                trigger: ".o_data_row:contains(Tour Family Edit)",
                 extra_trigger: ".o_list_view",
             },
             {
@@ -99,7 +99,7 @@ odoo.define("ssi_school_character.school_character_family_tour", function (requi
             },
             {
                 content: "Change the description",
-                trigger: ".o_field_widget[name='description'] textarea",
+                trigger: "textarea.o_field_widget[name='description']",
                 extra_trigger: ".o_form_view.o_form_editable",
                 run: "text Updated by tour.",
             },
@@ -126,7 +126,7 @@ odoo.define("ssi_school_character.school_character_family_tour", function (requi
             ...openMenuSteps(),
             {
                 content: "Open the record to delete",
-                trigger: ".o_data_row:contains(Tour Character Familie Delete)",
+                trigger: ".o_data_row:contains(Tour Family Delete)",
                 extra_trigger: ".o_list_view",
             },
             {
@@ -176,7 +176,7 @@ odoo.define("ssi_school_character.school_character_family_tour", function (requi
             {
                 content: "Select the record to deactivate",
                 trigger:
-                    ".o_data_row:contains(Tour Character Familie Deactivate) .o_list_record_selector input",
+                    ".o_data_row:contains(Tour Family Deactivate) .o_list_record_selector input",
             },
             {
                 content: "Open the Action menu",
@@ -202,7 +202,7 @@ odoo.define("ssi_school_character.school_character_family_tour", function (requi
             {
                 content: "The record no longer appears in the default list view",
                 trigger:
-                    ".o_list_view:not(:has(.o_data_row:contains(Tour Character Familie Deactivate)))",
+                    ".o_list_view:not(:has(.o_data_row:contains(Tour Family Deactivate)))",
                 run: function () {
                     // Assertion only; do not trigger the default click action.
                     return true;
@@ -243,7 +243,7 @@ odoo.define("ssi_school_character.school_character_family_tour", function (requi
             {
                 content: "Select the record to reactivate",
                 trigger:
-                    ".o_data_row:contains(Tour Character Familie Activate) .o_list_record_selector input",
+                    ".o_data_row:contains(Tour Family Activate) .o_list_record_selector input",
             },
             {
                 content: "Open the Action menu",
@@ -263,7 +263,7 @@ odoo.define("ssi_school_character.school_character_family_tour", function (requi
             },
             {
                 content: "The record is restored and listed again",
-                trigger: ".o_data_row:contains(Tour Character Familie Activate)",
+                trigger: ".o_data_row:contains(Tour Family Activate)",
                 run: function () {
                     // Assertion only; do not trigger the default click action.
                     return true;

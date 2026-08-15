@@ -20,10 +20,17 @@ class TestUiSchoolCharacterAnchor(HttpSavepointCase):
                 "code": "TOUR-ANC-CON",
             }
         )
+        cls.scale = cls.env["school_character_scale"].create(
+            {
+                "name": "Tour Anchor Scale",
+                "code": "TOUR-ANC-SCALE",
+            }
+        )
         cls.level = cls.env["school_character_level"].create(
             {
                 "name": "Tour Anchor Level",
                 "code": "TOUR-ANC-LVL",
+                "scale_id": cls.scale.id,
             }
         )
         cls.anchor_edit = cls.env["school_character_anchor"].create(

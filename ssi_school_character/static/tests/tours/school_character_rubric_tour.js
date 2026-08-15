@@ -116,6 +116,16 @@ odoo.define("ssi_school_character.school_character_rubric_tour", function (requi
                 trigger: ".o_form_button_edit",
             },
             {
+                content: "Form is now editable",
+                trigger: ".o_form_view.o_form_editable",
+                run: function () {
+                    // Assertion only; let the edit-mode re-render settle
+                    // before switching tabs, so the tab click below lands
+                    // on the stable post-edit notebook rather than a
+                    // transient node about to be replaced.
+                },
+            },
+            {
                 content: "Open the Descriptors tab",
                 trigger: ".o_notebook .nav-link:contains(Descriptors)",
             },
@@ -137,7 +147,7 @@ odoo.define("ssi_school_character.school_character_rubric_tour", function (requi
             {
                 content: "Fill in the Descriptor text",
                 trigger:
-                    ".o_field_widget[name='descriptor_ids'] .o_selected_row .o_field_widget[name='descriptor'] textarea",
+                    ".o_field_widget[name='descriptor_ids'] .o_selected_row textarea.o_field_widget[name='descriptor']",
                 run: "text Edited descriptor via tour.",
             },
             {

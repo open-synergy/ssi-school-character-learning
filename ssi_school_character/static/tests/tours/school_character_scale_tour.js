@@ -100,12 +100,12 @@ odoo.define("ssi_school_character.school_character_scale_tour", function (requir
             },
             {
                 content: "Fill in the level Code",
-                trigger: ".o_selected_row .o_field_widget[name='code'] input",
+                trigger: ".o_selected_row input.o_field_widget[name='code']",
                 run: "text TOUR-SCL-LVL",
             },
             {
                 content: "Fill in the level Name",
-                trigger: ".o_selected_row .o_field_widget[name='name'] input",
+                trigger: ".o_selected_row input.o_field_widget[name='name']",
                 run: "text Tour Scale Level",
             },
             {

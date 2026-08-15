@@ -95,7 +95,7 @@ odoo.define("ssi_school_character.school_character_profile_tour", function (requ
             },
             {
                 content: "Fill in the Description",
-                trigger: ".o_field_widget[name='description'] textarea",
+                trigger: "textarea.o_field_widget[name='description']",
                 extra_trigger: ".o_form_view.o_form_editable",
                 run: "text Edited description via tour.",
             },
