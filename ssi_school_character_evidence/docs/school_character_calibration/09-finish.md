@@ -1,12 +1,11 @@
 # Finish Character Teacher Calibration
 
-> **Module:** ssi_school_character_evidence
-> **Model:** `school_character_calibration`
-> **Menu:** School ‣ Character Learning ‣ Measurement ‣ Character Teacher
->   Calibrations
-> **Actor:** Character Calibration Officer
-> **State:** `open` → `done`
-> **Requires:** `05-approve`
+> **Module:** ssi_school_character_evidence\
+> **Model:** `school_character_calibration`\
+> **Menu:** School ‣ Character Learning ‣ Measurement ‣ Character Teacher Calibrations\
+> **Actor:** Character Calibration Officer\
+> **State:** `open` → `done`\
+> **Requires:** > `05-approve`
 
 ## Pre-Condition
 

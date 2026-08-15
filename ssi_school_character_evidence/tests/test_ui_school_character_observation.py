@@ -106,7 +106,8 @@ class TestUiSchoolCharacterObservation(HttpSavepointCase):
         IK: docs/school_character_observation/01-create.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_evidence_observation_create",
+            "/web",
+            "ssi_school_character_evidence_observation_create",
             login="admin",
         )
 
@@ -116,7 +117,8 @@ class TestUiSchoolCharacterObservation(HttpSavepointCase):
         IK: docs/school_character_observation/02-edit.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_evidence_observation_edit",
+            "/web",
+            "ssi_school_character_evidence_observation_edit",
             login="admin",
         )
 
@@ -126,7 +128,8 @@ class TestUiSchoolCharacterObservation(HttpSavepointCase):
         IK: docs/school_character_observation/03-delete.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_evidence_observation_delete",
+            "/web",
+            "ssi_school_character_evidence_observation_delete",
             login="admin",
         )
 
@@ -136,7 +139,8 @@ class TestUiSchoolCharacterObservation(HttpSavepointCase):
         IK: docs/school_character_observation/04-confirm.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_evidence_observation_confirm",
+            "/web",
+            "ssi_school_character_evidence_observation_confirm",
             login="admin",
         )
 
@@ -146,7 +150,8 @@ class TestUiSchoolCharacterObservation(HttpSavepointCase):
         IK: docs/school_character_observation/05-approve.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_evidence_observation_approve",
+            "/web",
+            "ssi_school_character_evidence_observation_approve",
             login="admin",
         )
 
@@ -156,7 +161,8 @@ class TestUiSchoolCharacterObservation(HttpSavepointCase):
         IK: docs/school_character_observation/06-reject.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_evidence_observation_reject",
+            "/web",
+            "ssi_school_character_evidence_observation_reject",
             login="admin",
         )
 
@@ -166,7 +172,8 @@ class TestUiSchoolCharacterObservation(HttpSavepointCase):
         IK: docs/school_character_observation/09-finish.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_evidence_observation_finish",
+            "/web",
+            "ssi_school_character_evidence_observation_finish",
             login="admin",
         )
 
@@ -176,7 +183,8 @@ class TestUiSchoolCharacterObservation(HttpSavepointCase):
         IK: docs/school_character_observation/10-cancel.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_evidence_observation_cancel",
+            "/web",
+            "ssi_school_character_evidence_observation_cancel",
             login="admin",
         )
 
@@ -186,6 +194,7 @@ class TestUiSchoolCharacterObservation(HttpSavepointCase):
         IK: docs/school_character_observation/12-restart.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_evidence_observation_restart",
+            "/web",
+            "ssi_school_character_evidence_observation_restart",
             login="admin",
         )

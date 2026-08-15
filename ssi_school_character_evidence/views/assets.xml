@@ -12,11 +12,11 @@
         <script
                 type="text/javascript"
                 src="/ssi_school_character_evidence/static/tests/tours/school_character_observation_tour.js"
-            ></script>
+            />
         <script
                 type="text/javascript"
                 src="/ssi_school_character_evidence/static/tests/tours/school_character_calibration_tour.js"
-            ></script>
+            />
     </xpath>
 </template>
 </odoo>

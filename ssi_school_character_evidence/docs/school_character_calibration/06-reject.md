@@ -1,20 +1,18 @@
 # Reject Character Teacher Calibration
 
-> **Module:** ssi_school_character_evidence
-> **Model:** `school_character_calibration`
-> **Menu:** School ‣ Character Learning ‣ Measurement ‣ Character Teacher
->   Calibrations
-> **Actor:** Character Calibration Manager
-> **State:** `confirm` → `reject`
+> **Module:** ssi_school_character_evidence\
+> **Model:** `school_character_calibration`\
+> **Menu:** School ‣ Character Learning ‣ Measurement ‣ Character Teacher Calibrations\
+> **Actor:** Character Calibration Manager\
+> **State:** `confirm` → `reject`\
 > **Requires:** `04-confirm`
 
 ## Pre-Condition
 
 - **Record:** Status is **Waiting for Approval**.
-- **Config:** An active `policy.template` grants `reject_ok` to the actor's
-  group.
-- **Access:** User is registered as an approver on the approval level that is
-  currently pending.
+- **Config:** An active `policy.template` grants `reject_ok` to the actor's group.
+- **Access:** User is registered as an approver on the approval level that is currently
+  pending.
 - **Access:** User is in group **Character Calibration Manager**.
 
 ## Flow

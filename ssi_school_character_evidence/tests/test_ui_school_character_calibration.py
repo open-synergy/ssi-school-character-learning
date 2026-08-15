@@ -43,9 +43,7 @@ class TestUiSchoolCharacterCalibration(HttpSavepointCase):
         cls.construct = cls.env["school_character_construct"].create(
             {"name": "TOUR Calibration Construct", "code": "TOUR-CAL-CON"}
         )
-        employee = cls.env["hr.employee"].create(
-            {"name": "TOUR Calibration Employee"}
-        )
+        employee = cls.env["hr.employee"].create({"name": "TOUR Calibration Employee"})
         cls.participant = cls.env["school_teacher"].create(
             {
                 "name": "TOUR Calibration Participant",
@@ -104,7 +102,8 @@ class TestUiSchoolCharacterCalibration(HttpSavepointCase):
         IK: docs/school_character_calibration/01-create.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_evidence_calibration_create",
+            "/web",
+            "ssi_school_character_evidence_calibration_create",
             login="admin",
         )
 
@@ -114,7 +113,8 @@ class TestUiSchoolCharacterCalibration(HttpSavepointCase):
         IK: docs/school_character_calibration/02-edit.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_evidence_calibration_edit",
+            "/web",
+            "ssi_school_character_evidence_calibration_edit",
             login="admin",
         )
 
@@ -124,7 +124,8 @@ class TestUiSchoolCharacterCalibration(HttpSavepointCase):
         IK: docs/school_character_calibration/03-delete.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_evidence_calibration_delete",
+            "/web",
+            "ssi_school_character_evidence_calibration_delete",
             login="admin",
         )
 
@@ -134,7 +135,8 @@ class TestUiSchoolCharacterCalibration(HttpSavepointCase):
         IK: docs/school_character_calibration/04-confirm.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_evidence_calibration_confirm",
+            "/web",
+            "ssi_school_character_evidence_calibration_confirm",
             login="admin",
         )
 
@@ -144,7 +146,8 @@ class TestUiSchoolCharacterCalibration(HttpSavepointCase):
         IK: docs/school_character_calibration/05-approve.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_evidence_calibration_approve",
+            "/web",
+            "ssi_school_character_evidence_calibration_approve",
             login="admin",
         )
 
@@ -154,7 +157,8 @@ class TestUiSchoolCharacterCalibration(HttpSavepointCase):
         IK: docs/school_character_calibration/06-reject.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_evidence_calibration_reject",
+            "/web",
+            "ssi_school_character_evidence_calibration_reject",
             login="admin",
         )
 
@@ -164,7 +168,8 @@ class TestUiSchoolCharacterCalibration(HttpSavepointCase):
         IK: docs/school_character_calibration/09-finish.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_evidence_calibration_finish",
+            "/web",
+            "ssi_school_character_evidence_calibration_finish",
             login="admin",
         )
 
@@ -174,7 +179,8 @@ class TestUiSchoolCharacterCalibration(HttpSavepointCase):
         IK: docs/school_character_calibration/10-cancel.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_evidence_calibration_cancel",
+            "/web",
+            "ssi_school_character_evidence_calibration_cancel",
             login="admin",
         )
 
@@ -184,6 +190,7 @@ class TestUiSchoolCharacterCalibration(HttpSavepointCase):
         IK: docs/school_character_calibration/12-restart.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_evidence_calibration_restart",
+            "/web",
+            "ssi_school_character_evidence_calibration_restart",
             login="admin",
         )

@@ -1,19 +1,18 @@
 # Cancel Character Teacher Calibration
 
-> **Module:** ssi_school_character_evidence
-> **Model:** `school_character_calibration`
-> **Menu:** School ‣ Character Learning ‣ Measurement ‣ Character Teacher
->   Calibrations
-> **Actor:** Character Calibration Officer
-> **State:** `draft` | `confirm` | `open` → `cancel`
+> **Module:** ssi_school_character_evidence\
+> **Model:** `school_character_calibration`\
+> **Menu:** School ‣ Character Learning ‣ Measurement ‣ Character Teacher Calibrations\
+> **Actor:** Character Calibration Officer\
+> **State:** `draft` | `confirm` | `open` → `cancel`\
 > **Requires:** `01-create`
 
 ## Pre-Condition
 
-- **Record:** Status allows cancellation (**Draft**, **Waiting for Approval**,
-  or **Open**).
-- **Config:** An active `policy.template` grants `cancel_ok` for that state to
-  the actor's group.
+- **Record:** Status allows cancellation (**Draft**, **Waiting for Approval**, or
+  **Open**).
+- **Config:** An active `policy.template` grants `cancel_ok` for that state to the
+  actor's group.
 - **Access:** User is in group **Character Calibration Officer**.
 
 ## Flow

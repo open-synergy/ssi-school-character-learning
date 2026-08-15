@@ -1,18 +1,17 @@
 # Restart Character Teacher Calibration
 
-> **Module:** ssi_school_character_evidence
-> **Model:** `school_character_calibration`
-> **Menu:** School ‣ Character Learning ‣ Measurement ‣ Character Teacher
->   Calibrations
-> **Actor:** Character Calibration Officer
-> **State:** `cancel` | `reject` → `draft`
+> **Module:** ssi_school_character_evidence\
+> **Model:** `school_character_calibration`\
+> **Menu:** School ‣ Character Learning ‣ Measurement ‣ Character Teacher Calibrations\
+> **Actor:** Character Calibration Officer\
+> **State:** `cancel` | `reject` → `draft`\
 > **Requires:** `10-cancel`
 
 ## Pre-Condition
 
 - **Record:** Status is **Cancelled** or **Rejected**.
-- **Config:** An active `policy.template` grants `restart_ok` for that state
-  to the actor's group.
+- **Config:** An active `policy.template` grants `restart_ok` for that state to the
+  actor's group.
 - **Access:** User is in group **Character Calibration Officer**.
 
 ## Flow
@@ -26,5 +25,5 @@
 ## Post-Condition
 
 - Status returns to **Draft**.
-- All approval records are removed and the approval template is cleared. A
-  later Confirm starts the approval process from the beginning.
+- All approval records are removed and the approval template is cleared. A later Confirm
+  starts the approval process from the beginning.
