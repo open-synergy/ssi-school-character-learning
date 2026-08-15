@@ -20,6 +20,18 @@ class TestUiSchoolCharacterRubric(HttpSavepointCase):
         cls.scale = cls.env["school_character_scale"].create(
             {"name": "Tour Rubric Scale", "code": "TOUR-RUB-SCALE"}
         )
+        # Pre-created so the edit tour's many2one autocomplete matches
+        # this EXISTING record instead of falling into Odoo's m2o
+        # "Create <value>" quick-add path -- code is required (NOT
+        # NULL) on school_character_level and quick-create supplies
+        # none, so the tour's insert would otherwise crash.
+        cls.level = cls.env["school_character_level"].create(
+            {
+                "name": "Tour Rubric Level",
+                "code": "TOUR-RUB-LVL",
+                "scale_id": cls.scale.id,
+            }
+        )
         cls.rec_edit = cls.env["school_character_rubric"].create(
             {
                 "name": "Tour Rubric Edit",
