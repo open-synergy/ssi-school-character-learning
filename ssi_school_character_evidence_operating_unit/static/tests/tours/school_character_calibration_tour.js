@@ -51,6 +51,7 @@ odoo.define(
                     extra_trigger: ".o_list_view",
                     run: function () {
                         // Assertion only; do not trigger the default click.
+                        return true;
                     },
                 },
                 {
@@ -63,6 +64,7 @@ odoo.define(
                     trigger: ".o_form_view.o_form_editable",
                     run: function () {
                         // Assertion only; do not trigger the default click.
+                        return true;
                     },
                 },
                 {
@@ -71,6 +73,7 @@ odoo.define(
                         ".o_form_view.o_form_editable .o_field_widget[name='operating_unit_id']",
                     run: function () {
                         // Assertion only; do not trigger the default click.
+                        return true;
                     },
                 },
             ]
