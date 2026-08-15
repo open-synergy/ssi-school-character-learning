@@ -89,27 +89,21 @@ class TestUiSchoolCharacterCurriculum(HttpSavepointCase):
 
         IK: docs/school_character_curriculum/01-create.md
         """
-        self.start_tour(
-            "/web", "ssi_school_character_curriculum_create", login="admin"
-        )
+        self.start_tour("/web", "ssi_school_character_curriculum_create", login="admin")
 
     def test_edit(self):
         """Run the edit tour for ``school_character_curriculum``.
 
         IK: docs/school_character_curriculum/02-edit.md
         """
-        self.start_tour(
-            "/web", "ssi_school_character_curriculum_edit", login="admin"
-        )
+        self.start_tour("/web", "ssi_school_character_curriculum_edit", login="admin")
 
     def test_delete(self):
         """Run the delete tour for ``school_character_curriculum``.
 
         IK: docs/school_character_curriculum/03-delete.md
         """
-        self.start_tour(
-            "/web", "ssi_school_character_curriculum_delete", login="admin"
-        )
+        self.start_tour("/web", "ssi_school_character_curriculum_delete", login="admin")
 
     def test_confirm(self):
         """Run the confirm tour for ``school_character_curriculum``.
@@ -134,27 +128,21 @@ class TestUiSchoolCharacterCurriculum(HttpSavepointCase):
 
         IK: docs/school_character_curriculum/06-reject.md
         """
-        self.start_tour(
-            "/web", "ssi_school_character_curriculum_reject", login="admin"
-        )
+        self.start_tour("/web", "ssi_school_character_curriculum_reject", login="admin")
 
     def test_finish(self):
         """Run the finish (Done) tour for ``school_character_curriculum``.
 
         IK: docs/school_character_curriculum/09-finish.md
         """
-        self.start_tour(
-            "/web", "ssi_school_character_curriculum_finish", login="admin"
-        )
+        self.start_tour("/web", "ssi_school_character_curriculum_finish", login="admin")
 
     def test_cancel(self):
         """Run the cancel tour for ``school_character_curriculum``.
 
         IK: docs/school_character_curriculum/10-cancel.md
         """
-        self.start_tour(
-            "/web", "ssi_school_character_curriculum_cancel", login="admin"
-        )
+        self.start_tour("/web", "ssi_school_character_curriculum_cancel", login="admin")
 
     def test_restart(self):
         """Run the restart tour for ``school_character_curriculum``.

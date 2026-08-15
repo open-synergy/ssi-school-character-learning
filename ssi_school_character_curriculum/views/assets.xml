@@ -12,7 +12,7 @@
         <script
                 type="text/javascript"
                 src="/ssi_school_character_curriculum/static/tests/tours/school_character_curriculum_tour.js"
-            ></script>
+            />
     </xpath>
 </template>
 </odoo>
