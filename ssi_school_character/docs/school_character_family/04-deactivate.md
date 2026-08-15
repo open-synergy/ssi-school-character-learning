@@ -1,10 +1,10 @@
 # Deactivate Character Family
 
-> **Module:** ssi_school_character
-> **Model:** `school_character_family`
-> **Menu:** School > Configuration > Character Learning > Character Families
-> **Actor:** Character Learning / User
-> **Active:** `true` → `false`
+> **Module:** ssi_school_character\
+> **Model:** `school_character_family`\
+> **Menu:** School > Configuration > Character Learning > Character Families\
+> **Actor:** Character Learning / User\
+> **Active:** `true` → `false`\
 > **Requires:** `01-create`
 
 ## Pre-Condition

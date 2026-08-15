@@ -1,9 +1,9 @@
 # Create Character Rubric
 
-> **Module:** ssi_school_character
-> **Model:** `school_character_rubric`
-> **Menu:** School > Configuration > Character Learning > Character Rubrics
-> **Actor:** Character Learning / User
+> **Module:** ssi_school_character\
+> **Model:** `school_character_rubric`\
+> **Menu:** School > Configuration > Character Learning > Character Rubrics\
+> **Actor:** Character Learning / User\
 > **State:** `—` → `draft`
 
 ## Pre-Condition

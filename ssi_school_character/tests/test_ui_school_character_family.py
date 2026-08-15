@@ -73,7 +73,9 @@ class TestUiSchoolCharacterFamily(HttpSavepointCase):
         IK: docs/school_character_family/04-deactivate.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_school_character_family_deactivate", login="admin"
+            "/web",
+            "ssi_school_character_school_character_family_deactivate",
+            login="admin",
         )
 
     def test_activate(self):
@@ -82,5 +84,7 @@ class TestUiSchoolCharacterFamily(HttpSavepointCase):
         IK: docs/school_character_family/05-activate.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_school_character_family_activate", login="admin"
+            "/web",
+            "ssi_school_character_school_character_family_activate",
+            login="admin",
         )

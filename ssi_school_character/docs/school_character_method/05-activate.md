@@ -1,10 +1,10 @@
 # Activate Character Method
 
-> **Module:** ssi_school_character
-> **Model:** `school_character_method`
-> **Menu:** School > Configuration > Character Learning > Character Methods
-> **Actor:** Character Learning / User
-> **Active:** `false` → `true`
+> **Module:** ssi_school_character\
+> **Model:** `school_character_method`\
+> **Menu:** School > Configuration > Character Learning > Character Methods\
+> **Actor:** Character Learning / User\
+> **Active:** `false` → `true`\
 > **Requires:** `04-deactivate`
 
 ## Pre-Condition

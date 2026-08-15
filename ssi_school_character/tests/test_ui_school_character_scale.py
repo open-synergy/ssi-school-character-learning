@@ -64,7 +64,9 @@ class TestUiSchoolCharacterScale(HttpSavepointCase):
         IK: docs/school_character_scale/04-deactivate.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_school_character_scale_deactivate", login="admin"
+            "/web",
+            "ssi_school_character_school_character_scale_deactivate",
+            login="admin",
         )
 
     def test_activate(self):
@@ -73,5 +75,7 @@ class TestUiSchoolCharacterScale(HttpSavepointCase):
         IK: docs/school_character_scale/05-activate.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_school_character_scale_activate", login="admin"
+            "/web",
+            "ssi_school_character_school_character_scale_activate",
+            login="admin",
         )

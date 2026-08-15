@@ -45,32 +45,52 @@ class TestUiSchoolCharacterConstruct(HttpSavepointCase):
 
         IK: docs/school_character_construct/01-create.md
         """
-        self.start_tour("/web", "ssi_school_character_school_character_construct_create", login="admin")
+        self.start_tour(
+            "/web",
+            "ssi_school_character_school_character_construct_create",
+            login="admin",
+        )
 
     def test_edit(self):
         """Run the edit tour for ``school_character_construct``.
 
         IK: docs/school_character_construct/02-edit.md
         """
-        self.start_tour("/web", "ssi_school_character_school_character_construct_edit", login="admin")
+        self.start_tour(
+            "/web",
+            "ssi_school_character_school_character_construct_edit",
+            login="admin",
+        )
 
     def test_delete(self):
         """Run the delete tour for ``school_character_construct``.
 
         IK: docs/school_character_construct/03-delete.md
         """
-        self.start_tour("/web", "ssi_school_character_school_character_construct_delete", login="admin")
+        self.start_tour(
+            "/web",
+            "ssi_school_character_school_character_construct_delete",
+            login="admin",
+        )
 
     def test_deactivate(self):
         """Run the deactivate tour for ``school_character_construct``.
 
         IK: docs/school_character_construct/04-deactivate.md
         """
-        self.start_tour("/web", "ssi_school_character_school_character_construct_deactivate", login="admin")
+        self.start_tour(
+            "/web",
+            "ssi_school_character_school_character_construct_deactivate",
+            login="admin",
+        )
 
     def test_activate(self):
         """Run the activate tour for ``school_character_construct``.
 
         IK: docs/school_character_construct/05-activate.md
         """
-        self.start_tour("/web", "ssi_school_character_school_character_construct_activate", login="admin")
+        self.start_tour(
+            "/web",
+            "ssi_school_character_school_character_construct_activate",
+            login="admin",
+        )

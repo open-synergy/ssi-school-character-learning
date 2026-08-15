@@ -25,7 +25,9 @@ odoo.define("ssi_school_character.school_character_rubric_tour", function (requi
                 trigger:
                     ".o_control_panel .breadcrumb-item.active:contains(Character Rubrics)",
                 extra_trigger: ".o_list_view",
-                run: function () {},
+                run: function () {
+                    return true;
+                },
             },
         ];
     }
@@ -44,7 +46,9 @@ odoo.define("ssi_school_character.school_character_rubric_tour", function (requi
             {
                 content: "Form is open in edit mode",
                 trigger: ".o_form_view.o_form_editable",
-                run: function () {},
+                run: function () {
+                    return true;
+                },
             },
             {
                 content: "Fill in Name",
@@ -68,7 +72,8 @@ odoo.define("ssi_school_character.school_character_rubric_tour", function (requi
             },
             {
                 content: "Pick the Construct from the dropdown",
-                trigger: ".ui-autocomplete .ui-menu-item a:contains(Tour Rubric Construct)",
+                trigger:
+                    ".ui-autocomplete .ui-menu-item a:contains(Tour Rubric Construct)",
                 in_modal: false,
             },
             {
@@ -88,7 +93,9 @@ odoo.define("ssi_school_character.school_character_rubric_tour", function (requi
             {
                 content: "Record is saved",
                 trigger: ".o_form_view.o_form_readonly",
-                run: function () {},
+                run: function () {
+                    return true;
+                },
             },
         ]
     );
@@ -140,7 +147,9 @@ odoo.define("ssi_school_character.school_character_rubric_tour", function (requi
             {
                 content: "Record is saved",
                 trigger: ".o_form_view.o_form_readonly",
-                run: function () {},
+                run: function () {
+                    return true;
+                },
             },
         ]
     );
@@ -164,9 +173,11 @@ odoo.define("ssi_school_character.school_character_rubric_tour", function (requi
                 content: "Click Delete",
                 trigger: ".o_cp_action_menus .o_menu_item a",
                 run: function () {
-                    var $delete = $(".o_cp_action_menus .o_menu_item a").filter(function () {
-                        return $(this).text().trim() === "Delete";
-                    });
+                    var $delete = $(".o_cp_action_menus .o_menu_item a").filter(
+                        function () {
+                            return $(this).text().trim() === "Delete";
+                        }
+                    );
                     $delete[0].click();
                 },
             },
@@ -182,7 +193,9 @@ odoo.define("ssi_school_character.school_character_rubric_tour", function (requi
             {
                 content: "Back to the list",
                 trigger: ".o_list_view",
-                run: function () {},
+                run: function () {
+                    return true;
+                },
             },
         ]
     );
@@ -206,9 +219,11 @@ odoo.define("ssi_school_character.school_character_rubric_tour", function (requi
                 content: "Click Archive",
                 trigger: ".o_cp_action_menus .o_menu_item a",
                 run: function () {
-                    var $archive = $(".o_cp_action_menus .o_menu_item a").filter(function () {
-                        return $(this).text().trim() === "Archive";
-                    });
+                    var $archive = $(".o_cp_action_menus .o_menu_item a").filter(
+                        function () {
+                            return $(this).text().trim() === "Archive";
+                        }
+                    );
                     $archive[0].click();
                 },
             },
@@ -221,7 +236,9 @@ odoo.define("ssi_school_character.school_character_rubric_tour", function (requi
                 content: "The record no longer appears in the default list view",
                 trigger:
                     ".o_list_view:not(:has(.o_data_row:contains(Tour Rubric Deactivate)))",
-                run: function () {},
+                run: function () {
+                    return true;
+                },
             },
         ]
     );
@@ -248,8 +265,11 @@ odoo.define("ssi_school_character.school_character_rubric_tour", function (requi
             },
             {
                 content: "Archived filter is applied",
-                trigger: ".o_filter_menu .o_menu_item a:contains(Archived)[aria-checked='true']",
-                run: function () {},
+                trigger:
+                    ".o_filter_menu .o_menu_item a:contains(Archived)[aria-checked='true']",
+                run: function () {
+                    return true;
+                },
             },
             {
                 content: "Select the rubric to reactivate",
@@ -264,16 +284,20 @@ odoo.define("ssi_school_character.school_character_rubric_tour", function (requi
                 content: "Click Unarchive",
                 trigger: ".o_cp_action_menus .o_menu_item a",
                 run: function () {
-                    var $unarchive = $(".o_cp_action_menus .o_menu_item a").filter(function () {
-                        return $(this).text().trim() === "Unarchive";
-                    });
+                    var $unarchive = $(".o_cp_action_menus .o_menu_item a").filter(
+                        function () {
+                            return $(this).text().trim() === "Unarchive";
+                        }
+                    );
                     $unarchive[0].click();
                 },
             },
             {
                 content: "The record is restored and listed again",
                 trigger: ".o_data_row:contains(Tour Rubric Activate)",
-                run: function () {},
+                run: function () {
+                    return true;
+                },
             },
         ]
     );

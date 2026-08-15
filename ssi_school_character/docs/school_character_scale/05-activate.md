@@ -1,10 +1,10 @@
 # Activate Character Scale
 
-> **Module:** ssi_school_character
-> **Model:** `school_character_scale`
-> **Menu:** School > Configuration > Character Learning > Character Scales
-> **Actor:** Character Learning / User
-> **Active:** `false` → `true`
+> **Module:** ssi_school_character\
+> **Model:** `school_character_scale`\
+> **Menu:** School > Configuration > Character Learning > Character Scales\
+> **Actor:** Character Learning / User\
+> **Active:** `false` → `true`\
 > **Requires:** `04-deactivate`
 
 ## Pre-Condition

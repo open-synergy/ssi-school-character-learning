@@ -1,9 +1,9 @@
 # Create Character Level
 
-> **Module:** ssi_school_character
-> **Model:** `school_character_level`
-> **Menu:** School > Configuration > Character Learning > Character Levels
-> **Actor:** Character Learning / User
+> **Module:** ssi_school_character\
+> **Model:** `school_character_level`\
+> **Menu:** School > Configuration > Character Learning > Character Levels\
+> **Actor:** Character Learning / User\
 > **State:** `—` → `draft`
 
 ## Pre-Condition
@@ -18,7 +18,8 @@
 3. Fill in the required fields:
    - **Name** and **Code**.
    - **Scale**: the character scale this level belongs to.
-   - **Sequence**: the ascending order of this level within its scale (defaults to `10`).
+   - **Sequence**: the ascending order of this level within its scale (defaults to
+     `10`).
 4. Optionally fill in **Description**.
 5. Click **Save**.
 

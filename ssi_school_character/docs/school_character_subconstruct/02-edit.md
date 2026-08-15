@@ -1,9 +1,9 @@
 # Edit Character Sub-construct
 
-> **Module:** ssi_school_character
-> **Model:** `school_character_subconstruct`
-> **Menu:** School > Configuration > Character Learning > Character Sub-constructs
-> **Actor:** Character Learning / User
+> **Module:** ssi_school_character\
+> **Model:** `school_character_subconstruct`\
+> **Menu:** School > Configuration > Character Learning > Character Sub-constructs\
+> **Actor:** Character Learning / User\
 > **Requires:** `01-create`
 
 ## Pre-Condition

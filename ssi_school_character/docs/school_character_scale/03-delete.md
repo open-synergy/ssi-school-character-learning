@@ -1,9 +1,9 @@
 # Delete Character Scale
 
-> **Module:** ssi_school_character
-> **Model:** `school_character_scale`
-> **Menu:** School > Configuration > Character Learning > Character Scales
-> **Actor:** Character Learning / User
+> **Module:** ssi_school_character\
+> **Model:** `school_character_scale`\
+> **Menu:** School > Configuration > Character Learning > Character Scales\
+> **Actor:** Character Learning / User\
 > **Requires:** `01-create`
 
 ## Pre-Condition

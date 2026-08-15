@@ -27,6 +27,7 @@ odoo.define("ssi_school_character.school_character_indicator_tour", function (re
                 extra_trigger: ".o_list_view",
                 run: function () {
                     // Assertion only.
+                    return true;
                 },
             },
         ];
@@ -48,6 +49,7 @@ odoo.define("ssi_school_character.school_character_indicator_tour", function (re
                 trigger: ".o_form_view.o_form_editable",
                 run: function () {
                     // Assertion only.
+                    return true;
                 },
             },
             {
@@ -68,7 +70,8 @@ odoo.define("ssi_school_character.school_character_indicator_tour", function (re
             },
             {
                 content: "Pick the Construct from the dropdown",
-                trigger: ".ui-autocomplete .ui-menu-item a:contains(Tour Indicator Construct)",
+                trigger:
+                    ".ui-autocomplete .ui-menu-item a:contains(Tour Indicator Construct)",
                 in_modal: false,
             },
             {
@@ -80,6 +83,7 @@ odoo.define("ssi_school_character.school_character_indicator_tour", function (re
                 trigger: ".o_form_view.o_form_readonly",
                 run: function () {
                     // Assertion only.
+                    return true;
                 },
             },
         ]
@@ -115,6 +119,7 @@ odoo.define("ssi_school_character.school_character_indicator_tour", function (re
                 trigger: ".o_form_view.o_form_readonly",
                 run: function () {
                     // Assertion only.
+                    return true;
                 },
             },
         ]
@@ -139,9 +144,11 @@ odoo.define("ssi_school_character.school_character_indicator_tour", function (re
                 content: "Click Delete",
                 trigger: ".o_cp_action_menus .o_menu_item a",
                 run: function () {
-                    var $delete = $(".o_cp_action_menus .o_menu_item a").filter(function () {
-                        return $(this).text().trim() === "Delete";
-                    });
+                    var $delete = $(".o_cp_action_menus .o_menu_item a").filter(
+                        function () {
+                            return $(this).text().trim() === "Delete";
+                        }
+                    );
                     $delete[0].click();
                 },
             },
@@ -151,14 +158,17 @@ odoo.define("ssi_school_character.school_character_indicator_tour", function (re
                 in_modal: true,
             },
             {
-                content: "Click the Character Indicators breadcrumb to return to the list",
-                trigger: ".breadcrumb-item.o_back_button a:contains(Character Indicators)",
+                content:
+                    "Click the Character Indicators breadcrumb to return to the list",
+                trigger:
+                    ".breadcrumb-item.o_back_button a:contains(Character Indicators)",
             },
             {
                 content: "Back to the list",
                 trigger: ".o_list_view",
                 run: function () {
                     // Assertion only.
+                    return true;
                 },
             },
         ]
@@ -183,9 +193,11 @@ odoo.define("ssi_school_character.school_character_indicator_tour", function (re
                 content: "Click Archive",
                 trigger: ".o_cp_action_menus .o_menu_item a",
                 run: function () {
-                    var $archive = $(".o_cp_action_menus .o_menu_item a").filter(function () {
-                        return $(this).text().trim() === "Archive";
-                    });
+                    var $archive = $(".o_cp_action_menus .o_menu_item a").filter(
+                        function () {
+                            return $(this).text().trim() === "Archive";
+                        }
+                    );
                     $archive[0].click();
                 },
             },
@@ -200,6 +212,7 @@ odoo.define("ssi_school_character.school_character_indicator_tour", function (re
                     ".o_list_view:not(:has(.o_data_row:contains(Tour Indicator Deactivate)))",
                 run: function () {
                     // Assertion only.
+                    return true;
                 },
             },
         ]
@@ -227,9 +240,11 @@ odoo.define("ssi_school_character.school_character_indicator_tour", function (re
             },
             {
                 content: "Archived filter is applied",
-                trigger: ".o_filter_menu .o_menu_item a:contains(Archived)[aria-checked='true']",
+                trigger:
+                    ".o_filter_menu .o_menu_item a:contains(Archived)[aria-checked='true']",
                 run: function () {
                     // Assertion only.
+                    return true;
                 },
             },
             {
@@ -245,9 +260,11 @@ odoo.define("ssi_school_character.school_character_indicator_tour", function (re
                 content: "Click Unarchive",
                 trigger: ".o_cp_action_menus .o_menu_item a",
                 run: function () {
-                    var $unarchive = $(".o_cp_action_menus .o_menu_item a").filter(function () {
-                        return $(this).text().trim() === "Unarchive";
-                    });
+                    var $unarchive = $(".o_cp_action_menus .o_menu_item a").filter(
+                        function () {
+                            return $(this).text().trim() === "Unarchive";
+                        }
+                    );
                     $unarchive[0].click();
                 },
             },
@@ -256,6 +273,7 @@ odoo.define("ssi_school_character.school_character_indicator_tour", function (re
                 trigger: ".o_data_row:contains(Tour Indicator Activate)",
                 run: function () {
                     // Assertion only.
+                    return true;
                 },
             },
         ]

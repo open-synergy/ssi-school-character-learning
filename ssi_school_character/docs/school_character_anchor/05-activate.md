@@ -1,10 +1,10 @@
 # Activate Character Anchor
 
-> **Module:** ssi_school_character
-> **Model:** `school_character_anchor`
-> **Menu:** School > Configuration > Character Learning > Character Anchors
-> **Actor:** Character Learning / User
-> **Active:** `false` → `true`
+> **Module:** ssi_school_character\
+> **Model:** `school_character_anchor`\
+> **Menu:** School > Configuration > Character Learning > Character Anchors\
+> **Actor:** Character Learning / User\
+> **Active:** `false` → `true`\
 > **Requires:** `04-deactivate`
 
 ## Pre-Condition

@@ -54,7 +54,9 @@ class TestUiSchoolCharacterIndicator(HttpSavepointCase):
         IK: docs/school_character_indicator/01-create.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_school_character_indicator_create", login="admin"
+            "/web",
+            "ssi_school_character_school_character_indicator_create",
+            login="admin",
         )
 
     def test_edit(self):
@@ -63,7 +65,9 @@ class TestUiSchoolCharacterIndicator(HttpSavepointCase):
         IK: docs/school_character_indicator/02-edit.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_school_character_indicator_edit", login="admin"
+            "/web",
+            "ssi_school_character_school_character_indicator_edit",
+            login="admin",
         )
 
     def test_delete(self):
@@ -72,7 +76,9 @@ class TestUiSchoolCharacterIndicator(HttpSavepointCase):
         IK: docs/school_character_indicator/03-delete.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_school_character_indicator_delete", login="admin"
+            "/web",
+            "ssi_school_character_school_character_indicator_delete",
+            login="admin",
         )
 
     def test_deactivate(self):
@@ -92,5 +98,7 @@ class TestUiSchoolCharacterIndicator(HttpSavepointCase):
         IK: docs/school_character_indicator/05-activate.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_school_character_indicator_activate", login="admin"
+            "/web",
+            "ssi_school_character_school_character_indicator_activate",
+            login="admin",
         )

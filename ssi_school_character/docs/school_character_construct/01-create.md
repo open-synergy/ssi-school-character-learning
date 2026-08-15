@@ -1,9 +1,9 @@
 # Create Character Construct
 
-> **Module:** ssi_school_character
-> **Model:** `school_character_construct`
-> **Menu:** School > Configuration > Character Learning > Character Constructs
-> **Actor:** Character Learning / User
+> **Module:** ssi_school_character\
+> **Model:** `school_character_construct`\
+> **Menu:** School > Configuration > Character Learning > Character Constructs\
+> **Actor:** Character Learning / User\
 > **State:** `—` → `draft`
 
 ## Pre-Condition

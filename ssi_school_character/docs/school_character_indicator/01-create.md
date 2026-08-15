@@ -1,9 +1,9 @@
 # Create Character Indicator
 
-> **Module:** ssi_school_character
-> **Model:** `school_character_indicator`
-> **Menu:** School > Configuration > Character Learning > Character Indicators
-> **Actor:** Character Learning / User
+> **Module:** ssi_school_character\
+> **Model:** `school_character_indicator`\
+> **Menu:** School > Configuration > Character Learning > Character Indicators\
+> **Actor:** Character Learning / User\
 > **State:** `—` → `draft`
 
 ## Pre-Condition

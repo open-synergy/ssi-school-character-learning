@@ -45,32 +45,50 @@ class TestUiSchoolCharacterProfile(HttpSavepointCase):
 
         IK: docs/school_character_profile/01-create.md
         """
-        self.start_tour("/web", "ssi_school_character_school_character_profile_create", login="admin")
+        self.start_tour(
+            "/web",
+            "ssi_school_character_school_character_profile_create",
+            login="admin",
+        )
 
     def test_edit(self):
         """Run the edit tour for ``school_character_profile``.
 
         IK: docs/school_character_profile/02-edit.md
         """
-        self.start_tour("/web", "ssi_school_character_school_character_profile_edit", login="admin")
+        self.start_tour(
+            "/web", "ssi_school_character_school_character_profile_edit", login="admin"
+        )
 
     def test_delete(self):
         """Run the delete tour for ``school_character_profile``.
 
         IK: docs/school_character_profile/03-delete.md
         """
-        self.start_tour("/web", "ssi_school_character_school_character_profile_delete", login="admin")
+        self.start_tour(
+            "/web",
+            "ssi_school_character_school_character_profile_delete",
+            login="admin",
+        )
 
     def test_deactivate(self):
         """Run the deactivate tour for ``school_character_profile``.
 
         IK: docs/school_character_profile/04-deactivate.md
         """
-        self.start_tour("/web", "ssi_school_character_school_character_profile_deactivate", login="admin")
+        self.start_tour(
+            "/web",
+            "ssi_school_character_school_character_profile_deactivate",
+            login="admin",
+        )
 
     def test_activate(self):
         """Run the activate tour for ``school_character_profile``.
 
         IK: docs/school_character_profile/05-activate.md
         """
-        self.start_tour("/web", "ssi_school_character_school_character_profile_activate", login="admin")
+        self.start_tour(
+            "/web",
+            "ssi_school_character_school_character_profile_activate",
+            login="admin",
+        )

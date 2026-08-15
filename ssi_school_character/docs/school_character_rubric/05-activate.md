@@ -1,10 +1,10 @@
 # Activate Character Rubric
 
-> **Module:** ssi_school_character
-> **Model:** `school_character_rubric`
-> **Menu:** School > Configuration > Character Learning > Character Rubrics
-> **Actor:** Character Learning / User
-> **Active:** `false` → `true`
+> **Module:** ssi_school_character\
+> **Model:** `school_character_rubric`\
+> **Menu:** School > Configuration > Character Learning > Character Rubrics\
+> **Actor:** Character Learning / User\
+> **Active:** `false` → `true`\
 > **Requires:** `04-deactivate`
 
 ## Pre-Condition

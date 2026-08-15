@@ -60,7 +60,8 @@ class TestUiSchoolCharacterRubric(HttpSavepointCase):
         IK: docs/school_character_rubric/01-create.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_school_character_rubric_create",
+            "/web",
+            "ssi_school_character_school_character_rubric_create",
             login="admin",
         )
 
@@ -70,7 +71,8 @@ class TestUiSchoolCharacterRubric(HttpSavepointCase):
         IK: docs/school_character_rubric/02-edit.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_school_character_rubric_edit",
+            "/web",
+            "ssi_school_character_school_character_rubric_edit",
             login="admin",
         )
 
@@ -80,7 +82,8 @@ class TestUiSchoolCharacterRubric(HttpSavepointCase):
         IK: docs/school_character_rubric/03-delete.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_school_character_rubric_delete",
+            "/web",
+            "ssi_school_character_school_character_rubric_delete",
             login="admin",
         )
 
@@ -90,7 +93,8 @@ class TestUiSchoolCharacterRubric(HttpSavepointCase):
         IK: docs/school_character_rubric/04-deactivate.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_school_character_rubric_deactivate",
+            "/web",
+            "ssi_school_character_school_character_rubric_deactivate",
             login="admin",
         )
 
@@ -100,6 +104,7 @@ class TestUiSchoolCharacterRubric(HttpSavepointCase):
         IK: docs/school_character_rubric/05-activate.md
         """
         self.start_tour(
-            "/web", "ssi_school_character_school_character_rubric_activate",
+            "/web",
+            "ssi_school_character_school_character_rubric_activate",
             login="admin",
         )

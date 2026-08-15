@@ -1,9 +1,9 @@
 # Create Character Arena
 
-> **Module:** ssi_school_character
-> **Model:** `school_character_arena`
-> **Menu:** School > Configuration > Character Learning > Character Arenas
-> **Actor:** Character Learning / User
+> **Module:** ssi_school_character\
+> **Model:** `school_character_arena`\
+> **Menu:** School > Configuration > Character Learning > Character Arenas\
+> **Actor:** Character Learning / User\
 > **State:** `—` → `draft`
 
 ## Pre-Condition

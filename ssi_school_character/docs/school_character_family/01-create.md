@@ -1,9 +1,9 @@
 # Create Character Family
 
-> **Module:** ssi_school_character
-> **Model:** `school_character_family`
-> **Menu:** School > Configuration > Character Learning > Character Families
-> **Actor:** Character Learning / User
+> **Module:** ssi_school_character\
+> **Model:** `school_character_family`\
+> **Menu:** School > Configuration > Character Learning > Character Families\
+> **Actor:** Character Learning / User\
 > **State:** `—` → `draft`
 
 ## Pre-Condition

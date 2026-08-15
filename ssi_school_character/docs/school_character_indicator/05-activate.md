@@ -1,10 +1,10 @@
 # Activate Character Indicator
 
-> **Module:** ssi_school_character
-> **Model:** `school_character_indicator`
-> **Menu:** School > Configuration > Character Learning > Character Indicators
-> **Actor:** Character Learning / User
-> **Active:** `false` → `true`
+> **Module:** ssi_school_character\
+> **Model:** `school_character_indicator`\
+> **Menu:** School > Configuration > Character Learning > Character Indicators\
+> **Actor:** Character Learning / User\
+> **Active:** `false` → `true`\
 > **Requires:** `04-deactivate`
 
 ## Pre-Condition

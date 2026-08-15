@@ -22,10 +22,12 @@ odoo.define("ssi_school_character.school_character_method_tour", function (requi
             },
             {
                 content: "Character Methods list is displayed",
-                trigger: ".o_control_panel .breadcrumb-item.active:contains(Character Methods)",
+                trigger:
+                    ".o_control_panel .breadcrumb-item.active:contains(Character Methods)",
                 extra_trigger: ".o_list_view",
                 run: function () {
                     // Assertion only; do not trigger the default click action.
+                    return true;
                 },
             },
         ];
@@ -47,6 +49,7 @@ odoo.define("ssi_school_character.school_character_method_tour", function (requi
                 trigger: ".o_form_view.o_form_editable",
                 run: function () {
                     // Assertion only; do not trigger the default click action.
+                    return true;
                 },
             },
             {
@@ -73,6 +76,7 @@ odoo.define("ssi_school_character.school_character_method_tour", function (requi
                 trigger: ".o_form_view.o_form_readonly",
                 run: function () {
                     // Assertion only; do not trigger the default click action.
+                    return true;
                 },
             },
         ]
@@ -108,6 +112,7 @@ odoo.define("ssi_school_character.school_character_method_tour", function (requi
                 trigger: ".o_form_view.o_form_readonly",
                 run: function () {
                     // Assertion only; do not trigger the default click action.
+                    return true;
                 },
             },
         ]
@@ -132,9 +137,11 @@ odoo.define("ssi_school_character.school_character_method_tour", function (requi
                 content: "Click Delete",
                 trigger: ".o_cp_action_menus .o_menu_item a",
                 run: function () {
-                    var $delete = $(".o_cp_action_menus .o_menu_item a").filter(function () {
-                        return $(this).text().trim() === "Delete";
-                    });
+                    var $delete = $(".o_cp_action_menus .o_menu_item a").filter(
+                        function () {
+                            return $(this).text().trim() === "Delete";
+                        }
+                    );
                     $delete[0].click();
                 },
             },
@@ -152,6 +159,7 @@ odoo.define("ssi_school_character.school_character_method_tour", function (requi
                 trigger: ".o_list_view",
                 run: function () {
                     // Assertion only; do not trigger the default click action.
+                    return true;
                 },
             },
         ]
@@ -176,9 +184,11 @@ odoo.define("ssi_school_character.school_character_method_tour", function (requi
                 content: "Click Archive",
                 trigger: ".o_cp_action_menus .o_menu_item a",
                 run: function () {
-                    var $archive = $(".o_cp_action_menus .o_menu_item a").filter(function () {
-                        return $(this).text().trim() === "Archive";
-                    });
+                    var $archive = $(".o_cp_action_menus .o_menu_item a").filter(
+                        function () {
+                            return $(this).text().trim() === "Archive";
+                        }
+                    );
                     $archive[0].click();
                 },
             },
@@ -189,9 +199,11 @@ odoo.define("ssi_school_character.school_character_method_tour", function (requi
             },
             {
                 content: "The record no longer appears in the default list view",
-                trigger: ".o_list_view:not(:has(.o_data_row:contains(Tour Character Method Deactivate)))",
+                trigger:
+                    ".o_list_view:not(:has(.o_data_row:contains(Tour Character Method Deactivate)))",
                 run: function () {
                     // Assertion only; do not trigger the default click action.
+                    return true;
                 },
             },
         ]
@@ -223,6 +235,7 @@ odoo.define("ssi_school_character.school_character_method_tour", function (requi
                     ".o_filter_menu .o_menu_item a:contains(Archived)[aria-checked='true']",
                 run: function () {
                     // Assertion only; do not trigger the default click action.
+                    return true;
                 },
             },
             {
@@ -238,9 +251,11 @@ odoo.define("ssi_school_character.school_character_method_tour", function (requi
                 content: "Click Unarchive",
                 trigger: ".o_cp_action_menus .o_menu_item a",
                 run: function () {
-                    var $unarchive = $(".o_cp_action_menus .o_menu_item a").filter(function () {
-                        return $(this).text().trim() === "Unarchive";
-                    });
+                    var $unarchive = $(".o_cp_action_menus .o_menu_item a").filter(
+                        function () {
+                            return $(this).text().trim() === "Unarchive";
+                        }
+                    );
                     $unarchive[0].click();
                 },
             },
@@ -249,6 +264,7 @@ odoo.define("ssi_school_character.school_character_method_tour", function (requi
                 trigger: ".o_data_row:contains(Tour Character Method Activate)",
                 run: function () {
                     // Assertion only; do not trigger the default click action.
+                    return true;
                 },
             },
         ]

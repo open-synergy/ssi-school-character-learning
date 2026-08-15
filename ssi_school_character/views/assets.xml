@@ -12,47 +12,47 @@
         <script
                 type="text/javascript"
                 src="/ssi_school_character/static/tests/tours/school_character_anchor_tour.js"
-            ></script>
+            />
         <script
                 type="text/javascript"
                 src="/ssi_school_character/static/tests/tours/school_character_arena_tour.js"
-            ></script>
+            />
         <script
                 type="text/javascript"
                 src="/ssi_school_character/static/tests/tours/school_character_family_tour.js"
-            ></script>
+            />
         <script
                 type="text/javascript"
                 src="/ssi_school_character/static/tests/tours/school_character_method_tour.js"
-            ></script>
+            />
         <script
                 type="text/javascript"
                 src="/ssi_school_character/static/tests/tours/school_character_level_tour.js"
-            ></script>
+            />
         <script
                 type="text/javascript"
                 src="/ssi_school_character/static/tests/tours/school_character_scale_tour.js"
-            ></script>
+            />
         <script
                 type="text/javascript"
                 src="/ssi_school_character/static/tests/tours/school_character_subconstruct_tour.js"
-            ></script>
+            />
         <script
                 type="text/javascript"
                 src="/ssi_school_character/static/tests/tours/school_character_indicator_tour.js"
-            ></script>
+            />
         <script
                 type="text/javascript"
                 src="/ssi_school_character/static/tests/tours/school_character_construct_tour.js"
-            ></script>
+            />
         <script
                 type="text/javascript"
                 src="/ssi_school_character/static/tests/tours/school_character_profile_tour.js"
-            ></script>
+            />
         <script
                 type="text/javascript"
                 src="/ssi_school_character/static/tests/tours/school_character_rubric_tour.js"
-            ></script>
+            />
     </xpath>
 </template>
 </odoo>

@@ -1,9 +1,9 @@
 # Delete Character Anchor
 
-> **Module:** ssi_school_character
-> **Model:** `school_character_anchor`
-> **Menu:** School > Configuration > Character Learning > Character Anchors
-> **Actor:** Character Learning / User
+> **Module:** ssi_school_character\
+> **Model:** `school_character_anchor`\
+> **Menu:** School > Configuration > Character Learning > Character Anchors\
+> **Actor:** Character Learning / User\
 > **Requires:** `01-create`
 
 ## Pre-Condition
