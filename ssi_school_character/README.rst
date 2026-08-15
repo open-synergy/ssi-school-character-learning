@@ -61,6 +61,41 @@ Work Instruction
 * `Delete Character Method <docs/school_character_method/index.html>`_
 * `Deactivate Character Method <docs/school_character_method/index.html>`_
 * `Activate Character Method <docs/school_character_method/index.html>`_
+* `Create Character Level <docs/school_character_level/index.html>`_
+* `Edit Character Level <docs/school_character_level/index.html>`_
+* `Delete Character Level <docs/school_character_level/index.html>`_
+* `Deactivate Character Level <docs/school_character_level/index.html>`_
+* `Activate Character Level <docs/school_character_level/index.html>`_
+* `Create Character Scale <docs/school_character_scale/index.html>`_
+* `Edit Character Scale <docs/school_character_scale/index.html>`_
+* `Delete Character Scale <docs/school_character_scale/index.html>`_
+* `Deactivate Character Scale <docs/school_character_scale/index.html>`_
+* `Activate Character Scale <docs/school_character_scale/index.html>`_
+* `Create Character Sub-construct <docs/school_character_subconstruct/index.html>`_
+* `Edit Character Sub-construct <docs/school_character_subconstruct/index.html>`_
+* `Delete Character Sub-construct <docs/school_character_subconstruct/index.html>`_
+* `Deactivate Character Sub-construct <docs/school_character_subconstruct/index.html>`_
+* `Activate Character Sub-construct <docs/school_character_subconstruct/index.html>`_
+* `Create Character Indicator <docs/school_character_indicator/index.html>`_
+* `Edit Character Indicator <docs/school_character_indicator/index.html>`_
+* `Delete Character Indicator <docs/school_character_indicator/index.html>`_
+* `Deactivate Character Indicator <docs/school_character_indicator/index.html>`_
+* `Activate Character Indicator <docs/school_character_indicator/index.html>`_
+* `Create Character Construct <docs/school_character_construct/index.html>`_
+* `Edit Character Construct <docs/school_character_construct/index.html>`_
+* `Delete Character Construct <docs/school_character_construct/index.html>`_
+* `Deactivate Character Construct <docs/school_character_construct/index.html>`_
+* `Activate Character Construct <docs/school_character_construct/index.html>`_
+* `Create Character Profile <docs/school_character_profile/index.html>`_
+* `Edit Character Profile <docs/school_character_profile/index.html>`_
+* `Delete Character Profile <docs/school_character_profile/index.html>`_
+* `Deactivate Character Profile <docs/school_character_profile/index.html>`_
+* `Activate Character Profile <docs/school_character_profile/index.html>`_
+* `Create Character Rubric <docs/school_character_rubric/index.html>`_
+* `Edit Character Rubric <docs/school_character_rubric/index.html>`_
+* `Delete Character Rubric <docs/school_character_rubric/index.html>`_
+* `Deactivate Character Rubric <docs/school_character_rubric/index.html>`_
+* `Activate Character Rubric <docs/school_character_rubric/index.html>`_
 
 
 Installation
