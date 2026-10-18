@@ -13,6 +13,8 @@ from . import (  # noqa: F401
     test_school_character_family_access,
     test_school_character_indicator_access,
     test_school_character_level_access,
+    test_school_character_method_access,
+    test_school_character_profile_access,
     test_ui_school_character_anchor,
     test_ui_school_character_arena,
     test_ui_school_character_family,

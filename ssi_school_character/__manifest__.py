@@ -27,6 +27,8 @@
         "security/res_groups/school_character_family.xml",
         "security/res_groups/school_character_indicator.xml",
         "security/res_groups/school_character_level.xml",
+        "security/res_groups/school_character_method.xml",
+        "security/res_groups/school_character_profile.xml",
         "security/ir_model_access/school_character_scale.xml",
         "security/ir_model_access/school_character_level.xml",
         "security/ir_model_access/school_character_family.xml",

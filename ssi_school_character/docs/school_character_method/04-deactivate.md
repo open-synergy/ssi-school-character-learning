@@ -1,16 +1,16 @@
 # Deactivate Character Method
 
-> **Module:** ssi_school_character\
+> **Module:** `ssi_school_character`\
 > **Model:** `school_character_method`\
 > **Menu:** School > Configuration > Character Learning > Character Methods\
-> **Actor:** Character Learning / User\
+> **Actor:** user in group `Character Method`\
 > **Active:** `true` → `false`\
 > **Requires:** `01-create`
 
 ## Pre-Condition
 
 - **Record:** The record is currently active.
-- **Access:** User is in group **Character Learning / User**.
+- **Access:** User is in group `Character Method`.
 
 ## Flow
 

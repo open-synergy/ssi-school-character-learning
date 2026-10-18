@@ -1,16 +1,16 @@
 # Delete Character Profile
 
-> **Module:** ssi_school_character\
+> **Module:** `ssi_school_character`\
 > **Model:** `school_character_profile`\
 > **Menu:** School > Configuration > Character Learning > Character Profiles\
-> **Actor:** Character Learning / User\
+> **Actor:** user in group `Character Profile`\
 > **Requires:** `01-create`
 
 ## Pre-Condition
 
 - **Record:** The record exists and is not referenced by any other document (e.g. no
   construct or curriculum map points to it).
-- **Access:** User is in group **Character Learning / User**.
+- **Access:** User is in group `Character Profile`.
 
 ## Flow
 
