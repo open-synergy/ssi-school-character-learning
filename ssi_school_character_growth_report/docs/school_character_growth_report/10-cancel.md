@@ -1,7 +1,7 @@
 # Cancel Character Growth Report
 
-> **Module:** ssi_school_character_growth_report\
-> **Model:** > `school_character_growth_report`\
+> **Module:** `ssi_school_character_growth_report`\
+> **Model:** `school_character_growth_report`\
 > **Menu:** School ‣ Character Learning ‣ Growth Report ‣ Character Growth Reports\
 > **Actor:** Character Growth Report User\
 > **State:** any cancellable state → `cancel`\
