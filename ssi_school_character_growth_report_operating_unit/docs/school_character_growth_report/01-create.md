@@ -1,6 +1,6 @@
 # Create Character Growth Report
 
-> **Module:** ssi_school_character_growth_report_operating_unit\
+> **Module:** `ssi_school_character_growth_report_operating_unit`\
 > **Extends:** ssi_school_character_growth_report — model `school_character_growth_report`,
 > aksi `01-create`
 
