@@ -1,6 +1,6 @@
 # Create Character Learning Activity
 
-> **Module:** ssi_school_character_activity_operating_unit\
+> **Module:** `ssi_school_character_activity_operating_unit`\
 > **Extends:** ssi_school_character_activity — model `school_character_activity`, aksi `01-create`
 
 ## Additional Pre-Condition
