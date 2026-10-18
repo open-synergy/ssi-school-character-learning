@@ -23,6 +23,8 @@
         "security/res_group_data.xml",
         "security/res_groups/school_character_anchor.xml",
         "security/res_groups/school_character_arena.xml",
+        "security/res_groups/school_character_construct.xml",
+        "security/res_groups/school_character_family.xml",
         "security/ir_model_access/school_character_scale.xml",
         "security/ir_model_access/school_character_level.xml",
         "security/ir_model_access/school_character_family.xml",

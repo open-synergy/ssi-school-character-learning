@@ -1,14 +1,14 @@
 # Create Character Construct
 
-> **Module:** ssi_school_character\
+> **Module:** `ssi_school_character`\
 > **Model:** `school_character_construct`\
 > **Menu:** School > Configuration > Character Learning > Character Constructs\
-> **Actor:** Character Learning / User\
+> **Actor:** user in group `Character Construct`\
 > **State:** `—` → `draft`
 
 ## Pre-Condition
 
-- **Access:** User is in group **Character Learning / User**.
+- **Access:** User is in group `Character Construct`.
 
 ## Flow
 

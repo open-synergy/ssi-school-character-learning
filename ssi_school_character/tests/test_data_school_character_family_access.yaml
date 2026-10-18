@@ -1,0 +1,110 @@
+scenarios:
+  - name: "Configurator member can create, write and unlink a Character Family"
+    steps:
+      - step: "Create the Character Family Configurator user"
+        action: "create"
+        model: "res.users"
+        save_as: "configurator"
+        values:
+          name: "Character Family Configurator"
+          login: "character_family_configurator@example.com"
+          groups_id:
+            [
+              [
+                6,
+                0,
+                [
+                  "REF: base.group_user",
+                  "REF: ssi_school_character.school_character_family_group",
+                ],
+              ],
+            ]
+      - step: "Create as the configurator group member must succeed"
+        action: "create"
+        model: "school_character_family"
+        as_user: "configurator"
+        save_as: "record"
+        values:
+          name: "Configurator Family"
+          code: "ACL-FAM-POS"
+      - step: "Write as the configurator group member must succeed"
+        action: "write"
+        target: "record"
+        as_user: "configurator"
+        values:
+          name: "Configurator Family Updated"
+      - step: "Assert the write persisted"
+        action: "assert"
+        target: "record"
+        asserts:
+          name:
+            type: "value"
+            expected: "Configurator Family Updated"
+      - step: "Unlink as the configurator group member must succeed"
+        action: "unlink"
+        target: "record"
+        as_user: "configurator"
+      - step: "Assert the record is gone"
+        action: "search"
+        model: "school_character_family"
+        domain: [["code", "=", "ACL-FAM-POS"]]
+        save_as: "gone"
+        expect_count: 0
+
+  - name: "Workflow User group alone cannot create, write or unlink a Character Family"
+    steps:
+      - step: "Create the Character Family Workflow User user"
+        action: "create"
+        model: "res.users"
+        save_as: "workflow_user"
+        values:
+          name: "Character Family Workflow User"
+          login: "character_family_workflow_user@example.com"
+          groups_id:
+            [
+              [
+                6,
+                0,
+                [
+                  "REF: base.group_user",
+                  "REF: ssi_school_character.school_character_user_group",
+                ],
+              ],
+            ]
+      - step: "Create the fixture record as superuser"
+        action: "create"
+        model: "school_character_family"
+        save_as: "fixture"
+        values:
+          name: "Fixture Family"
+          code: "ACL-FAM-NEG"
+      - step: "Create as the workflow User group member must be rejected"
+        action: "create"
+        model: "school_character_family"
+        as_user: "workflow_user"
+        expect_error:
+          type: "AccessError"
+        values:
+          name: "Blocked Family"
+          code: "ACL-FAM-BLK"
+      - step: "Write as the workflow User group member must be rejected"
+        action: "write"
+        target: "fixture"
+        as_user: "workflow_user"
+        expect_error:
+          type: "AccessError"
+        values:
+          name: "Blocked Rename"
+      - step: "Unlink as the workflow User group member must be rejected"
+        action: "unlink"
+        target: "fixture"
+        as_user: "workflow_user"
+        expect_error:
+          type: "AccessError"
+      - step: "Read as the workflow User group member still works"
+        action: "search"
+        model: "school_character_family"
+        as_user: "workflow_user"
+        domain: [["id", "=", "REC: fixture.id"]]
+        save_as: "visible"
+        expect_count: 1
