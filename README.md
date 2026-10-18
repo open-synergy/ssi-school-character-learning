@@ -23,7 +23,7 @@ addon | version | maintainers | summary
 [ssi_school_character_activity_operating_unit](ssi_school_character_activity_operating_unit/) | 14.0.1.0.1 |  | Character Learning Activity - Operating Unit
 [ssi_school_character_curriculum](ssi_school_character_curriculum/) | 14.0.1.0.2 |  | Character Curriculum Map / Annual Syllabus
 [ssi_school_character_curriculum_operating_unit](ssi_school_character_curriculum_operating_unit/) | 14.0.1.0.1 |  | Character Curriculum Map / Annual Syllabus - Operating Unit
-[ssi_school_character_evidence](ssi_school_character_evidence/) | 14.0.1.0.2 |  | Character Observation & Teacher Calibration
+[ssi_school_character_evidence](ssi_school_character_evidence/) | 14.0.1.0.3 |  | Character Observation & Teacher Calibration
 [ssi_school_character_evidence_operating_unit](ssi_school_character_evidence_operating_unit/) | 14.0.1.0.1 |  | Character Observation & Teacher Calibration - Operating Unit
 [ssi_school_character_growth_report](ssi_school_character_growth_report/) | 14.0.1.0.2 |  | Character Growth Report
 [ssi_school_character_growth_report_operating_unit](ssi_school_character_growth_report_operating_unit/) | 14.0.1.0.1 |  | Character Growth Report - Operating Unit
