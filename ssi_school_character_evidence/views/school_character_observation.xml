@@ -85,10 +85,12 @@
                 <field name="date" />
                 <field name="academic_year_id" />
                 <field name="academic_term_id" />
-                <field name="evidence_count" />
             </xpath>
             <xpath expr="//page[1]" position="before">
                 <page name="evidence" string="Evidence Entries">
+                    <group name="evidence_summary" colspan="4" col="2">
+                        <field name="evidence_count" />
+                    </group>
                     <field name="evidence_ids">
                         <tree editable="bottom">
                             <field name="date" />

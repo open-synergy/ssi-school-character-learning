@@ -1,6 +1,6 @@
 # Reject Character Observation
 
-> **Module:** ssi_school_character_evidence\
+> **Module:** `ssi_school_character_evidence`\
 > **Model:** `school_character_observation`\
 > **Menu:** School ‣ Character Learning ‣ Measurement ‣ Character Observations\
 > **Actor:** Character Observation Manager\
