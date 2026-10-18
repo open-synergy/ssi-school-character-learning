@@ -50,7 +50,6 @@
             </xpath>
             <xpath expr="//group[@name='header_right']" position="inside">
                 <field name="date" />
-                <field name="rating_count" />
             </xpath>
             <xpath expr="//page[1]" position="before">
                 <page name="scope" string="Scope">
@@ -61,6 +60,9 @@
                     </group>
                 </page>
                 <page name="rating" string="Ratings">
+                    <group name="rating_summary" colspan="4" col="2">
+                        <field name="rating_count" />
+                    </group>
                     <field name="rating_ids">
                         <tree editable="bottom">
                             <field name="participant_id" />
