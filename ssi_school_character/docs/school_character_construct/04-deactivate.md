@@ -1,16 +1,16 @@
 # Deactivate Character Construct
 
-> **Module:** ssi_school_character\
+> **Module:** `ssi_school_character`\
 > **Model:** `school_character_construct`\
 > **Menu:** School > Configuration > Character Learning > Character Constructs\
-> **Actor:** Character Learning / User\
+> **Actor:** user in group `Character Construct`\
 > **Active:** `true` → `false`\
 > **Requires:** `01-create`
 
 ## Pre-Condition
 
 - **Record:** The record is currently active.
-- **Access:** User is in group **Character Learning / User**.
+- **Access:** User is in group `Character Construct`.
 
 ## Flow
 

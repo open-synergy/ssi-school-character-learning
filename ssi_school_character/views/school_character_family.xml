@@ -56,7 +56,7 @@
         name="Character Families"
         parent="menu_character_configuration"
         action="school_character_family_action"
-        groups="school_character_user_group"
+        groups="school_character_family_group"
         sequence="30"
     />
 
