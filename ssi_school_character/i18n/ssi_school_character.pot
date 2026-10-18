@@ -195,6 +195,7 @@ msgstr ""
 
 #. module: ssi_school_character
 #: model:ir.model,name:ssi_school_character.model_school_character_anchor
+#: model:res.groups,name:ssi_school_character.school_character_anchor_group
 msgid "Character Anchor"
 msgstr ""
 
@@ -206,6 +207,7 @@ msgstr ""
 
 #. module: ssi_school_character
 #: model:ir.model,name:ssi_school_character.model_school_character_arena
+#: model:res.groups,name:ssi_school_character.school_character_arena_group
 msgid "Character Arena"
 msgstr ""
 
