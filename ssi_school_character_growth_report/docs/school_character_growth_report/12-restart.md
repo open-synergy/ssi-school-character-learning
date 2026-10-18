@@ -1,10 +1,10 @@
 # Restart Character Growth Report
 
-> **Module:** ssi_school_character_growth_report\
-> **Model:** > `school_character_growth_report`\
+> **Module:** `ssi_school_character_growth_report`\
+> **Model:** `school_character_growth_report`\
 > **Menu:** School ‣ Character Learning ‣ Growth Report ‣ Character Growth Reports\
 > **Actor:** Character Growth Report User\
-> **State:** > `cancel` → `draft`\
+> **State:** `cancel` → `draft`\
 > **Requires:** `10-cancel`
 
 ## Pre-Condition
