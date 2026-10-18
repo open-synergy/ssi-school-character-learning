@@ -7,6 +7,8 @@ from . import (  # noqa: F401
     test_school_character_construct,
     test_school_character_rubric,
     test_school_character_code_constraint,
+    test_school_character_anchor_access,
+    test_school_character_arena_access,
     test_ui_school_character_anchor,
     test_ui_school_character_arena,
     test_ui_school_character_family,

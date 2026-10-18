@@ -1,0 +1,110 @@
+scenarios:
+  - name: "Configurator member can create, write and unlink a Character Arena"
+    steps:
+      - step: "Create the Character Arena Configurator user"
+        action: "create"
+        model: "res.users"
+        save_as: "configurator"
+        values:
+          name: "Character Arena Configurator"
+          login: "character_arena_configurator@example.com"
+          groups_id:
+            [
+              [
+                6,
+                0,
+                [
+                  "REF: base.group_user",
+                  "REF: ssi_school_character.school_character_arena_group",
+                ],
+              ],
+            ]
+      - step: "Create as the configurator group member must succeed"
+        action: "create"
+        model: "school_character_arena"
+        as_user: "configurator"
+        save_as: "record"
+        values:
+          name: "Configurator Arena"
+          code: "ACL-ARE-POS"
+      - step: "Write as the configurator group member must succeed"
+        action: "write"
+        target: "record"
+        as_user: "configurator"
+        values:
+          name: "Configurator Arena Updated"
+      - step: "Assert the write persisted"
+        action: "assert"
+        target: "record"
+        asserts:
+          name:
+            type: "value"
+            expected: "Configurator Arena Updated"
+      - step: "Unlink as the configurator group member must succeed"
+        action: "unlink"
+        target: "record"
+        as_user: "configurator"
+      - step: "Assert the record is gone"
+        action: "search"
+        model: "school_character_arena"
+        domain: [["code", "=", "ACL-ARE-POS"]]
+        save_as: "gone"
+        expect_count: 0
+
+  - name: "Workflow User group alone cannot create, write or unlink a Character Arena"
+    steps:
+      - step: "Create the Character Arena Workflow User user"
+        action: "create"
+        model: "res.users"
+        save_as: "workflow_user"
+        values:
+          name: "Character Arena Workflow User"
+          login: "character_arena_workflow_user@example.com"
+          groups_id:
+            [
+              [
+                6,
+                0,
+                [
+                  "REF: base.group_user",
+                  "REF: ssi_school_character.school_character_user_group",
+                ],
+              ],
+            ]
+      - step: "Create the fixture record as superuser"
+        action: "create"
+        model: "school_character_arena"
+        save_as: "fixture"
+        values:
+          name: "Fixture Arena"
+          code: "ACL-ARE-NEG"
+      - step: "Create as the workflow User group member must be rejected"
+        action: "create"
+        model: "school_character_arena"
+        as_user: "workflow_user"
+        expect_error:
+          type: "AccessError"
+        values:
+          name: "Blocked Arena"
+          code: "ACL-ARE-BLK"
+      - step: "Write as the workflow User group member must be rejected"
+        action: "write"
+        target: "fixture"
+        as_user: "workflow_user"
+        expect_error:
+          type: "AccessError"
+        values:
+          name: "Blocked Rename"
+      - step: "Unlink as the workflow User group member must be rejected"
+        action: "unlink"
+        target: "fixture"
+        as_user: "workflow_user"
+        expect_error:
+          type: "AccessError"
+      - step: "Read as the workflow User group member still works"
+        action: "search"
+        model: "school_character_arena"
+        as_user: "workflow_user"
+        domain: [["id", "=", "REC: fixture.id"]]
+        save_as: "visible"
+        expect_count: 1

@@ -74,7 +74,7 @@
         name="Character Arenas"
         parent="menu_character_configuration"
         action="school_character_arena_action"
-        groups="school_character_user_group"
+        groups="school_character_arena_group"
         sequence="50"
     />
 
