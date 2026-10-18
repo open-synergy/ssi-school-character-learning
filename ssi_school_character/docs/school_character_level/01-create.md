@@ -1,15 +1,15 @@
 # Create Character Level
 
-> **Module:** ssi_school_character\
+> **Module:** `ssi_school_character`\
 > **Model:** `school_character_level`\
 > **Menu:** School > Configuration > Character Learning > Character Levels\
-> **Actor:** Character Learning / User\
+> **Actor:** user in group `Character Level`\
 > **State:** `—` → `draft`
 
 ## Pre-Condition
 
 - **Data:** At least one **Character Scale** (`school_character_scale`) exists.
-- **Access:** User is in group **Character Learning / User**.
+- **Access:** User is in group `Character Level`.
 
 ## Flow
 
