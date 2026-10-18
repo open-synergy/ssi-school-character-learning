@@ -1,16 +1,16 @@
 # Activate Character Level
 
-> **Module:** ssi_school_character\
+> **Module:** `ssi_school_character`\
 > **Model:** `school_character_level`\
 > **Menu:** School > Configuration > Character Learning > Character Levels\
-> **Actor:** Character Learning / User\
+> **Actor:** user in group `Character Level`\
 > **Active:** `false` → `true`\
 > **Requires:** `04-deactivate`
 
 ## Pre-Condition
 
 - **Record:** The record is currently archived (inactive).
-- **Access:** User is in group **Character Learning / User**.
+- **Access:** User is in group `Character Level`.
 
 ## Flow
 

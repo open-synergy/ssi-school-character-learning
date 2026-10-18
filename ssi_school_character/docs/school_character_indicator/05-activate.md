@@ -1,16 +1,16 @@
 # Activate Character Indicator
 
-> **Module:** ssi_school_character\
+> **Module:** `ssi_school_character`\
 > **Model:** `school_character_indicator`\
 > **Menu:** School > Configuration > Character Learning > Character Indicators\
-> **Actor:** Character Learning / User\
+> **Actor:** user in group `Character Indicator`\
 > **Active:** `false` → `true`\
 > **Requires:** `04-deactivate`
 
 ## Pre-Condition
 
 - **Record:** The record is currently archived (inactive).
-- **Access:** User is in group **Character Learning / User**.
+- **Access:** User is in group `Character Indicator`.
 
 ## Flow
 

@@ -1,16 +1,16 @@
 # Delete Character Level
 
-> **Module:** ssi_school_character\
+> **Module:** `ssi_school_character`\
 > **Model:** `school_character_level`\
 > **Menu:** School > Configuration > Character Learning > Character Levels\
-> **Actor:** Character Learning / User\
+> **Actor:** user in group `Character Level`\
 > **Requires:** `01-create`
 
 ## Pre-Condition
 
 - **Record:** The record exists and is not referenced by any other document (e.g. no
   rubric descriptor line points to it).
-- **Access:** User is in group **Character Learning / User**.
+- **Access:** User is in group `Character Level`.
 
 ## Flow
 
