@@ -1,6 +1,6 @@
 # Create Character Curriculum Map
 
-> **Module:** ssi_school_character_curriculum_operating_unit\
+> **Module:** `ssi_school_character_curriculum_operating_unit`\
 > **Extends:** ssi_school_character_curriculum — model `school_character_curriculum`, aksi
 > `01-create`
 
