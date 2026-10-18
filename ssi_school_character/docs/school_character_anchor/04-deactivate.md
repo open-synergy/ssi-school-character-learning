@@ -1,16 +1,16 @@
 # Deactivate Character Anchor
 
-> **Module:** ssi_school_character\
+> **Module:** `ssi_school_character`\
 > **Model:** `school_character_anchor`\
 > **Menu:** School > Configuration > Character Learning > Character Anchors\
-> **Actor:** Character Learning / User\
+> **Actor:** user in group `Character Anchor`\
 > **Active:** `true` → `false`\
 > **Requires:** `01-create`
 
 ## Pre-Condition
 
 - **Record:** The record is currently active.
-- **Access:** User is in group **Character Learning / User**.
+- **Access:** User is in group `Character Anchor`.
 
 ## Flow
 

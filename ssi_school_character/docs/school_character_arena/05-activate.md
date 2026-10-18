@@ -1,16 +1,16 @@
 # Activate Character Arena
 
-> **Module:** ssi_school_character\
+> **Module:** `ssi_school_character`\
 > **Model:** `school_character_arena`\
 > **Menu:** School > Configuration > Character Learning > Character Arenas\
-> **Actor:** Character Learning / User\
+> **Actor:** user in group `Character Arena`\
 > **Active:** `false` → `true`\
 > **Requires:** `04-deactivate`
 
 ## Pre-Condition
 
 - **Record:** The record is currently archived.
-- **Access:** User is in group **Character Learning / User**.
+- **Access:** User is in group `Character Arena`.
 
 ## Flow
 

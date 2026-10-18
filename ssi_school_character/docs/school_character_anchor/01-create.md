@@ -1,16 +1,16 @@
 # Create Character Anchor
 
-> **Module:** ssi_school_character\
+> **Module:** `ssi_school_character`\
 > **Model:** `school_character_anchor`\
 > **Menu:** School > Configuration > Character Learning > Character Anchors\
-> **Actor:** Character Learning / User\
+> **Actor:** user in group `Character Anchor`\
 > **State:** `—` → `draft`
 
 ## Pre-Condition
 
 - **Data:** At least one **Character Construct** (`school_character_construct`) exists.
 - **Data:** At least one **Character Level** (`school_character_level`) exists.
-- **Access:** User is in group **Character Learning / User**.
+- **Access:** User is in group `Character Anchor`.
 
 ## Flow
 

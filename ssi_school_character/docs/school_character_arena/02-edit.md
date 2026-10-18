@@ -1,14 +1,14 @@
 # Edit Character Arena
 
-> **Module:** ssi_school_character\
+> **Module:** `ssi_school_character`\
 > **Model:** `school_character_arena`\
 > **Menu:** School > Configuration > Character Learning > Character Arenas\
-> **Actor:** Character Learning / User\
+> **Actor:** user in group `Character Arena`\
 > **Requires:** `01-create`
 
 ## Pre-Condition
 
-- **Access:** User is in group **Character Learning / User**.
+- **Access:** User is in group `Character Arena`.
 
 ## Flow
 
