@@ -1,6 +1,6 @@
 # Approve Character Learning Activity
 
-> **Module:** ssi_school_character_activity\
+> **Module:** `ssi_school_character_activity`\
 > **Model:** `school_character_activity`\
 > **Menu:** School ‣ Character Learning ‣ Activity ‣ Character Learning Activities\
 > **Actor:** Character Activity Approver\
