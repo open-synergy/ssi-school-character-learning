@@ -1,6 +1,6 @@
 # Create Character Observation
 
-> **Module:** ssi_school_character_evidence_operating_unit\
+> **Module:** `ssi_school_character_evidence_operating_unit`\
 > **Extends:** ssi_school_character_evidence — model `school_character_observation`, aksi
 > `01-create`
 
