@@ -79,12 +79,12 @@
                         name="subconstruct_id"
                         domain="[('construct_id', '=', construct_id)]"
                     />
-                <field name="provisional_level_id" />
             </xpath>
             <xpath expr="//group[@name='header_right']" position="inside">
                 <field name="date" />
                 <field name="academic_year_id" />
                 <field name="academic_term_id" />
+                <field name="provisional_level_id" />
             </xpath>
             <xpath expr="//page[1]" position="before">
                 <page name="evidence" string="Evidence Entries">
