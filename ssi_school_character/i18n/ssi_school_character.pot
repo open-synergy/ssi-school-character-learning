@@ -224,6 +224,7 @@ msgstr ""
 
 #. module: ssi_school_character
 #: model:ir.model,name:ssi_school_character.model_school_character_construct
+#: model:res.groups,name:ssi_school_character.school_character_construct_group
 msgid "Character Construct"
 msgstr ""
 
@@ -241,6 +242,7 @@ msgstr ""
 
 #. module: ssi_school_character
 #: model:ir.model,name:ssi_school_character.model_school_character_family
+#: model:res.groups,name:ssi_school_character.school_character_family_group
 msgid "Character Family"
 msgstr ""
 
