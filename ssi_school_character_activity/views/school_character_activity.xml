@@ -87,10 +87,10 @@
                     />
                 <field name="arena_id" />
                 <field name="method_id" />
-                <field name="grade_class_id" />
-                <field name="teacher_id" />
             </xpath>
             <xpath expr="//group[@name='header_right']" position="inside">
+                <field name="grade_class_id" />
+                <field name="teacher_id" />
                 <field name="date" />
                 <field name="date_end" />
                 <field name="rbt_level" />
