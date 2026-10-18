@@ -1,6 +1,6 @@
 # Delete Character Curriculum Map
 
-> **Module:** ssi_school_character_curriculum\
+> **Module:** `ssi_school_character_curriculum`\
 > **Model:** `school_character_curriculum`\
 > **Menu:** School ‣ Character Learning ‣ Curriculum ‣ Character Curriculum Maps\
 > **Actor:** Character Curriculum User\

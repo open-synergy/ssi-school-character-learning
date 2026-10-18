@@ -79,16 +79,16 @@
     <field name="arch" type="xml">
         <data>
             <xpath expr="//field[@name='user_id']" position="after">
-                <field name="academic_year_id" />
-                <field name="academic_term_id" />
                 <field name="school_id" />
                 <field name="grade_id" />
                 <field name="grade_class_id" />
-                <field name="profile_id" />
-                <field name="pathway" />
             </xpath>
             <xpath expr="//group[@name='header_right']" position="inside">
                 <field name="date" />
+                <field name="academic_year_id" />
+                <field name="academic_term_id" />
+                <field name="profile_id" />
+                <field name="pathway" />
             </xpath>
             <xpath expr="//page[1]" position="before">
                 <page name="curriculum_line" string="Curriculum Lines">
