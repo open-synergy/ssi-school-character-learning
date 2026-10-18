@@ -248,6 +248,7 @@ msgstr ""
 
 #. module: ssi_school_character
 #: model:ir.model,name:ssi_school_character.model_school_character_indicator
+#: model:res.groups,name:ssi_school_character.school_character_indicator_group
 msgid "Character Indicator"
 msgstr ""
 
@@ -265,6 +266,7 @@ msgstr ""
 
 #. module: ssi_school_character
 #: model:ir.model,name:ssi_school_character.model_school_character_level
+#: model:res.groups,name:ssi_school_character.school_character_level_group
 msgid "Character Level"
 msgstr ""
 
