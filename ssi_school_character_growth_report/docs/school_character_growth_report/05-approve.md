@@ -1,11 +1,11 @@
 # Approve Character Growth Report
 
-> **Module:** ssi_school_character_growth_report\
-> **Model:** > `school_character_growth_report`\
+> **Module:** `ssi_school_character_growth_report`\
+> **Model:** `school_character_growth_report`\
 > **Menu:** School ‣ Character Learning ‣ Growth Report ‣ Character Growth Reports\
 > **Actor:** Character Growth Report Officer\
 > **State:** `confirm` → `open` (via `approve_ok`, then automatic Open)\
-> **Requires:** > `04-confirm`
+> **Requires:** `04-confirm`
 
 ## Pre-Condition
 

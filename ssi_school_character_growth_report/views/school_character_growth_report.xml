@@ -79,12 +79,12 @@
         <data>
             <xpath expr="//field[@name='user_id']" position="after">
                 <field name="student_id" />
-                <field name="academic_year_id" />
-                <field name="academic_term_id" />
                 <field name="homeroom_teacher_id" />
                 <field name="calibration_id" />
             </xpath>
             <xpath expr="//group[@name='header_right']" position="inside">
+                <field name="academic_year_id" />
+                <field name="academic_term_id" />
                 <field name="date" />
                 <field name="pathway" />
             </xpath>
