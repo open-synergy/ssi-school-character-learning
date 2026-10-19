@@ -278,6 +278,7 @@ msgstr ""
 
 #. module: ssi_school_character
 #: model:ir.model,name:ssi_school_character.model_school_character_method
+#: model:res.groups,name:ssi_school_character.school_character_method_group
 msgid "Character Method"
 msgstr ""
 
@@ -289,6 +290,7 @@ msgstr ""
 
 #. module: ssi_school_character
 #: model:ir.model,name:ssi_school_character.model_school_character_profile
+#: model:res.groups,name:ssi_school_character.school_character_profile_group
 msgid "Character Profile"
 msgstr ""
 
