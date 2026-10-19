@@ -1,16 +1,16 @@
 # Activate Character Sub-construct
 
-> **Module:** ssi_school_character\
+> **Module:** `ssi_school_character`\
 > **Model:** `school_character_subconstruct`\
 > **Menu:** School > Configuration > Character Learning > Character Sub-constructs\
-> **Actor:** Character Learning / User\
+> **Actor:** user in group `Character Sub-construct`\
 > **Active:** `false` → `true`\
-> **Requires:** > `04-deactivate`
+> **Requires:** `04-deactivate`
 
 ## Pre-Condition
 
 - **Record:** The record is currently archived (inactive).
-- **Access:** User is in group **Character Learning / User**.
+- **Access:** User is in group `Character Sub-construct`.
 
 ## Flow
 

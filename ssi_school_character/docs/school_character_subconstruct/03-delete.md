@@ -1,16 +1,16 @@
 # Delete Character Sub-construct
 
-> **Module:** ssi_school_character\
+> **Module:** `ssi_school_character`\
 > **Model:** `school_character_subconstruct`\
 > **Menu:** School > Configuration > Character Learning > Character Sub-constructs\
-> **Actor:** Character Learning / User\
+> **Actor:** user in group `Character Sub-construct`\
 > **Requires:** `01-create`
 
 ## Pre-Condition
 
 - **Record:** The record exists and is not referenced by any other document (e.g. no
   indicator or activity alignment line points to it).
-- **Access:** User is in group **Character Learning / User**.
+- **Access:** User is in group `Character Sub-construct`.
 
 ## Flow
 
