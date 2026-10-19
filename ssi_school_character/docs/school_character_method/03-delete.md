@@ -1,14 +1,14 @@
 # Delete Character Method
 
-> **Module:** ssi_school_character\
+> **Module:** `ssi_school_character`\
 > **Model:** `school_character_method`\
 > **Menu:** School > Configuration > Character Learning > Character Methods\
-> **Actor:** Character Learning / User\
+> **Actor:** user in group `Character Method`\
 > **Requires:** `01-create`
 
 ## Pre-Condition
 
-- **Access:** User is in group **Character Learning / User**.
+- **Access:** User is in group `Character Method`.
 
 ## Flow
 

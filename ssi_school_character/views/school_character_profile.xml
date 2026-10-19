@@ -93,7 +93,7 @@
         name="Character Profiles"
         parent="menu_character_configuration"
         action="school_character_profile_action"
-        groups="school_character_user_group"
+        groups="school_character_profile_group"
         sequence="60"
     />
 
