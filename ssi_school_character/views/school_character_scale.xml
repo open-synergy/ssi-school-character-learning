@@ -68,7 +68,7 @@
         name="Character Scales"
         parent="menu_character_configuration"
         action="school_character_scale_action"
-        groups="school_character_user_group"
+        groups="school_character_scale_group"
         sequence="10"
     />
 
