@@ -302,6 +302,7 @@ msgstr ""
 
 #. module: ssi_school_character
 #: model:ir.model,name:ssi_school_character.model_school_character_rubric
+#: model:res.groups,name:ssi_school_character.school_character_rubric_group
 msgid "Character Rubric"
 msgstr ""
 
@@ -318,6 +319,7 @@ msgstr ""
 
 #. module: ssi_school_character
 #: model:ir.model,name:ssi_school_character.model_school_character_scale
+#: model:res.groups,name:ssi_school_character.school_character_scale_group
 msgid "Character Scale"
 msgstr ""
 
