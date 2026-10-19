@@ -1,15 +1,15 @@
 # Edit Character Rubric
 
-> **Module:** ssi_school_character\
+> **Module:** `ssi_school_character`\
 > **Model:** `school_character_rubric`\
 > **Menu:** School > Configuration > Character Learning > Character Rubrics\
-> **Actor:** Character Learning / User\
+> **Actor:** user in group `Character Rubric`\
 > **Requires:** `01-create`
 
 ## Pre-Condition
 
 - **Record:** The record exists and is active.
-- **Access:** User is in group **Character Learning / User**.
+- **Access:** User is in group `Character Rubric`.
 
 ## Flow
 

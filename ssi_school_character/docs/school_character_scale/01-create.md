@@ -1,14 +1,14 @@
 # Create Character Scale
 
-> **Module:** ssi_school_character\
+> **Module:** `ssi_school_character`\
 > **Model:** `school_character_scale`\
 > **Menu:** School > Configuration > Character Learning > Character Scales\
-> **Actor:** Character Learning / User\
+> **Actor:** user in group `Character Scale`\
 > **State:** `—` → `draft`
 
 ## Pre-Condition
 
-- **Access:** User is in group **Character Learning / User**.
+- **Access:** User is in group `Character Scale`.
 
 ## Flow
 
