@@ -331,6 +331,7 @@ msgstr ""
 
 #. module: ssi_school_character
 #: model:ir.model,name:ssi_school_character.model_school_character_subconstruct
+#: model:res.groups,name:ssi_school_character.school_character_subconstruct_group
 msgid "Character Sub-construct"
 msgstr ""
 
