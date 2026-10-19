@@ -17,6 +17,7 @@ from . import (  # noqa: F401
     test_school_character_profile_access,
     test_school_character_rubric_access,
     test_school_character_scale_access,
+    test_school_character_subconstruct_access,
     test_ui_school_character_anchor,
     test_ui_school_character_arena,
     test_ui_school_character_family,

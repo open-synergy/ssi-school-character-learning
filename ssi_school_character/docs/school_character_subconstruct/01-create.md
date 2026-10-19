@@ -1,15 +1,15 @@
 # Create Character Sub-construct
 
-> **Module:** ssi_school_character\
+> **Module:** `ssi_school_character`\
 > **Model:** `school_character_subconstruct`\
 > **Menu:** School > Configuration > Character Learning > Character Sub-constructs\
-> **Actor:** Character Learning / User\
+> **Actor:** user in group `Character Sub-construct`\
 > **State:** `—` → `draft`
 
 ## Pre-Condition
 
 - **Data:** At least one **Character Construct** (`school_character_construct`) exists.
-- **Access:** User is in group **Character Learning / User**.
+- **Access:** User is in group `Character Sub-construct`.
 
 ## Flow
 

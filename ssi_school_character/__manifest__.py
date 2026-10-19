@@ -31,6 +31,7 @@
         "security/res_groups/school_character_profile.xml",
         "security/res_groups/school_character_rubric.xml",
         "security/res_groups/school_character_scale.xml",
+        "security/res_groups/school_character_subconstruct.xml",
         "security/ir_model_access/school_character_scale.xml",
         "security/ir_model_access/school_character_level.xml",
         "security/ir_model_access/school_character_family.xml",
