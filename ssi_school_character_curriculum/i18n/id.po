@@ -34,7 +34,7 @@ msgstr "Periode Akademik"
 #: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__academic_year_id
 #: model_terms:ir.ui.view,arch_db:ssi_school_character_curriculum.school_character_curriculum_view_search
 msgid "Academic Year"
-msgstr "Tahun Akademik"
+msgstr "Tahun Ajaran"
 
 #. module: ssi_school_character_curriculum
 #: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__message_needaction
@@ -195,7 +195,7 @@ msgstr "Demo Kurikulum Karakter TA 2026/2027"
 #. module: ssi_school_character_curriculum
 #: model:school_grade,name:ssi_school_character_curriculum.demo_grade
 msgid "Character Curriculum Demo Grade 7"
-msgstr "Demo Kurikulum Karakter Kelas 7"
+msgstr "Demo Kurikulum Karakter Tingkat 7"
 
 #. module: ssi_school_character_curriculum
 #: model:school_grade_type,name:ssi_school_character_curriculum.demo_grade_type
@@ -210,7 +210,7 @@ msgstr "Demo Kurikulum Karakter Sekolah"
 #. module: ssi_school_character_curriculum
 #: model:school_academic_term,name:ssi_school_character_curriculum.demo_academic_term
 msgid "Character Curriculum Demo Term 1"
-msgstr "Demo Kurikulum Karakter Semester 1"
+msgstr "Demo Kurikulum Karakter Periode Akademik 1"
 
 #. module: ssi_school_character_curriculum
 #: model:ir.model,name:ssi_school_character_curriculum.model_school_character_curriculum
@@ -346,12 +346,12 @@ msgstr "Penuh"
 #: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__grade_id
 #: model_terms:ir.ui.view,arch_db:ssi_school_character_curriculum.school_character_curriculum_view_search
 msgid "Grade"
-msgstr "Kelas"
+msgstr "Tingkat"
 
 #. module: ssi_school_character_curriculum
 #: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__grade_class_id
 msgid "Grade Class"
-msgstr "Kelas"
+msgstr "Kelas Tingkat"
 
 #. module: ssi_school_character_curriculum
 #: model_terms:ir.ui.view,arch_db:ssi_school_character_curriculum.school_character_curriculum_view_search
