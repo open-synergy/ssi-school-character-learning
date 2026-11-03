@@ -356,7 +356,7 @@ msgstr "Kelas Tingkat"
 #. module: ssi_school_character_curriculum
 #: model_terms:ir.ui.view,arch_db:ssi_school_character_curriculum.school_character_curriculum_view_search
 msgid "Group By"
-msgstr "Kelompokkan Menurut"
+msgstr "Kelompokkan Berdasarkan"
 
 #. module: ssi_school_character_curriculum
 #: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__id
