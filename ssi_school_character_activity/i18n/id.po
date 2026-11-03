@@ -314,7 +314,7 @@ msgstr "DOK 3 - Berpikir Strategis"
 #. module: ssi_school_character_activity
 #: model:ir.model.fields.selection,name:ssi_school_character_activity.selection__school_character_activity__dok_level__4
 msgid "DOK 4 - Extended Thinking"
-msgstr "DOK 4 - Berpikir Lanjut"
+msgstr "DOK 4 - Berpikir Diperluas"
 
 #. module: ssi_school_character_activity
 #: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__dok_level
@@ -368,7 +368,7 @@ msgstr "Mengevaluasi"
 #. module: ssi_school_character_activity
 #: model:ir.model.fields.selection,name:ssi_school_character_activity.selection__school_character_activity__solo_target__extended_abstract
 msgid "Extended Abstract"
-msgstr "Abstrak Lanjut"
+msgstr "Abstrak Diperluas"
 
 #. module: ssi_school_character_activity
 #: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity_alignment__feedback_plan
@@ -409,7 +409,7 @@ msgstr "Kelas Tingkat"
 #. module: ssi_school_character_activity
 #: model_terms:ir.ui.view,arch_db:ssi_school_character_activity.school_character_activity_view_search
 msgid "Group By"
-msgstr "Kelompokkan Menurut"
+msgstr "Kelompokkan Berdasarkan"
 
 #. module: ssi_school_character_activity
 #: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity_alignment__feedback_plan
