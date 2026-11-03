@@ -47,7 +47,7 @@ msgstr "Periode Akademik"
 #: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_observation__academic_year_id
 #: model_terms:ir.ui.view,arch_db:ssi_school_character_evidence.school_character_observation_view_search
 msgid "Academic Year"
-msgstr "Tahun Akademik"
+msgstr "Tahun Ajaran"
 
 #. module: ssi_school_character_evidence
 #: model:ir.model.fields,field_description:ssi_school_character_evidence.field_school_character_calibration__message_needaction
@@ -917,7 +917,7 @@ msgstr "Periode akademik tempat observasi ini berada."
 #. module: ssi_school_character_evidence
 #: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation__academic_year_id
 msgid "The academic year this observation belongs to."
-msgstr "Tahun akademik tempat observasi ini berada."
+msgstr "Tahun ajaran tempat observasi ini berada."
 
 #. module: ssi_school_character_evidence
 #: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_observation_evidence__arena_id
@@ -1094,7 +1094,7 @@ msgstr ""
 "* Biarkan '/' agar nomor dibuat otomatis\n"
 "* Ubah '/' menjadi nomor/pengenal apa pun untuk menetapkan nomor secara manual.\n"
 "  Penetapan nomor manual dapat dilakukan pada status 'Draf'\n"
-"  Hanya pengguna dengan kebijakan 'Can Manualy Assign Number' yang dapat menetapkan nomor secara manual.\n"
+"  Hanya pengguna dengan kebijakan 'Dapat Memasukkan Nomor Dokumen Manual' yang dapat menetapkan nomor secara manual.\n"
 "* Transaksi dengan nomor selain '/' tidak dapat dihapus."
 
 #. module: ssi_school_character_evidence
