@@ -34,7 +34,7 @@ msgstr "Periode Akademik"
 #: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__academic_year_id
 #: model_terms:ir.ui.view,arch_db:ssi_school_character_growth_report.school_character_growth_report_view_search
 msgid "Academic Year"
-msgstr "Tahun Akademik"
+msgstr "Tahun Ajaran"
 
 #. module: ssi_school_character_growth_report
 #: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__level_id
@@ -110,7 +110,7 @@ msgid ""
 msgstr ""
 "Kebijakan persetujuan\n"
 "\n"
-"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Approve'"
+"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Setujui'"
 
 #. module: ssi_school_character_growth_report
 #: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__approved
@@ -186,7 +186,7 @@ msgid ""
 msgstr ""
 "Kebijakan pembatalan\n"
 "\n"
-"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Cancel'"
+"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Batal'"
 
 #. module: ssi_school_character_growth_report
 #: model:ir.model,name:ssi_school_character_growth_report.model_school_character_growth_report
@@ -246,7 +246,7 @@ msgid ""
 msgstr ""
 "Kebijakan konfirmasi\n"
 "\n"
-"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Confirm'"
+"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Konfirmasi'"
 
 #. module: ssi_school_character_growth_report
 #: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__construct_id
@@ -290,7 +290,7 @@ msgid ""
 msgstr ""
 "Kebijakan penyelesaian\n"
 "\n"
-"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Done'"
+"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Selesai'"
 
 #. module: ssi_school_character_growth_report
 #: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__evidence_count
@@ -541,7 +541,7 @@ msgid ""
 msgstr ""
 "Kebijakan penolakan\n"
 "\n"
-"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Reject'"
+"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Tolak'"
 
 #. module: ssi_school_character_growth_report
 #: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__rejected
@@ -567,7 +567,7 @@ msgid ""
 msgstr ""
 "Kebijakan mulai ulang persetujuan\n"
 "\n"
-"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Restart Approval'"
+"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Mulai Ulang Persetujuan'"
 
 #. module: ssi_school_character_growth_report
 #: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__restart_ok
@@ -578,7 +578,7 @@ msgid ""
 msgstr ""
 "Kebijakan mulai ulang\n"
 "\n"
-"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Restart'"
+"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Mulai Ulang'"
 
 #. module: ssi_school_character_growth_report
 #: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__reviewer_id
@@ -594,7 +594,7 @@ msgid ""
 msgstr ""
 "Kebijakan mulai\n"
 "\n"
-"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Start'"
+"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Mulai'"
 
 #. module: ssi_school_character_growth_report
 #: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__state
@@ -628,7 +628,7 @@ msgstr "Periode akademik yang dicakup laporan perkembangan ini."
 #. module: ssi_school_character_growth_report
 #: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__academic_year_id
 msgid "The academic year this growth report covers."
-msgstr "Tahun akademik yang dicakup laporan perkembangan ini."
+msgstr "Tahun ajaran yang dicakup laporan perkembangan ini."
 
 #. module: ssi_school_character_growth_report
 #: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report_line__construct_id
@@ -732,8 +732,8 @@ msgstr ""
 "* Pengenal unik transaksi\n"
 "* Biarkan '/' agar nomor dibuat otomatis\n"
 "* Ubah '/' menjadi nomor/pengenal apa pun untuk memberi nomor secara manual.\n"
-"  Pemberian nomor manual dapat dilakukan pada status 'Draft'\n"
-"  Hanya pengguna dengan kebijakan 'Can Manualy Assign Number' yang dapat memberi nomor secara manual.\n"
+"  Pemberian nomor manual dapat dilakukan pada status 'Draf'\n"
+"  Hanya pengguna dengan kebijakan 'Dapat Memasukkan Nomor Dokumen Manual' yang dapat memberi nomor secara manual.\n"
 "* Transaksi dengan nomor selain '/' tidak dapat dihapus."
 
 #. module: ssi_school_character_growth_report
