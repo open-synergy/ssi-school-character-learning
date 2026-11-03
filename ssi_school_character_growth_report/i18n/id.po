@@ -108,7 +108,7 @@ msgid ""
 "\n"
 "* If active user can see and execute 'Approve' button"
 msgstr ""
-"Kebijakan persetujuan\n"
+"Kebijakan setujui\n"
 "\n"
 "* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Setujui'"
 
@@ -184,7 +184,7 @@ msgid ""
 "\n"
 "* If active user can see and execute 'Cancel' button"
 msgstr ""
-"Kebijakan pembatalan\n"
+"Kebijakan batal\n"
 "\n"
 "* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Batal'"
 
@@ -288,7 +288,7 @@ msgid ""
 "\n"
 "* If active user can see and execute 'Done' button"
 msgstr ""
-"Kebijakan penyelesaian\n"
+"Kebijakan selesai\n"
 "\n"
 "* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Selesai'"
 
@@ -379,7 +379,7 @@ msgstr "Jika dicentang, pesan baru memerlukan perhatian Anda."
 #. module: ssi_school_character_growth_report
 #: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr "Jika dicentang, sebagian pesan mengalami kesalahan pengiriman."
+msgstr "Jika dicentang, beberapa pesan mengalami kesalahan pengiriman."
 
 #. module: ssi_school_character_growth_report
 #: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_is_follower
@@ -426,7 +426,7 @@ msgid ""
 "\n"
 "* If active user can edit document number"
 msgstr ""
-"Kebijakan pemberian nomor manual\n"
+"Kebijakan penetapan nomor manual\n"
 "\n"
 "* Jika pengguna aktif dapat mengubah nomor dokumen"
 
@@ -539,7 +539,7 @@ msgid ""
 "\n"
 "* If active user can see and execute 'Reject' button"
 msgstr ""
-"Kebijakan penolakan\n"
+"Kebijakan tolak\n"
 "\n"
 "* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Tolak'"
 
@@ -612,7 +612,7 @@ msgstr ""
 "Status berdasarkan aktivitas\n"
 "Terlambat: Tanggal jatuh tempo sudah lewat\n"
 "Hari ini: Tanggal aktivitas adalah hari ini\n"
-"Terencana: Aktivitas mendatang."
+"Direncanakan: Aktivitas mendatang."
 
 #. module: ssi_school_character_growth_report
 #: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__student_id
@@ -731,9 +731,9 @@ msgstr ""
 "\n"
 "* Pengenal unik transaksi\n"
 "* Biarkan '/' agar nomor dibuat otomatis\n"
-"* Ubah '/' menjadi nomor/pengenal apa pun untuk memberi nomor secara manual.\n"
-"  Pemberian nomor manual dapat dilakukan pada status 'Draf'\n"
-"  Hanya pengguna dengan kebijakan 'Dapat Memasukkan Nomor Dokumen Manual' yang dapat memberi nomor secara manual.\n"
+"* Ubah '/' menjadi nomor/pengenal apa pun untuk menetapkan nomor secara manual.\n"
+"  Penetapan nomor manual dapat dilakukan pada status 'Draf'\n"
+"  Hanya pengguna dengan kebijakan 'Dapat Memasukkan Nomor Dokumen Manual' yang dapat menetapkan nomor secara manual.\n"
 "* Transaksi dengan nomor selain '/' tidak dapat dihapus."
 
 #. module: ssi_school_character_growth_report
