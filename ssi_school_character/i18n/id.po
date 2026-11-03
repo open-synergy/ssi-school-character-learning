@@ -705,13 +705,13 @@ msgstr "Profil Karakter GREAT"
 #. module: ssi_school_character
 #: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__grade_id
 msgid "Grade"
-msgstr "Kelas"
+msgstr "Tingkat"
 
 #. module: ssi_school_character
 #: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__grade_type_id
 #: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__grade_type_id
 msgid "Grade Type"
-msgstr "Jenjang"
+msgstr "Jenis Tingkat"
 
 #. module: ssi_school_character
 #: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_anchor_view_search
@@ -1314,21 +1314,24 @@ msgstr "Satu deskriptor untuk setiap level skala, yang menjelaskan seperti apa k
 #: model:ir.model.fields,help:ssi_school_character.field_school_character_anchor__grade_type_id
 msgid ""
 "Optional education level (grade type) this anchor example is calibrated for."
-msgstr "Jenjang pendidikan (jenis kelas) opsional yang menjadi acuan kalibrasi contoh jangkar ini."
+msgstr ""
+"Tingkat pendidikan (jenis tingkat) opsional yang menjadi acuan kalibrasi contoh jangkar ini."
 
 #. module: ssi_school_character
 #: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__grade_type_id
 msgid ""
 "Optional education level (grade type) this indicator is calibrated for, e.g. "
 "an indicator worded for a particular stage of schooling."
-msgstr "Jenjang pendidikan (jenis kelas) opsional yang menjadi acuan kalibrasi indikator ini, mis. indikator yang dirumuskan untuk tahap pendidikan tertentu."
+msgstr ""
+"Tingkat pendidikan (jenis tingkat) opsional yang menjadi acuan kalibrasi indikator ini, mis. indikator yang dirumuskan untuk tahap pendidikan tertentu."
 
 #. module: ssi_school_character
 #: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__grade_id
 msgid ""
 "Optional grade this indicator is calibrated for, when it is specific to a "
 "single grade rather than a whole grade type."
-msgstr "Kelas opsional yang menjadi acuan kalibrasi indikator ini, bila indikator ini khusus untuk satu kelas dan bukan seluruh jenjang."
+msgstr ""
+"Tingkat opsional yang menjadi acuan kalibrasi indikator ini, bila indikator ini khusus untuk satu tingkat dan bukan seluruh jenis tingkat."
 
 #. module: ssi_school_character
 #: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__subconstruct_id
