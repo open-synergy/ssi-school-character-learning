@@ -103,7 +103,7 @@ msgstr "Menerapkan"
 #. module: ssi_school_character_activity
 #: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__approval_template_id
 msgid "Approval Configuration"
-msgstr "Konfigurasi persetujuan"
+msgstr "Konfigurasi Persetujuan"
 
 #. module: ssi_school_character_activity
 #: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__approval_template_id
@@ -276,7 +276,7 @@ msgstr "Konstruk"
 #. module: ssi_school_character_activity
 #: model:ir.model.fields.selection,name:ssi_school_character_activity.selection__school_character_activity__rbt_level__create
 msgid "Create"
-msgstr "Mencipta"
+msgstr "Buat"
 
 #. module: ssi_school_character_activity
 #: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__create_uid
@@ -404,7 +404,7 @@ msgstr "Deskripsi bebas dari aktivitas pembelajaran yang dilaksanakan."
 #: model:ir.model.fields,field_description:ssi_school_character_activity.field_school_character_activity__grade_class_id
 #: model_terms:ir.ui.view,arch_db:ssi_school_character_activity.school_character_activity_view_search
 msgid "Grade Class"
-msgstr "Kelas"
+msgstr "Kelas Tingkat"
 
 #. module: ssi_school_character_activity
 #: model_terms:ir.ui.view,arch_db:ssi_school_character_activity.school_character_activity_view_search
@@ -837,7 +837,15 @@ msgid ""
 "  Only user with 'Can Manualy Assign Number' policy can manually assign "
 "number.\n"
 "* Transaction with number other than '/' can not be deleted."
-msgstr "Nomor transaksi/dokumen\n\n* Pengenal unik transaksi\n* Biarkan '/' agar nomor dibuat otomatis\n* Ubah '/' menjadi nomor/pengenal apa pun untuk menetapkan nomor secara manual.\n  Penetapan nomor manual dapat dilakukan pada status 'Draf'\n  Hanya pengguna dengan kebijakan 'Dapat Menetapkan Nomor Manual' yang dapat menetapkan nomor secara manual.\n* Transaksi dengan nomor selain '/' tidak dapat dihapus."
+msgstr ""
+"Nomor transaksi/dokumen\n"
+"\n"
+"* Pengenal unik transaksi\n"
+"* Biarkan '/' agar nomor dibuat otomatis\n"
+"* Ubah '/' menjadi nomor/pengenal apa pun untuk menetapkan nomor secara manual.\n"
+"  Penetapan nomor manual dapat dilakukan pada status 'Draf'\n"
+"  Hanya pengguna dengan kebijakan 'Dapat Memasukkan Nomor Dokumen Manual' yang dapat menetapkan nomor secara manual.\n"
+"* Transaksi dengan nomor selain '/' tidak dapat dihapus."
 
 #. module: ssi_school_character_activity
 #: model:ir.model.fields,help:ssi_school_character_activity.field_school_character_activity__activity_exception_decoration
