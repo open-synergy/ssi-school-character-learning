@@ -1,0 +1,825 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ssi_school_character_curriculum
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: id\n"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum_line__curriculum_id
+msgid "# Curriculum Map"
+msgstr "# Peta Kurikulum"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__name
+msgid "# Document"
+msgstr "No. Dokumen"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__academic_term_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_curriculum.school_character_curriculum_view_search
+msgid "Academic Term"
+msgstr "Periode Akademik"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__academic_year_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_curriculum.school_character_curriculum_view_search
+msgid "Academic Year"
+msgstr "Tahun Ajaran"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__message_needaction
+msgid "Action Needed"
+msgstr "Perlu Tindakan"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__active_approval_ids
+msgid "Active Approvals"
+msgstr "Persetujuan Aktif"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__active_approver_partner_ids
+msgid "Active Partners"
+msgstr "Mitra Aktif"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__active_approver_user_ids
+msgid "Active Users"
+msgstr "Pengguna Aktif"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__activity_ids
+msgid "Activities"
+msgstr "Aktivitas"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Dekorasi Pengecualian Aktivitas"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__activity_state
+msgid "Activity State"
+msgstr "Status Aktivitas"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Ikon Jenis Aktivitas"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__allowed_policy_template_ids
+msgid "Allowed Policy Templates"
+msgstr "Templat Kebijakan yang Diizinkan"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__approval_template_id
+msgid "Approval Configuration"
+msgstr "Konfigurasi Persetujuan"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__approval_template_id
+msgid "Approval Template"
+msgstr "Templat Persetujuan"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__approval_ids
+msgid "Approvals"
+msgstr "Persetujuan"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__approve_ok
+msgid ""
+"Approve policy\n"
+"\n"
+"* If active user can see and execute 'Approve' button"
+msgstr "Kebijakan setujui\n\n* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Setujui'"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__approved
+msgid "Approved"
+msgstr "Disetujui"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum_line__arena_id
+msgid "Arena"
+msgstr "Arena"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__message_attachment_count
+msgid "Attachment Count"
+msgstr "Jumlah Lampiran"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__approve_ok
+msgid "Can Approve"
+msgstr "Dapat Menyetujui"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__cancel_ok
+msgid "Can Cancel"
+msgstr "Dapat Membatalkan"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__confirm_ok
+msgid "Can Confirm"
+msgstr "Dapat Mengonfirmasi"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__done_ok
+msgid "Can Finished"
+msgstr "Dapat Diselesaikan"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__manual_number_ok
+msgid "Can Input Manual Document Number"
+msgstr "Dapat Memasukkan Nomor Dokumen Manual"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__reject_ok
+msgid "Can Reject"
+msgstr "Dapat Menolak"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__restart_ok
+msgid "Can Restart"
+msgstr "Dapat Memulai Ulang"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__restart_approval_ok
+msgid "Can Restart Approval"
+msgstr "Dapat Memulai Ulang Persetujuan"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__open_ok
+msgid "Can Start"
+msgstr "Dapat Memulai"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__cancel_reason_id
+msgid "Cancel Reason"
+msgstr "Alasan Pembatalan"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__cancel_ok
+msgid ""
+"Cancel policy\n"
+"\n"
+"* If active user can see and execute 'Cancel' button"
+msgstr "Kebijakan batal\n\n* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Batal'"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.module.category,name:ssi_school_character_curriculum.school_character_curriculum_data_ownership_module_category
+msgid "Character Curriculum - Data Ownership"
+msgstr "Kurikulum Karakter - Kepemilikan Data"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.module.category,name:ssi_school_character_curriculum.school_character_curriculum_workflow_module_category
+msgid "Character Curriculum - Workflow"
+msgstr "Kurikulum Karakter - Alur Kerja"
+
+#. module: ssi_school_character_curriculum
+#: model:school_academic_year,name:ssi_school_character_curriculum.demo_academic_year
+msgid "Character Curriculum Demo AY 2026/2027"
+msgstr "Demo Kurikulum Karakter TA 2026/2027"
+
+#. module: ssi_school_character_curriculum
+#: model:school_grade,name:ssi_school_character_curriculum.demo_grade
+msgid "Character Curriculum Demo Grade 7"
+msgstr "Demo Kurikulum Karakter Tingkat 7"
+
+#. module: ssi_school_character_curriculum
+#: model:school_grade_type,name:ssi_school_character_curriculum.demo_grade_type
+msgid "Character Curriculum Demo Grade Type"
+msgstr "Demo Kurikulum Karakter Jenis Tingkat"
+
+#. module: ssi_school_character_curriculum
+#: model:school,name:ssi_school_character_curriculum.demo_school
+msgid "Character Curriculum Demo School"
+msgstr "Demo Kurikulum Karakter Sekolah"
+
+#. module: ssi_school_character_curriculum
+#: model:school_academic_term,name:ssi_school_character_curriculum.demo_academic_term
+msgid "Character Curriculum Demo Term 1"
+msgstr "Demo Kurikulum Karakter Periode Akademik 1"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model,name:ssi_school_character_curriculum.model_school_character_curriculum
+msgid "Character Curriculum Map / Annual Syllabus"
+msgstr "Peta Kurikulum Karakter / Silabus Tahunan"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model,name:ssi_school_character_curriculum.model_school_character_curriculum_line
+msgid "Character Curriculum Map Line"
+msgstr "Baris Peta Kurikulum Karakter"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.actions.act_window,name:ssi_school_character_curriculum.school_character_curriculum_action
+#: model:ir.ui.menu,name:ssi_school_character_curriculum.school_character_curriculum_menu
+msgid "Character Curriculum Maps"
+msgstr "Peta Kurikulum Karakter"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__profile_id
+msgid "Character Profile"
+msgstr "Profil Karakter"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__company_id
+msgid "Company"
+msgstr "Perusahaan"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__company_partner_id
+msgid "Company Partner"
+msgstr "Mitra Perusahaan"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__company_id
+msgid ""
+"Company that own the document\n"
+"\n"
+"* Automatically filled with user's company.\n"
+"  Default company can be changed"
+msgstr "Perusahaan pemilik dokumen\n\n* Terisi otomatis dengan perusahaan pengguna.\n  Perusahaan bawaan dapat diubah"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__confirm_ok
+msgid ""
+"Confirm policy\n"
+"\n"
+"* If active user can see and execute 'Confirm' button"
+msgstr "Kebijakan konfirmasi\n\n* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Konfirmasi'"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum_line__construct_id
+msgid "Construct"
+msgstr "Konstruk"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum_line__construct_scale_id
+msgid "Construct Scale"
+msgstr "Skala Konstruk"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields.selection,name:ssi_school_character_curriculum.selection__school_character_curriculum__pathway__core
+msgid "Core"
+msgstr "Inti"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__create_uid
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum_line__create_uid
+msgid "Created by"
+msgstr "Dibuat oleh"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__create_date
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum_line__create_date
+msgid "Created on"
+msgstr "Dibuat pada"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.ui.menu,name:ssi_school_character_curriculum.menu_character_curriculum_root
+msgid "Curriculum"
+msgstr "Kurikulum"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__line_ids
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_curriculum.school_character_curriculum_view_form
+msgid "Curriculum Lines"
+msgstr "Baris Kurikulum"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__display_name
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum_line__display_name
+msgid "Display Name"
+msgstr "Nama Tampilan"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__date
+msgid "Document Date"
+msgstr "Tanggal Dokumen"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__done_ok
+msgid ""
+"Done policy\n"
+"\n"
+"* If active user can see and execute 'Done' button"
+msgstr "Kebijakan selesai\n\n* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Selesai'"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__message_follower_ids
+msgid "Followers"
+msgstr "Pengikut"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Pengikut (Saluran)"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Pengikut (Mitra)"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Ikon Font Awesome, mis. fa-tasks"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields.selection,name:ssi_school_character_curriculum.selection__school_character_curriculum__pathway__full
+msgid "Full"
+msgstr "Penuh"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__grade_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_curriculum.school_character_curriculum_view_search
+msgid "Grade"
+msgstr "Tingkat"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__grade_class_id
+msgid "Grade Class"
+msgstr "Kelas Tingkat"
+
+#. module: ssi_school_character_curriculum
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_curriculum.school_character_curriculum_view_search
+msgid "Group By"
+msgstr "Kelompokkan Berdasarkan"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__id
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__activity_exception_icon
+msgid "Icon"
+msgstr "Ikon"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Ikon untuk menandai aktivitas pengecualian."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__message_needaction
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Jika dicentang, pesan baru memerlukan perhatian Anda."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Jika dicentang, beberapa pesan mengalami kesalahan pengiriman."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__pathway
+msgid ""
+"Implementation pathway of this character curriculum map (ICLAD Lite/Core/"
+"Full), reflecting the depth and coverage the school commits to for the "
+"period."
+msgstr "Jalur implementasi peta kurikulum karakter ini (ICLAD Ringkas/Inti/Penuh), yang mencerminkan kedalaman dan cakupan yang disanggupi sekolah untuk periode tersebut."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum_line__indicator_ids
+msgid "Indicators"
+msgstr "Indikator"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields.selection,name:ssi_school_character_curriculum.selection__school_character_curriculum_line__track__intracurricular
+msgid "Intracurricular"
+msgstr "Intrakurikuler"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__message_is_follower
+msgid "Is Follower"
+msgstr "Adalah Pengikut"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum____last_update
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum_line____last_update
+msgid "Last Modified on"
+msgstr "Terakhir Diubah pada"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__write_uid
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum_line__write_uid
+msgid "Last Updated by"
+msgstr "Terakhir Diperbarui oleh"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__write_date
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum_line__write_date
+msgid "Last Updated on"
+msgstr "Terakhir Diperbarui pada"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum_line__capaian
+msgid "Learning Outcome"
+msgstr "Capaian Pembelajaran"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields.selection,name:ssi_school_character_curriculum.selection__school_character_curriculum__pathway__lite
+msgid "Lite"
+msgstr "Ringkas"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Lampiran Utama"
+
+#. module: ssi_school_character_curriculum
+#: model:res.groups,name:ssi_school_character_curriculum.school_character_curriculum_manager_group
+msgid "Manager"
+msgstr "Manajer"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__manual_number_ok
+msgid ""
+"Manual number assignment policy\n"
+"\n"
+"* If active user can edit document number"
+msgstr "Kebijakan penetapan nomor manual\n\n* Jika pengguna aktif dapat mengubah nomor dokumen"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__message_has_error
+msgid "Message Delivery error"
+msgstr "Kesalahan Pengiriman Pesan"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__message_ids
+msgid "Messages"
+msgstr "Pesan"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum_line__method_id
+msgid "Method"
+msgstr "Metode"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Batas Waktu Aktivitas Saya"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__need_validation
+msgid "Need Validation"
+msgstr "Perlu Validasi"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Batas Waktu Aktivitas Berikutnya"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__activity_summary
+msgid "Next Activity Summary"
+msgstr "Ringkasan Aktivitas Berikutnya"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__activity_type_id
+msgid "Next Activity Type"
+msgstr "Jenis Aktivitas Berikutnya"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__next_approval_ids
+msgid "Next Approvals"
+msgstr "Persetujuan Berikutnya"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__note
+msgid "Note"
+msgstr "Catatan"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Jumlah Tindakan"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__message_has_error_counter
+msgid "Number of errors"
+msgstr "Jumlah kesalahan"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Jumlah pesan yang memerlukan tindakan"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Jumlah pesan dengan kesalahan pengiriman"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Jumlah pesan yang belum dibaca"
+
+#. module: ssi_school_character_curriculum
+#: model:res.groups,name:ssi_school_character_curriculum.school_character_curriculum_officer_group
+msgid "Officer"
+msgstr "Petugas"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__pathway
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_curriculum.school_character_curriculum_view_search
+msgid "Pathway"
+msgstr "Jalur"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__policy_template_id
+msgid "Policy Template"
+msgstr "Templat Kebijakan"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__reject_ok
+msgid ""
+"Reject policy\n"
+"\n"
+"* If active user can see and execute 'Reject' button"
+msgstr "Kebijakan tolak\n\n* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Tolak'"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__rejected
+msgid "Rejected"
+msgstr "Ditolak"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__user_id
+msgid "Responsible"
+msgstr "Penanggung Jawab"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__activity_user_id
+msgid "Responsible User"
+msgstr "Pengguna Penanggung Jawab"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__restart_approval_ok
+msgid ""
+"Restart approval policy\n"
+"\n"
+"* If active user can see and execute 'Restart Approval' button"
+msgstr "Kebijakan mulai ulang persetujuan\n\n* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Mulai Ulang Persetujuan'"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__restart_ok
+msgid ""
+"Restart policy\n"
+"\n"
+"* If active user can see and execute 'Restart' button"
+msgstr "Kebijakan mulai ulang\n\n* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Mulai Ulang'"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__reviewer_id
+msgid "Reviewer"
+msgstr "Pemeriksa"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__school_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_curriculum.school_character_curriculum_view_search
+msgid "School"
+msgstr "Sekolah"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__open_ok
+msgid ""
+"Start policy\n"
+"\n"
+"* If active user can see and execute 'Start' button"
+msgstr "Kebijakan mulai\n\n* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Mulai'"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__state
+msgid "State"
+msgstr "Status"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr "Status berdasarkan aktivitas\nTerlambat: Tanggal jatuh tempo sudah lewat\nHari ini: Tanggal aktivitas adalah hari ini\nDirencanakan: Aktivitas mendatang."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields.selection,name:ssi_school_character_curriculum.selection__school_character_curriculum_line__track__student_affairs
+msgid "Student Affairs"
+msgstr "Kesiswaan"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum_line__subconstruct_id
+msgid "Sub-construct"
+msgstr "Subkonstruk"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum_line__target_level_id
+msgid "Target Level"
+msgstr "Level Target"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__academic_term_id
+msgid ""
+"The academic term/semester this character curriculum map applies to. Leave "
+"empty for a whole-year map."
+msgstr "Periode akademik yang menjadi cakupan peta kurikulum karakter ini. Kosongkan untuk peta satu tahun penuh."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__academic_year_id
+msgid "The academic year this character curriculum map applies to."
+msgstr "Tahun ajaran yang menjadi cakupan peta kurikulum karakter ini."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum_line__arena_id
+msgid ""
+"The arena/program (e.g. classroom, school culture, project) where this "
+"construct is developed."
+msgstr "Arena/program (mis. kelas, budaya sekolah, proyek) tempat konstruk ini dikembangkan."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum_line__indicator_ids
+msgid ""
+"The behavioral indicators used to observe progress on this construct for the "
+"period."
+msgstr "Indikator perilaku yang digunakan untuk mengamati kemajuan pada konstruk ini selama periode tersebut."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum_line__construct_id
+msgid "The character construct prioritized on this mapping line."
+msgstr "Konstruk karakter yang diprioritaskan pada baris pemetaan ini."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum_line__curriculum_id
+msgid "The character curriculum map document this line belongs to."
+msgstr "Dokumen peta kurikulum karakter tempat baris ini berada."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__profile_id
+msgid ""
+"The character profile (framework of constructs) this map is derived from."
+msgstr "Profil karakter (kerangka konstruk) yang menjadi dasar peta ini."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum_line__method_id
+msgid "The character-development method applied on this line."
+msgstr "Metode pengembangan karakter yang diterapkan pada baris ini."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__line_ids
+msgid ""
+"The construct-to-arena mapping lines of this character curriculum map: for "
+"each prioritized construct, the arena/program, method, target level, and "
+"learning outcome."
+msgstr "Baris pemetaan konstruk ke arena pada peta kurikulum karakter ini: untuk setiap konstruk yang diprioritaskan, berisi arena/program, metode, level target, dan capaian pembelajaran."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__date
+msgid "The date this Character Curriculum Map document was drawn up."
+msgstr "Tanggal dokumen Peta Kurikulum Karakter ini disusun."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum_line__track
+msgid ""
+"The delivery track through which this construct is developed: "
+"intracurricular (in-class) or student affairs (co-curricular)."
+msgstr "Jalur penyampaian untuk mengembangkan konstruk ini: intrakurikuler (di dalam kelas) atau kesiswaan (kokurikuler)."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__grade_id
+msgid "The grade/level this character curriculum map targets."
+msgstr "Tingkat/level yang menjadi sasaran peta kurikulum karakter ini."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum_line__capaian
+msgid ""
+"The learning outcome / Capaian Pembelajaran (CP) statement for this "
+"construct in the period."
+msgstr "Pernyataan capaian pembelajaran (CP) untuk konstruk ini pada periode tersebut."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum_line__construct_scale_id
+msgid ""
+"The mastery scale of the selected construct, used to restrict the Target "
+"Level choices to levels of that scale."
+msgstr "Skala penguasaan dari konstruk yang dipilih, digunakan untuk membatasi pilihan Level Target pada level dari skala tersebut."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__school_id
+msgid "The school this character curriculum map applies to."
+msgstr "Sekolah yang menjadi cakupan peta kurikulum karakter ini."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__grade_class_id
+msgid ""
+"The specific homeroom class this character curriculum map targets. Leave "
+"empty for a grade-wide map."
+msgstr "Kelas wali tertentu yang menjadi sasaran peta kurikulum karakter ini. Kosongkan untuk peta satu tingkat."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum_line__subconstruct_id
+msgid ""
+"The specific sub-construct addressed on this line, when the mapping is more "
+"granular than the construct itself."
+msgstr "Subkonstruk tertentu yang ditangani pada baris ini, bila pemetaannya lebih terperinci daripada konstruknya sendiri."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum_line__target_level_id
+msgid ""
+"The target mastery level to be reached for this construct in the period, "
+"taken from the construct's own mastery scale."
+msgstr "Level penguasaan target yang ingin dicapai untuk konstruk ini pada periode tersebut, diambil dari skala penguasaan konstruk itu sendiri."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum_line__track
+msgid "Track"
+msgstr "Jalur"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__name
+msgid ""
+"Transaction/document number\n"
+"\n"
+"* Unique indentifer of transaction\n"
+"* Leave '/' to automatically generate number\n"
+"* Change '/' into any number/identifier to manually assign number.\n"
+"  Manual number assignment can be done in 'Draft' state\n"
+"  Only user with 'Can Manualy Assign Number' policy can manually assign "
+"number.\n"
+"* Transaction with number other than '/' can not be deleted."
+msgstr ""
+"Nomor transaksi/dokumen\n"
+"\n"
+"* Pengenal unik transaksi\n"
+"* Biarkan '/' agar nomor dibuat otomatis\n"
+"* Ubah '/' menjadi nomor/pengenal apa pun untuk menetapkan nomor secara manual.\n"
+"  Penetapan nomor manual dapat dilakukan pada status 'Draf'\n"
+"  Hanya pengguna dengan kebijakan 'Dapat Memasukkan Nomor Dokumen Manual' yang dapat menetapkan nomor secara manual.\n"
+"* Transaksi dengan nomor selain '/' tidak dapat dihapus."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Jenis aktivitas pengecualian pada rekaman."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__message_unread
+msgid "Unread Messages"
+msgstr "Pesan yang Belum Dibaca"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Penghitung Pesan yang Belum Dibaca"
+
+#. module: ssi_school_character_curriculum
+#: model:res.groups,name:ssi_school_character_curriculum.school_character_curriculum_user_group
+msgid "User"
+msgstr "Pengguna"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__user_id
+msgid ""
+"User that responsible for document\n"
+"\n"
+"* Create user can be different with responsible user\n"
+"* Automatically filled with user that initiate document creation.\n"
+"  Default responsible can be changed."
+msgstr "Pengguna yang bertanggung jawab atas dokumen\n\n* Pengguna pembuat dapat berbeda dengan pengguna penanggung jawab\n* Terisi otomatis dengan pengguna yang memulai pembuatan dokumen.\n  Penanggung jawab bawaan dapat diubah."
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__reviewer_id
+msgid ""
+"User that responsible to review document\n"
+"\n"
+"* Unless it configured to approve reviewer does not equal to approver"
+msgstr "Pengguna yang bertanggung jawab memeriksa dokumen\n\n* Kecuali dikonfigurasi untuk menyetujui, pemeriksa tidak sama dengan penyetuju"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__active_approver_user_ids
+msgid "Users that can approve/reject document"
+msgstr "Pengguna yang dapat menyetujui/menolak dokumen"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,field_description:ssi_school_character_curriculum.field_school_character_curriculum__website_message_ids
+msgid "Website Messages"
+msgstr "Pesan Situs Web"
+
+#. module: ssi_school_character_curriculum
+#: model:ir.model.fields,help:ssi_school_character_curriculum.field_school_character_curriculum__website_message_ids
+msgid "Website communication history"
+msgstr "Riwayat komunikasi situs web"

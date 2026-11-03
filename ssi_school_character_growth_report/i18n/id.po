@@ -1,0 +1,798 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ssi_school_character_growth_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: id\n"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__name
+msgid "# Document"
+msgstr "No. Dokumen"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__report_id
+msgid "# Growth Report"
+msgstr "# Laporan Perkembangan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__academic_term_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_growth_report.school_character_growth_report_view_search
+msgid "Academic Term"
+msgstr "Periode Akademik"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__academic_year_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_growth_report.school_character_growth_report_view_search
+msgid "Academic Year"
+msgstr "Tahun Ajaran"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__level_id
+msgid "Achieved Level"
+msgstr "Level yang Dicapai"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_needaction
+msgid "Action Needed"
+msgstr "Perlu Tindakan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__active_approval_ids
+msgid "Active Approvals"
+msgstr "Persetujuan Aktif"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__active_approver_partner_ids
+msgid "Active Partners"
+msgstr "Mitra Aktif"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__active_approver_user_ids
+msgid "Active Users"
+msgstr "Pengguna Aktif"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__activity_ids
+msgid "Activities"
+msgstr "Aktivitas"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Dekorasi Pengecualian Aktivitas"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__activity_state
+msgid "Activity State"
+msgstr "Status Aktivitas"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Ikon Jenis Aktivitas"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__allowed_policy_template_ids
+msgid "Allowed Policy Templates"
+msgstr "Templat Kebijakan yang Diizinkan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__approval_template_id
+msgid "Approval Configuration"
+msgstr "Konfigurasi Persetujuan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__approval_template_id
+msgid "Approval Template"
+msgstr "Templat Persetujuan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__approval_ids
+msgid "Approvals"
+msgstr "Persetujuan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__approve_ok
+msgid ""
+"Approve policy\n"
+"\n"
+"* If active user can see and execute 'Approve' button"
+msgstr ""
+"Kebijakan setujui\n"
+"\n"
+"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Setujui'"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__approved
+msgid "Approved"
+msgstr "Disetujui"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_attachment_count
+msgid "Attachment Count"
+msgstr "Jumlah Lampiran"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__calibration_id
+msgid "Calibration"
+msgstr "Kalibrasi"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__approve_ok
+msgid "Can Approve"
+msgstr "Dapat Menyetujui"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__cancel_ok
+msgid "Can Cancel"
+msgstr "Dapat Membatalkan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__confirm_ok
+msgid "Can Confirm"
+msgstr "Dapat Mengonfirmasi"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__done_ok
+msgid "Can Finished"
+msgstr "Dapat Diselesaikan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__manual_number_ok
+msgid "Can Input Manual Document Number"
+msgstr "Dapat Memasukkan Nomor Dokumen Manual"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__reject_ok
+msgid "Can Reject"
+msgstr "Dapat Menolak"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__restart_ok
+msgid "Can Restart"
+msgstr "Dapat Memulai Ulang"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__restart_approval_ok
+msgid "Can Restart Approval"
+msgstr "Dapat Memulai Ulang Persetujuan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__open_ok
+msgid "Can Start"
+msgstr "Dapat Memulai"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__cancel_reason_id
+msgid "Cancel Reason"
+msgstr "Alasan Pembatalan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__cancel_ok
+msgid ""
+"Cancel policy\n"
+"\n"
+"* If active user can see and execute 'Cancel' button"
+msgstr ""
+"Kebijakan batal\n"
+"\n"
+"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Batal'"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model,name:ssi_school_character_growth_report.model_school_character_growth_report
+msgid "Character Growth Report"
+msgstr "Laporan Perkembangan Karakter"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.module.category,name:ssi_school_character_growth_report.school_character_growth_report_data_ownership_module_category
+msgid "Character Growth Report - Data Ownership"
+msgstr "Laporan Perkembangan Karakter - Kepemilikan Data"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.module.category,name:ssi_school_character_growth_report.school_character_growth_report_workflow_module_category
+msgid "Character Growth Report - Workflow"
+msgstr "Laporan Perkembangan Karakter - Alur Kerja"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model,name:ssi_school_character_growth_report.model_school_character_growth_report_line
+msgid "Character Growth Report Line"
+msgstr "Baris Laporan Perkembangan Karakter"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.actions.act_window,name:ssi_school_character_growth_report.school_character_growth_report_action
+#: model:ir.ui.menu,name:ssi_school_character_growth_report.school_character_growth_report_menu
+msgid "Character Growth Reports"
+msgstr "Laporan Perkembangan Karakter"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__company_id
+msgid "Company"
+msgstr "Perusahaan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__company_partner_id
+msgid "Company Partner"
+msgstr "Mitra Perusahaan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__company_id
+msgid ""
+"Company that own the document\n"
+"\n"
+"* Automatically filled with user's company.\n"
+"  Default company can be changed"
+msgstr ""
+"Perusahaan pemilik dokumen\n"
+"\n"
+"* Terisi otomatis dengan perusahaan pengguna.\n"
+"  Perusahaan bawaan dapat diubah"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__confirm_ok
+msgid ""
+"Confirm policy\n"
+"\n"
+"* If active user can see and execute 'Confirm' button"
+msgstr ""
+"Kebijakan konfirmasi\n"
+"\n"
+"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Konfirmasi'"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__construct_id
+msgid "Construct"
+msgstr "Konstruk"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields.selection,name:ssi_school_character_growth_report.selection__school_character_growth_report__pathway__core
+msgid "Core"
+msgstr "Inti"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__create_uid
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__create_uid
+msgid "Created by"
+msgstr "Dibuat oleh"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__create_date
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__create_date
+msgid "Created on"
+msgstr "Dibuat pada"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__display_name
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__display_name
+msgid "Display Name"
+msgstr "Nama Tampilan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__date
+msgid "Document Date"
+msgstr "Tanggal Dokumen"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__done_ok
+msgid ""
+"Done policy\n"
+"\n"
+"* If active user can see and execute 'Done' button"
+msgstr ""
+"Kebijakan selesai\n"
+"\n"
+"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Selesai'"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__evidence_count
+msgid "Evidence Count"
+msgstr "Jumlah Bukti"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__evidence_ids
+msgid "Evidence Entries"
+msgstr "Entri Bukti"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_follower_ids
+msgid "Followers"
+msgstr "Pengikut"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Pengikut (Saluran)"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Pengikut (Mitra)"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Ikon Font Awesome, mis. fa-tasks"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields.selection,name:ssi_school_character_growth_report.selection__school_character_growth_report__pathway__full
+msgid "Full"
+msgstr "Penuh"
+
+#. module: ssi_school_character_growth_report
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_growth_report.school_character_growth_report_view_search
+msgid "Group By"
+msgstr "Kelompokkan Berdasarkan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__line_ids
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_growth_report.school_character_growth_report_view_form
+msgid "Growth Lines"
+msgstr "Baris Perkembangan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__narrative
+msgid "Growth Narrative"
+msgstr "Narasi Perkembangan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.ui.menu,name:ssi_school_character_growth_report.menu_character_growth_report_root
+msgid "Growth Report"
+msgstr "Laporan Perkembangan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__homeroom_teacher_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_growth_report.school_character_growth_report_view_search
+msgid "Homeroom Teacher"
+msgstr "Wali Kelas"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__id
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__activity_exception_icon
+msgid "Icon"
+msgstr "Ikon"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Ikon untuk menandai aktivitas pengecualian."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__message_needaction
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Jika dicentang, pesan baru memerlukan perhatian Anda."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Jika dicentang, beberapa pesan mengalami kesalahan pengiriman."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_is_follower
+msgid "Is Follower"
+msgstr "Adalah Pengikut"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report____last_update
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line____last_update
+msgid "Last Modified on"
+msgstr "Terakhir Diubah pada"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__write_uid
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__write_uid
+msgid "Last Updated by"
+msgstr "Terakhir Diperbarui oleh"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__write_date
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__write_date
+msgid "Last Updated on"
+msgstr "Terakhir Diperbarui pada"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields.selection,name:ssi_school_character_growth_report.selection__school_character_growth_report__pathway__lite
+msgid "Lite"
+msgstr "Ringkas"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Lampiran Utama"
+
+#. module: ssi_school_character_growth_report
+#: model:res.groups,name:ssi_school_character_growth_report.school_character_growth_report_manager_group
+msgid "Manager"
+msgstr "Manajer"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__manual_number_ok
+msgid ""
+"Manual number assignment policy\n"
+"\n"
+"* If active user can edit document number"
+msgstr ""
+"Kebijakan penetapan nomor manual\n"
+"\n"
+"* Jika pengguna aktif dapat mengubah nomor dokumen"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_has_error
+msgid "Message Delivery error"
+msgstr "Kesalahan Pengiriman Pesan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_ids
+msgid "Messages"
+msgstr "Pesan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Batas Waktu Aktivitas Saya"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__need_validation
+msgid "Need Validation"
+msgstr "Perlu Validasi"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Batas Waktu Aktivitas Berikutnya"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__activity_summary
+msgid "Next Activity Summary"
+msgstr "Ringkasan Aktivitas Berikutnya"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__activity_type_id
+msgid "Next Activity Type"
+msgstr "Jenis Aktivitas Berikutnya"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__next_approval_ids
+msgid "Next Approvals"
+msgstr "Persetujuan Berikutnya"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report_line__next_step
+msgid "Next Step"
+msgstr "Langkah Berikutnya"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__note
+msgid "Note"
+msgstr "Catatan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Jumlah Tindakan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_has_error_counter
+msgid "Number of errors"
+msgstr "Jumlah kesalahan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report_line__evidence_count
+msgid "Number of evidence entries linked to this growth line."
+msgstr "Jumlah entri bukti yang terhubung ke baris perkembangan ini."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Jumlah pesan yang memerlukan tindakan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Jumlah pesan dengan kesalahan pengiriman"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Jumlah pesan yang belum dibaca"
+
+#. module: ssi_school_character_growth_report
+#: model:res.groups,name:ssi_school_character_growth_report.school_character_growth_report_officer_group
+msgid "Officer"
+msgstr "Petugas"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__overall_narrative
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_growth_report.school_character_growth_report_view_form
+msgid "Overall Narrative"
+msgstr "Narasi Keseluruhan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__pathway
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_growth_report.school_character_growth_report_view_search
+msgid "Pathway"
+msgstr "Jalur"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__policy_template_id
+msgid "Policy Template"
+msgstr "Templat Kebijakan"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__reject_ok
+msgid ""
+"Reject policy\n"
+"\n"
+"* If active user can see and execute 'Reject' button"
+msgstr ""
+"Kebijakan tolak\n"
+"\n"
+"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Tolak'"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__rejected
+msgid "Rejected"
+msgstr "Ditolak"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__user_id
+msgid "Responsible"
+msgstr "Penanggung Jawab"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__activity_user_id
+msgid "Responsible User"
+msgstr "Pengguna Penanggung Jawab"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__restart_approval_ok
+msgid ""
+"Restart approval policy\n"
+"\n"
+"* If active user can see and execute 'Restart Approval' button"
+msgstr ""
+"Kebijakan mulai ulang persetujuan\n"
+"\n"
+"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Mulai Ulang Persetujuan'"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__restart_ok
+msgid ""
+"Restart policy\n"
+"\n"
+"* If active user can see and execute 'Restart' button"
+msgstr ""
+"Kebijakan mulai ulang\n"
+"\n"
+"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Mulai Ulang'"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__reviewer_id
+msgid "Reviewer"
+msgstr "Pemeriksa"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__open_ok
+msgid ""
+"Start policy\n"
+"\n"
+"* If active user can see and execute 'Start' button"
+msgstr ""
+"Kebijakan mulai\n"
+"\n"
+"* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Mulai'"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__state
+msgid "State"
+msgstr "Status"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Status berdasarkan aktivitas\n"
+"Terlambat: Tanggal jatuh tempo sudah lewat\n"
+"Hari ini: Tanggal aktivitas adalah hari ini\n"
+"Direncanakan: Aktivitas mendatang."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__student_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character_growth_report.school_character_growth_report_view_search
+msgid "Student"
+msgstr "Siswa"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__academic_term_id
+msgid "The academic term this growth report covers."
+msgstr "Periode akademik yang dicakup laporan perkembangan ini."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__academic_year_id
+msgid "The academic year this growth report covers."
+msgstr "Tahun ajaran yang dicakup laporan perkembangan ini."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report_line__construct_id
+msgid "The character construct this growth line profiles."
+msgstr "Konstruk karakter yang diprofilkan oleh baris perkembangan ini."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report_line__evidence_ids
+msgid ""
+"The character evidence entries that support this growth line, drawn only "
+"from legitimate character observations (the sole admissible evidence source)."
+msgstr "Entri bukti karakter yang mendukung baris perkembangan ini, hanya diambil dari observasi karakter yang sah (satu-satunya sumber bukti yang dapat diterima)."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report_line__report_id
+msgid "The character growth report document this line belongs to."
+msgstr "Dokumen laporan perkembangan karakter tempat baris ini berada."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__pathway
+msgid ""
+"The character-learning pathway (lite/core/full) this report is compiled at, "
+"chosen per school."
+msgstr "Jalur pembelajaran karakter (ringkas/inti/penuh) tempat laporan ini disusun, dipilih per sekolah."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__date
+msgid "The date this Character Growth Report document was drawn up."
+msgstr "Tanggal dokumen Laporan Perkembangan Karakter ini disusun."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report_line__next_step
+msgid ""
+"The feedforward next step for the student to pursue on this construct, "
+"phrased as growth language."
+msgstr "Langkah berikutnya (feedforward) yang ditempuh siswa pada konstruk ini, dirumuskan dengan bahasa pertumbuhan."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report_line__narrative
+msgid ""
+"The formative narrative describing how the student grew on this construct, "
+"phrased as growth language (ICLAD Bab 14.4). Free text with no fixed labels "
+"or scores."
+msgstr "Narasi formatif yang menggambarkan perkembangan siswa pada konstruk ini, dirumuskan dengan bahasa pertumbuhan (ICLAD Bab 14.4). Teks bebas tanpa label atau skor baku."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__homeroom_teacher_id
+msgid "The homeroom teacher who compiles this growth report."
+msgstr "Wali kelas yang menyusun laporan perkembangan ini."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__overall_narrative
+msgid ""
+"The overall, formative growth narrative for the student across this term, "
+"phrased as growth language (ICLAD Bab 14.4). Free text with no fixed labels "
+"or scores."
+msgstr "Narasi perkembangan formatif secara keseluruhan bagi siswa selama periode ini, dirumuskan dengan bahasa pertumbuhan (ICLAD Bab 14.4). Teks bebas tanpa label atau skor baku."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__line_ids
+msgid ""
+"The per-construct growth lines: for each construct the achieved level, the "
+"growth narrative, the feedforward next step, and the linked character "
+"evidence."
+msgstr "Baris perkembangan per konstruk: untuk setiap konstruk berisi level yang dicapai, narasi perkembangan, langkah berikutnya (feedforward), dan bukti karakter yang terhubung."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report_line__level_id
+msgid ""
+"The scale level the student achieved for this construct, taken from the "
+"configured character scale. Never hardcoded."
+msgstr "Level skala yang dicapai siswa pada konstruk ini, diambil dari skala karakter yang dikonfigurasi. Tidak pernah ditulis permanen di kode."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__student_id
+msgid "The student whose character growth this report profiles."
+msgstr "Siswa yang perkembangan karakternya diprofilkan oleh laporan ini."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__calibration_id
+msgid ""
+"The teacher calibration session that validates the scoring behind this "
+"report, kept as a validation reference."
+msgstr "Sesi kalibrasi guru yang memvalidasi penskoran di balik laporan ini, disimpan sebagai rujukan validasi."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__name
+msgid ""
+"Transaction/document number\n"
+"\n"
+"* Unique indentifer of transaction\n"
+"* Leave '/' to automatically generate number\n"
+"* Change '/' into any number/identifier to manually assign number.\n"
+"  Manual number assignment can be done in 'Draft' state\n"
+"  Only user with 'Can Manualy Assign Number' policy can manually assign "
+"number.\n"
+"* Transaction with number other than '/' can not be deleted."
+msgstr ""
+"Nomor transaksi/dokumen\n"
+"\n"
+"* Pengenal unik transaksi\n"
+"* Biarkan '/' agar nomor dibuat otomatis\n"
+"* Ubah '/' menjadi nomor/pengenal apa pun untuk menetapkan nomor secara manual.\n"
+"  Penetapan nomor manual dapat dilakukan pada status 'Draf'\n"
+"  Hanya pengguna dengan kebijakan 'Dapat Memasukkan Nomor Dokumen Manual' yang dapat menetapkan nomor secara manual.\n"
+"* Transaksi dengan nomor selain '/' tidak dapat dihapus."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Jenis aktivitas pengecualian pada rekaman."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_unread
+msgid "Unread Messages"
+msgstr "Pesan yang Belum Dibaca"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Penghitung Pesan yang Belum Dibaca"
+
+#. module: ssi_school_character_growth_report
+#: model:res.groups,name:ssi_school_character_growth_report.school_character_growth_report_user_group
+msgid "User"
+msgstr "Pengguna"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__user_id
+msgid ""
+"User that responsible for document\n"
+"\n"
+"* Create user can be different with responsible user\n"
+"* Automatically filled with user that initiate document creation.\n"
+"  Default responsible can be changed."
+msgstr ""
+"Pengguna yang bertanggung jawab atas dokumen\n"
+"\n"
+"* Pengguna pembuat dapat berbeda dengan pengguna penanggung jawab\n"
+"* Terisi otomatis dengan pengguna yang memulai pembuatan dokumen.\n"
+"  Penanggung jawab bawaan dapat diubah."
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__reviewer_id
+msgid ""
+"User that responsible to review document\n"
+"\n"
+"* Unless it configured to approve reviewer does not equal to approver"
+msgstr ""
+"Pengguna yang bertanggung jawab memeriksa dokumen\n"
+"\n"
+"* Kecuali dikonfigurasi untuk menyetujui, pemeriksa tidak sama dengan penyetuju"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__active_approver_user_ids
+msgid "Users that can approve/reject document"
+msgstr "Pengguna yang dapat menyetujui/menolak dokumen"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,field_description:ssi_school_character_growth_report.field_school_character_growth_report__website_message_ids
+msgid "Website Messages"
+msgstr "Pesan Situs Web"
+
+#. module: ssi_school_character_growth_report
+#: model:ir.model.fields,help:ssi_school_character_growth_report.field_school_character_growth_report__website_message_ids
+msgid "Website communication history"
+msgstr "Riwayat komunikasi situs web"

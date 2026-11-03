@@ -1,0 +1,1721 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ssi_school_character
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: id\n"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric_descriptor__rubric_id
+msgid "# Rubric"
+msgstr "No. Rubrik"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__message_needaction
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__message_needaction
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__message_needaction
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__message_needaction
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__message_needaction
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__message_needaction
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__message_needaction
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__message_needaction
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__message_needaction
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__message_needaction
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__message_needaction
+msgid "Action Needed"
+msgstr "Perlu Tindakan"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__active
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__active
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__active
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__active
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__active
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__active
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__active
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__active
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__active
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__active
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__active
+msgid "Active"
+msgstr "Aktif"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__activity_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__activity_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__activity_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__activity_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__activity_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__activity_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__activity_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__activity_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__activity_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__activity_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__activity_ids
+msgid "Activities"
+msgstr "Aktivitas"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__activity_exception_decoration
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__activity_exception_decoration
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__activity_exception_decoration
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__activity_exception_decoration
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__activity_exception_decoration
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__activity_exception_decoration
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__activity_exception_decoration
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__activity_exception_decoration
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__activity_exception_decoration
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__activity_exception_decoration
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Dekorasi Pengecualian Aktivitas"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__activity_state
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__activity_state
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__activity_state
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__activity_state
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__activity_state
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__activity_state
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__activity_state
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__activity_state
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__activity_state
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__activity_state
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__activity_state
+msgid "Activity State"
+msgstr "Status Aktivitas"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__activity_type_icon
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__activity_type_icon
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__activity_type_icon
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__activity_type_icon
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__activity_type_icon
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__activity_type_icon
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__activity_type_icon
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__activity_type_icon
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__activity_type_icon
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__activity_type_icon
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Ikon Jenis Aktivitas"
+
+#. module: ssi_school_character
+#: model:school_character_indicator,name:ssi_school_character.indicator_admit_mistake
+msgid "Admits own mistakes without being confronted"
+msgstr "Mengakui kesalahan sendiri tanpa harus dikonfrontasi"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_indicator__rbt_level__analyze
+msgid "Analyze"
+msgstr "Menganalisis"
+
+#. module: ssi_school_character
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_anchor_view_form
+msgid "Anchor"
+msgstr "Jangkar"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_indicator__rbt_level__apply
+msgid "Apply"
+msgstr "Menerapkan"
+
+#. module: ssi_school_character
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_arena_view_form
+msgid "Arena"
+msgstr "Arena"
+
+#. module: ssi_school_character
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_arena_view_form
+msgid "Arena Configuration"
+msgstr "Konfigurasi Arena"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__arena_type
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_arena_view_search
+msgid "Arena Type"
+msgstr "Jenis Arena"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_anchor__source_type__artifact
+msgid "Artifact/Work Product"
+msgstr "Artefak/Hasil Karya"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_level__sequence
+msgid ""
+"Ascending order of this level within its scale: a lower value means a less "
+"advanced level and a higher value a more advanced one (levels are shown and "
+"evaluated from the lowest sequence up)."
+msgstr "Urutan menaik level ini dalam skalanya: nilai yang lebih rendah berarti level yang kurang maju dan nilai yang lebih tinggi berarti level yang lebih maju (level ditampilkan dan dievaluasi dari urutan terendah ke atas)."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__message_attachment_count
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__message_attachment_count
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__message_attachment_count
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__message_attachment_count
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__message_attachment_count
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__message_attachment_count
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__message_attachment_count
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__message_attachment_count
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__message_attachment_count
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__message_attachment_count
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__message_attachment_count
+msgid "Attachment Count"
+msgstr "Jumlah Lampiran"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__boundary_statement
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_construct_view_form
+msgid "Boundary Statement"
+msgstr "Pernyataan Batasan"
+
+#. module: ssi_school_character
+#: model:ir.module.category,name:ssi_school_character.school_character_configurator_module_category
+msgid "Character - Configurator"
+msgstr "Karakter - Konfigurator"
+
+#. module: ssi_school_character
+#: model:ir.module.category,name:ssi_school_character.school_character_data_ownership_module_category
+msgid "Character - Data Ownership"
+msgstr "Karakter - Kepemilikan Data"
+
+#. module: ssi_school_character
+#: model:ir.module.category,name:ssi_school_character.school_character_workflow_module_category
+msgid "Character - Workflow"
+msgstr "Karakter - Alur Kerja"
+
+#. module: ssi_school_character
+#: model:ir.model,name:ssi_school_character.model_school_character_anchor
+#: model:res.groups,name:ssi_school_character.school_character_anchor_group
+msgid "Character Anchor"
+msgstr "Jangkar Karakter"
+
+#. module: ssi_school_character
+#: model:ir.actions.act_window,name:ssi_school_character.school_character_anchor_action
+#: model:ir.ui.menu,name:ssi_school_character.school_character_anchor_menu
+msgid "Character Anchors"
+msgstr "Jangkar Karakter"
+
+#. module: ssi_school_character
+#: model:ir.model,name:ssi_school_character.model_school_character_arena
+#: model:res.groups,name:ssi_school_character.school_character_arena_group
+msgid "Character Arena"
+msgstr "Arena Karakter"
+
+#. module: ssi_school_character
+#: model:ir.actions.act_window,name:ssi_school_character.school_character_arena_action
+#: model:ir.ui.menu,name:ssi_school_character.school_character_arena_menu
+msgid "Character Arenas"
+msgstr "Arena Karakter"
+
+#. module: ssi_school_character
+#: model:ir.model,name:ssi_school_character.model_school_character_code_constraint_mixin
+msgid "Character Code Constraint Mixin"
+msgstr "Mixin Batasan Kode Karakter"
+
+#. module: ssi_school_character
+#: model:ir.model,name:ssi_school_character.model_school_character_construct
+#: model:res.groups,name:ssi_school_character.school_character_construct_group
+msgid "Character Construct"
+msgstr "Konstruk Karakter"
+
+#. module: ssi_school_character
+#: model:ir.actions.act_window,name:ssi_school_character.school_character_construct_action
+#: model:ir.ui.menu,name:ssi_school_character.school_character_construct_menu
+msgid "Character Constructs"
+msgstr "Konstruk Karakter"
+
+#. module: ssi_school_character
+#: model:ir.actions.act_window,name:ssi_school_character.school_character_family_action
+#: model:ir.ui.menu,name:ssi_school_character.school_character_family_menu
+msgid "Character Families"
+msgstr "Rumpun Karakter"
+
+#. module: ssi_school_character
+#: model:ir.model,name:ssi_school_character.model_school_character_family
+#: model:res.groups,name:ssi_school_character.school_character_family_group
+msgid "Character Family"
+msgstr "Rumpun Karakter"
+
+#. module: ssi_school_character
+#: model:ir.model,name:ssi_school_character.model_school_character_indicator
+#: model:res.groups,name:ssi_school_character.school_character_indicator_group
+msgid "Character Indicator"
+msgstr "Indikator Karakter"
+
+#. module: ssi_school_character
+#: model:ir.actions.act_window,name:ssi_school_character.school_character_indicator_action
+#: model:ir.ui.menu,name:ssi_school_character.school_character_indicator_menu
+msgid "Character Indicators"
+msgstr "Indikator Karakter"
+
+#. module: ssi_school_character
+#: model:ir.ui.menu,name:ssi_school_character.menu_character_configuration
+#: model:ir.ui.menu,name:ssi_school_character.menu_character_root
+msgid "Character Learning"
+msgstr "Pembelajaran Karakter"
+
+#. module: ssi_school_character
+#: model:ir.model,name:ssi_school_character.model_school_character_level
+#: model:res.groups,name:ssi_school_character.school_character_level_group
+msgid "Character Level"
+msgstr "Level Karakter"
+
+#. module: ssi_school_character
+#: model:ir.actions.act_window,name:ssi_school_character.school_character_level_action
+#: model:ir.ui.menu,name:ssi_school_character.school_character_level_menu
+msgid "Character Levels"
+msgstr "Level Karakter"
+
+#. module: ssi_school_character
+#: model:ir.model,name:ssi_school_character.model_school_character_method
+#: model:res.groups,name:ssi_school_character.school_character_method_group
+msgid "Character Method"
+msgstr "Metode Karakter"
+
+#. module: ssi_school_character
+#: model:ir.actions.act_window,name:ssi_school_character.school_character_method_action
+#: model:ir.ui.menu,name:ssi_school_character.school_character_method_menu
+msgid "Character Methods"
+msgstr "Metode Karakter"
+
+#. module: ssi_school_character
+#: model:ir.model,name:ssi_school_character.model_school_character_profile
+#: model:res.groups,name:ssi_school_character.school_character_profile_group
+msgid "Character Profile"
+msgstr "Profil Karakter"
+
+#. module: ssi_school_character
+#: model:ir.actions.act_window,name:ssi_school_character.school_character_profile_action
+#: model:ir.ui.menu,name:ssi_school_character.school_character_profile_menu
+msgid "Character Profiles"
+msgstr "Profil Karakter"
+
+#. module: ssi_school_character
+#: model:ir.model,name:ssi_school_character.model_school_character_rubric
+#: model:res.groups,name:ssi_school_character.school_character_rubric_group
+msgid "Character Rubric"
+msgstr "Rubrik Karakter"
+
+#. module: ssi_school_character
+#: model:ir.model,name:ssi_school_character.model_school_character_rubric_descriptor
+msgid "Character Rubric - Descriptor"
+msgstr "Rubrik Karakter - Deskriptor"
+
+#. module: ssi_school_character
+#: model:ir.actions.act_window,name:ssi_school_character.school_character_rubric_action
+#: model:ir.ui.menu,name:ssi_school_character.school_character_rubric_menu
+msgid "Character Rubrics"
+msgstr "Rubrik Karakter"
+
+#. module: ssi_school_character
+#: model:ir.model,name:ssi_school_character.model_school_character_scale
+#: model:res.groups,name:ssi_school_character.school_character_scale_group
+msgid "Character Scale"
+msgstr "Skala Karakter"
+
+#. module: ssi_school_character
+#: model:ir.actions.act_window,name:ssi_school_character.school_character_scale_action
+#: model:ir.ui.menu,name:ssi_school_character.school_character_scale_menu
+msgid "Character Scales"
+msgstr "Skala Karakter"
+
+#. module: ssi_school_character
+#: model:ir.model,name:ssi_school_character.model_school_character_subconstruct
+#: model:res.groups,name:ssi_school_character.school_character_subconstruct_group
+msgid "Character Sub-construct"
+msgstr "Subkonstruk Karakter"
+
+#. module: ssi_school_character
+#: model:ir.actions.act_window,name:ssi_school_character.school_character_subconstruct_action
+#: model:ir.ui.menu,name:ssi_school_character.school_character_subconstruct_menu
+msgid "Character Sub-constructs"
+msgstr "Subkonstruk Karakter"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_profile__construct_ids
+msgid "Character constructs that make up this profile."
+msgstr "Konstruk karakter yang menyusun profil ini."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_construct__profile_id
+msgid "Character profile this construct belongs to."
+msgstr "Profil karakter tempat konstruk ini berada."
+
+#. module: ssi_school_character
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_anchor_view_form
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_construct_view_form
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_indicator_view_form
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_rubric_view_form
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_subconstruct_view_form
+msgid "Classification"
+msgstr "Klasifikasi"
+
+#. module: ssi_school_character
+#: model:school_character_arena,name:ssi_school_character.arena_classroom
+msgid "Classroom Learning"
+msgstr "Pembelajaran di Kelas"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_arena__arena_type__cocurricular
+msgid "Co-curricular"
+msgstr "Kokurikuler"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__code
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__code
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__code
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__code
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__code
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__code
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__code
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__code
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__code
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__code
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__code
+msgid "Code"
+msgstr "Kode"
+
+#. module: ssi_school_character
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_indicator_view_form
+msgid "Cognitive Demand"
+msgstr "Tuntutan Kognitif"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__rbt_level
+msgid ""
+"Cognitive level of this indicator on the Revised Bloom's Taxonomy (ICLAD Bab "
+"8)."
+msgstr "Level kognitif indikator ini menurut Taksonomi Bloom Revisi (ICLAD Bab 8)."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_rubric_descriptor__criteria
+msgid ""
+"Concrete, observable criteria used to decide whether a learner is at this "
+"level."
+msgstr "Kriteria konkret dan teramati yang dipakai untuk menentukan apakah peserta didik berada pada level ini."
+
+#. module: ssi_school_character
+#: model:school_character_level,name:ssi_school_character.level_iclad_consistent
+msgid "Consistent"
+msgstr "Konsisten"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__construct_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__construct_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__construct_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__construct_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_anchor_view_search
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_construct_view_form
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_indicator_view_search
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_rubric_view_search
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_subconstruct_view_search
+msgid "Construct"
+msgstr "Konstruk"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_anchor__construct_id
+msgid "Construct this anchor example calibrates."
+msgstr "Konstruk yang dikalibrasi oleh contoh jangkar ini."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__construct_id
+msgid "Construct this indicator provides evidence for."
+msgstr "Konstruk yang dibuktikan oleh indikator ini."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_rubric__construct_id
+msgid "Construct this rubric assesses."
+msgstr "Konstruk yang dinilai oleh rubrik ini."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_subconstruct__construct_id
+msgid "Construct this sub-construct decomposes."
+msgstr "Konstruk yang diuraikan oleh subkonstruk ini."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__construct_ids
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_profile_view_form
+msgid "Constructs"
+msgstr "Konstruk"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_indicator__rbt_level__create
+msgid "Create"
+msgstr "Buat"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__create_uid
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__create_uid
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__create_uid
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__create_uid
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__create_uid
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__create_uid
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__create_uid
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__create_uid
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__create_uid
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric_descriptor__create_uid
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__create_uid
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__create_uid
+msgid "Created by"
+msgstr "Dibuat oleh"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__create_date
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__create_date
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__create_date
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__create_date
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__create_date
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__create_date
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__create_date
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__create_date
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__create_date
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric_descriptor__create_date
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__create_date
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__create_date
+msgid "Created on"
+msgstr "Dibuat pada"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric_descriptor__criteria
+msgid "Criteria"
+msgstr "Kriteria"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_indicator__dok_level__1
+msgid "DOK 1 - Recall"
+msgstr "DOK 1 - Mengingat"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_indicator__dok_level__2
+msgid "DOK 2 - Skill/Concept"
+msgstr "DOK 2 - Keterampilan/Konsep"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_indicator__dok_level__3
+msgid "DOK 3 - Strategic Thinking"
+msgstr "DOK 3 - Berpikir Strategis"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_indicator__dok_level__4
+msgid "DOK 4 - Extended Thinking"
+msgstr "DOK 4 - Berpikir Diperluas"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__dok_level
+msgid "DOK Level"
+msgstr "Level DOK"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_construct__scale_id
+msgid "Default scale used to assess this construct."
+msgstr "Skala bawaan yang dipakai untuk menilai konstruk ini."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__definition
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__definition
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_construct_view_form
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_subconstruct_view_form
+msgid "Definition"
+msgstr "Definisi"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__dok_level
+msgid "Depth of Knowledge level of this indicator (ICLAD Bab 8)."
+msgstr "Level Depth of Knowledge dari indikator ini (ICLAD Bab 8)."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__description
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__description
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__description
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__description
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__description
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__description
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_arena_view_form
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_family_view_form
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_indicator_view_form
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_level_view_form
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_method_view_form
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_profile_view_form
+msgid "Description"
+msgstr "Deskripsi"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_rubric_descriptor__descriptor
+msgid "Description of what performance at this level looks like."
+msgstr "Deskripsi tentang seperti apa kinerja pada level ini."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric_descriptor__descriptor
+msgid "Descriptor"
+msgstr "Deskriptor"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__descriptor_ids
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_rubric_view_form
+msgid "Descriptors"
+msgstr "Deskriptor"
+
+#. module: ssi_school_character
+#: model:school_character_level,name:ssi_school_character.level_iclad_developing
+msgid "Developing"
+msgstr "Berkembang"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__display_name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__display_name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_code_constraint_mixin__display_name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__display_name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__display_name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__display_name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__display_name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__display_name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__display_name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__display_name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric_descriptor__display_name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__display_name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__display_name
+msgid "Display Name"
+msgstr "Nama Tampilan"
+
+#. module: ssi_school_character
+#: model:school_character_level,name:ssi_school_character.level_status_eff
+msgid "Effective (EFF)"
+msgstr "Efektif (EFF)"
+
+#. module: ssi_school_character
+#: model:school_character_level,name:ssi_school_character.level_iclad_emerging
+msgid "Emerging"
+msgstr "Mulai Muncul"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_indicator__rbt_level__evaluate
+msgid "Evaluate"
+msgstr "Mengevaluasi"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_indicator__solo_level__extended_abstract
+msgid "Extended Abstract"
+msgstr "Abstrak Diperluas"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_arena__arena_type__extracurricular
+msgid "Extracurricular"
+msgstr "Ekstrakurikuler"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__family_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_construct_view_search
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_family_view_form
+msgid "Family"
+msgstr "Rumpun"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_construct__family_id
+msgid ""
+"Family this construct is grouped under, used to report and analyse related "
+"constructs together."
+msgstr "Rumpun tempat konstruk ini dikelompokkan, digunakan untuk melaporkan dan menganalisis konstruk terkait secara bersama-sama."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__message_follower_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__message_follower_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__message_follower_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__message_follower_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__message_follower_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__message_follower_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__message_follower_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__message_follower_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__message_follower_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__message_follower_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__message_follower_ids
+msgid "Followers"
+msgstr "Pengikut"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__message_channel_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__message_channel_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__message_channel_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__message_channel_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__message_channel_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__message_channel_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__message_channel_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__message_channel_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__message_channel_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__message_channel_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Pengikut (Saluran)"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__message_partner_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__message_partner_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__message_partner_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__message_partner_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__message_partner_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__message_partner_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__message_partner_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__message_partner_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__message_partner_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__message_partner_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Pengikut (Mitra)"
+
+#. module: ssi_school_character
+#: model:school_character_indicator,name:ssi_school_character.indicator_non_example
+msgid "Follows rules only when supervised"
+msgstr "Mengikuti aturan hanya saat diawasi"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_anchor__activity_type_icon
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_arena__activity_type_icon
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_construct__activity_type_icon
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_family__activity_type_icon
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__activity_type_icon
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_level__activity_type_icon
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_method__activity_type_icon
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_profile__activity_type_icon
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_rubric__activity_type_icon
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_scale__activity_type_icon
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_subconstruct__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Ikon Font Awesome, mis. fa-tasks"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__description
+msgid "Full wording of the observable behaviour that this indicator describes."
+msgstr "Rumusan lengkap perilaku teramati yang dijelaskan oleh indikator ini."
+
+#. module: ssi_school_character
+#: model:school_character_profile,name:ssi_school_character.profile_great
+msgid "GREAT Character Profile"
+msgstr "Profil Karakter GREAT"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__grade_id
+msgid "Grade"
+msgstr "Tingkat"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__grade_type_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__grade_type_id
+msgid "Grade Type"
+msgstr "Jenis Tingkat"
+
+#. module: ssi_school_character
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_anchor_view_search
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_arena_view_search
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_construct_view_search
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_indicator_view_search
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_level_view_search
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_profile_view_search
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_rubric_view_search
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_subconstruct_view_search
+msgid "Group By"
+msgstr "Kelompokkan Berdasarkan"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_method__suitable_for
+msgid ""
+"Guidance on the situations, developmental stages, or construct types this "
+"method is most appropriate for."
+msgstr "Panduan tentang situasi, tahap perkembangan, atau jenis konstruk yang paling sesuai untuk metode ini."
+
+#. module: ssi_school_character
+#: model:school_character_method,name:ssi_school_character.method_reflection
+msgid "Guided Reflection"
+msgstr "Refleksi Terbimbing"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_arena__arena_type__homeroom
+msgid "Homeroom"
+msgstr "Wali Kelas"
+
+#. module: ssi_school_character
+#: model:school_character_subconstruct,name:ssi_school_character.subconstruct_honesty
+msgid "Honesty"
+msgstr "Kejujuran"
+
+#. module: ssi_school_character
+#: model:school_character_scale,name:ssi_school_character.scale_iclad_4level
+msgid "ICLAD 4-Level Mastery"
+msgstr "Penguasaan 4 Level ICLAD"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_code_constraint_mixin__id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric_descriptor__id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__id
+msgid "ID"
+msgstr "ID"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__activity_exception_icon
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__activity_exception_icon
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__activity_exception_icon
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__activity_exception_icon
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__activity_exception_icon
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__activity_exception_icon
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__activity_exception_icon
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__activity_exception_icon
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__activity_exception_icon
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__activity_exception_icon
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__activity_exception_icon
+msgid "Icon"
+msgstr "Ikon"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_anchor__activity_exception_icon
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_arena__activity_exception_icon
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_construct__activity_exception_icon
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_family__activity_exception_icon
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__activity_exception_icon
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_level__activity_exception_icon
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_method__activity_exception_icon
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_profile__activity_exception_icon
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_rubric__activity_exception_icon
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_scale__activity_exception_icon
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_subconstruct__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Ikon untuk menandai aktivitas pengecualian."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_anchor__message_needaction
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_anchor__message_unread
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_arena__message_needaction
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_arena__message_unread
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_construct__message_needaction
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_construct__message_unread
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_family__message_needaction
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_family__message_unread
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__message_needaction
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__message_unread
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_level__message_needaction
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_level__message_unread
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_method__message_needaction
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_method__message_unread
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_profile__message_needaction
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_profile__message_unread
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_rubric__message_needaction
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_rubric__message_unread
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_scale__message_needaction
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_scale__message_unread
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_subconstruct__message_needaction
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_subconstruct__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Jika dicentang, pesan baru memerlukan perhatian Anda."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_anchor__message_has_error
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_arena__message_has_error
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_construct__message_has_error
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_family__message_has_error
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__message_has_error
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_level__message_has_error
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_method__message_has_error
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_profile__message_has_error
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_rubric__message_has_error
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_scale__message_has_error
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_subconstruct__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Jika dicentang, beberapa pesan mengalami kesalahan pengiriman."
+
+#. module: ssi_school_character
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_indicator_view_form
+msgid "Indicator"
+msgstr "Indikator"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__indicator_type
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_indicator_view_search
+msgid "Indicator Type"
+msgstr "Jenis Indikator"
+
+#. module: ssi_school_character
+#: model:school_character_construct,name:ssi_school_character.construct_integrity
+msgid "Integrity"
+msgstr "Integritas"
+
+#. module: ssi_school_character
+#: model:school_character_family,name:ssi_school_character.family_integrity
+msgid "Integrity & Moral Courage"
+msgstr "Integritas & Keberanian Moral"
+
+#. module: ssi_school_character
+#: model:school_character_rubric,name:ssi_school_character.rubric_integrity
+msgid "Integrity Rubric"
+msgstr "Rubrik Integritas"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_arena__arena_type__intracurricular
+msgid "Intracurricular"
+msgstr "Intrakurikuler"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__message_is_follower
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__message_is_follower
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__message_is_follower
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__message_is_follower
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__message_is_follower
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__message_is_follower
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__message_is_follower
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__message_is_follower
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__message_is_follower
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__message_is_follower
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__message_is_follower
+msgid "Is Follower"
+msgstr "Adalah Pengikut"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_anchor__source_type
+msgid ""
+"Kind of evidence this anchor sample was drawn from. The values mirror the "
+"evidence source types used when recording real character evidence, so "
+"anchors and evidence stay comparable."
+msgstr "Jenis bukti asal contoh jangkar ini. Nilainya mengikuti jenis sumber bukti yang dipakai saat mencatat bukti karakter yang sebenarnya, sehingga jangkar dan bukti tetap dapat dibandingkan."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_arena__arena_type
+msgid ""
+"Kind of learning setting this arena represents: Intracurricular = within "
+"subject lessons, Co-curricular = activities tied to the curriculum, "
+"Extracurricular = activities outside the curriculum, School Culture = the "
+"day-to-day habits and norms of the school, Homeroom = the homeroom/guidance "
+"setting."
+msgstr "Jenis lingkungan belajar yang diwakili arena ini: Intrakurikuler = di dalam pelajaran mata pelajaran, Kokurikuler = kegiatan yang terkait dengan kurikulum, Ekstrakurikuler = kegiatan di luar kurikulum, Budaya Sekolah = kebiasaan dan norma sehari-hari sekolah, Wali Kelas = lingkungan wali kelas/bimbingan."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor____last_update
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena____last_update
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_code_constraint_mixin____last_update
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct____last_update
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family____last_update
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator____last_update
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level____last_update
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method____last_update
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile____last_update
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric____last_update
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric_descriptor____last_update
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale____last_update
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct____last_update
+msgid "Last Modified on"
+msgstr "Terakhir Diubah pada"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__write_uid
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__write_uid
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__write_uid
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__write_uid
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__write_uid
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__write_uid
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__write_uid
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__write_uid
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__write_uid
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric_descriptor__write_uid
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__write_uid
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__write_uid
+msgid "Last Updated by"
+msgstr "Terakhir Diperbarui oleh"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__write_date
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__write_date
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__write_date
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__write_date
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__write_date
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__write_date
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__write_date
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__write_date
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__write_date
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric_descriptor__write_date
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__write_date
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__write_date
+msgid "Last Updated on"
+msgstr "Terakhir Diperbarui pada"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__level_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric_descriptor__level_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_anchor_view_search
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_level_view_form
+msgid "Level"
+msgstr "Level"
+
+#. module: ssi_school_character
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_level_view_form
+msgid "Level Configuration"
+msgstr "Konfigurasi Level"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__level_ids
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_scale_view_form
+msgid "Levels"
+msgstr "Level"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__message_main_attachment_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__message_main_attachment_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__message_main_attachment_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__message_main_attachment_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__message_main_attachment_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__message_main_attachment_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__message_main_attachment_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__message_main_attachment_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__message_main_attachment_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__message_main_attachment_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Lampiran Utama"
+
+#. module: ssi_school_character
+#: model:res.groups,name:ssi_school_character.school_character_manager_group
+msgid "Manager"
+msgstr "Manajer"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_anchor__active
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_arena__active
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_construct__active
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_family__active
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__active
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_level__active
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_method__active
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_profile__active
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_rubric__active
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_scale__active
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_subconstruct__active
+msgid ""
+"Master data status\n"
+"\n"
+"* Inactive data can not be selected when creating new transaction\n"
+"* Transaction with inactive master data can still be viewed\n"
+"* Set master data as inactive if master data no longger needed,\n"
+"but master data already used on transaction"
+msgstr "Status data master\n\n* Data yang tidak aktif tidak dapat dipilih saat membuat transaksi baru\n* Transaksi dengan data master tidak aktif tetap dapat dilihat\n* Atur data master sebagai tidak aktif jika data master tidak diperlukan lagi,\ntetapi data master sudah digunakan pada transaksi"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_anchor__code
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_arena__code
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_construct__code
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_family__code
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__code
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_level__code
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_method__code
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_profile__code
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_rubric__code
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_scale__code
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_subconstruct__code
+msgid ""
+"Master data unique identifier.\n"
+"\n"
+"* Fill with '/' if You do not need unique identifier\n"
+"* Click 'Generate Code' button to automatically assign code.\n"
+"  Sequence template mush be set to perform this action\n"
+"  Only master data with '/' code will be assign automatic code"
+msgstr "Pengenal unik data master.\n\n* Isi dengan '/' jika Anda tidak memerlukan pengenal unik\n* Klik tombol 'Buat Kode' untuk menetapkan kode secara otomatis.\n  Templat urutan harus diatur untuk melakukan tindakan ini\n  Hanya data master dengan kode '/' yang akan diberi kode otomatis"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__message_has_error
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__message_has_error
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__message_has_error
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__message_has_error
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__message_has_error
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__message_has_error
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__message_has_error
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__message_has_error
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__message_has_error
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__message_has_error
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__message_has_error
+msgid "Message Delivery error"
+msgstr "Kesalahan Pengiriman Pesan"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__message_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__message_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__message_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__message_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__message_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__message_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__message_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__message_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__message_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__message_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__message_ids
+msgid "Messages"
+msgstr "Pesan"
+
+#. module: ssi_school_character
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_method_view_form
+msgid "Method"
+msgstr "Metode"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__method_ids
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_construct_view_form
+msgid "Methods"
+msgstr "Metode"
+
+#. module: ssi_school_character
+#: model:school_character_method,name:ssi_school_character.method_modeling
+msgid "Modeling"
+msgstr "Pemodelan"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_indicator__solo_level__multistructural
+msgid "Multistructural"
+msgstr "Multistruktural"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Batas Waktu Aktivitas Saya"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__name
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__name
+msgid "Name"
+msgstr "Nama"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_method__description
+msgid "Narrative description of how this pedagogical method is carried out."
+msgstr "Deskripsi naratif tentang cara metode pedagogis ini dilaksanakan."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_family__description
+msgid ""
+"Narrative description of the common theme shared by the constructs grouped "
+"in this family."
+msgstr "Deskripsi naratif tentang tema bersama yang dimiliki konstruk-konstruk dalam rumpun ini."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_profile__description
+msgid ""
+"Narrative description of this character profile and the intent behind the "
+"set of values it groups."
+msgstr "Deskripsi naratif tentang profil karakter ini dan maksud di balik kumpulan nilai yang dikelompokkannya."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_arena__description
+msgid ""
+"Narrative description of this learning arena and how character is formed and "
+"observed within it."
+msgstr "Deskripsi naratif tentang arena pembelajaran ini dan bagaimana karakter dibentuk serta diamati di dalamnya."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_level__description
+msgid ""
+"Narrative description of what this level represents within its scale, i.e. "
+"the qualities a learner shows to be placed at this level."
+msgstr "Deskripsi naratif tentang apa yang diwakili level ini dalam skalanya, yaitu kualitas yang ditunjukkan peserta didik agar ditempatkan pada level ini."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Batas Waktu Aktivitas Berikutnya"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__activity_summary
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__activity_summary
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__activity_summary
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__activity_summary
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__activity_summary
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__activity_summary
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__activity_summary
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__activity_summary
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__activity_summary
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__activity_summary
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__activity_summary
+msgid "Next Activity Summary"
+msgstr "Ringkasan Aktivitas Berikutnya"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__activity_type_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__activity_type_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__activity_type_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__activity_type_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__activity_type_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__activity_type_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__activity_type_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__activity_type_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__activity_type_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__activity_type_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__activity_type_id
+msgid "Next Activity Type"
+msgstr "Jenis Aktivitas Berikutnya"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_indicator__indicator_type__non_indicator
+msgid "Non-indicator"
+msgstr "Bukan Indikator"
+
+#. module: ssi_school_character
+#: model:school_character_level,name:ssi_school_character.level_status_tdk
+msgid "Not Yet (TDK)"
+msgstr "Belum (TDK)"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__note
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__note
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__note
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__note
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__note
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__note
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__note
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__note
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__note
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__note
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__note
+msgid "Note"
+msgstr "Catatan"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__message_needaction_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__message_needaction_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__message_needaction_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__message_needaction_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__message_needaction_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__message_needaction_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__message_needaction_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__message_needaction_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__message_needaction_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__message_needaction_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Jumlah Tindakan"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__message_has_error_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__message_has_error_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__message_has_error_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__message_has_error_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__message_has_error_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__message_has_error_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__message_has_error_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__message_has_error_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__message_has_error_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__message_has_error_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__message_has_error_counter
+msgid "Number of errors"
+msgstr "Jumlah kesalahan"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_anchor__message_needaction_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_arena__message_needaction_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_construct__message_needaction_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_family__message_needaction_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__message_needaction_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_level__message_needaction_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_method__message_needaction_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_profile__message_needaction_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_rubric__message_needaction_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_scale__message_needaction_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_subconstruct__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Jumlah pesan yang memerlukan tindakan"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_anchor__message_has_error_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_arena__message_has_error_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_construct__message_has_error_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_family__message_has_error_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__message_has_error_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_level__message_has_error_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_method__message_has_error_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_profile__message_has_error_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_rubric__message_has_error_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_scale__message_has_error_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_subconstruct__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Jumlah pesan dengan kesalahan pengiriman"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_anchor__message_unread_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_arena__message_unread_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_construct__message_unread_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_family__message_unread_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__message_unread_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_level__message_unread_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_method__message_unread_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_profile__message_unread_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_rubric__message_unread_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_scale__message_unread_counter
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_subconstruct__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Jumlah pesan yang belum dibaca"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_anchor__source_type__observation
+msgid "Observation"
+msgstr "Observasi"
+
+#. module: ssi_school_character
+#: model:res.groups,name:ssi_school_character.school_character_officer_group
+msgid "Officer"
+msgstr "Petugas"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_rubric__descriptor_ids
+msgid ""
+"One descriptor per level of the scale, describing what performance at that "
+"level looks like."
+msgstr "Satu deskriptor untuk setiap level skala, yang menjelaskan seperti apa kinerja pada level tersebut."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_anchor__grade_type_id
+msgid ""
+"Optional education level (grade type) this anchor example is calibrated for."
+msgstr ""
+"Tingkat pendidikan (jenis tingkat) opsional yang menjadi acuan kalibrasi contoh jangkar ini."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__grade_type_id
+msgid ""
+"Optional education level (grade type) this indicator is calibrated for, e.g. "
+"an indicator worded for a particular stage of schooling."
+msgstr ""
+"Tingkat pendidikan (jenis tingkat) opsional yang menjadi acuan kalibrasi indikator ini, mis. indikator yang dirumuskan untuk tahap pendidikan tertentu."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__grade_id
+msgid ""
+"Optional grade this indicator is calibrated for, when it is specific to a "
+"single grade rather than a whole grade type."
+msgstr ""
+"Tingkat opsional yang menjadi acuan kalibrasi indikator ini, bila indikator ini khusus untuk satu tingkat dan bukan seluruh jenis tingkat."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__subconstruct_id
+msgid ""
+"Optional sub-construct this indicator provides evidence for, when the "
+"indicator targets a specific facet of the construct."
+msgstr "Subkonstruk opsional yang dibuktikan oleh indikator ini, bila indikator menyasar segi tertentu dari konstruk."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_scale__level_ids
+msgid ""
+"Ordered set of levels that make up this scale. Each level is a School "
+"Character Level record ordered by its Sequence."
+msgstr "Kumpulan level berurutan yang menyusun skala ini. Setiap level adalah rekaman Level Karakter Sekolah yang diurutkan berdasarkan Urutan."
+
+#. module: ssi_school_character
+#: model:school_character_level,name:ssi_school_character.level_status_par
+msgid "Partial (PAR)"
+msgstr "Sebagian (PAR)"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_construct__method_ids
+msgid ""
+"Pedagogical methods used to teach, practise, and habituate this construct."
+msgstr "Metode pedagogis yang dipakai untuk mengajarkan, melatih, dan membiasakan konstruk ini."
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_anchor__source_type__peer_report
+msgid "Peer Report"
+msgstr "Laporan Teman Sebaya"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_indicator__indicator_type__positive
+msgid "Positive Indicator"
+msgstr "Indikator Positif"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_construct__definition
+msgid ""
+"Precise definition of the construct: the observable trait or disposition the "
+"school intends to form and assess."
+msgstr "Definisi yang tepat dari konstruk: sifat atau disposisi teramati yang ingin dibentuk dan dinilai oleh sekolah."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_subconstruct__definition
+msgid ""
+"Precise definition of this sub-construct as a narrower facet of its parent "
+"construct."
+msgstr "Definisi yang tepat dari subkonstruk ini sebagai segi yang lebih sempit dari konstruk induknya."
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_indicator__solo_level__prestructural
+msgid "Prestructural"
+msgstr "Prastruktural"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__profile_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_construct_view_search
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_profile_view_form
+msgid "Profile"
+msgstr "Profil"
+
+#. module: ssi_school_character
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_profile_view_form
+msgid "Profile Configuration"
+msgstr "Konfigurasi Profil"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__rbt_level
+msgid "RBT Level"
+msgstr "Level RBT"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_indicator__solo_level__relational
+msgid "Relational"
+msgstr "Relasional"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_indicator__rbt_level__remember
+msgid "Remember"
+msgstr "Mengingat"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__activity_user_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__activity_user_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__activity_user_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__activity_user_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__activity_user_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__activity_user_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__activity_user_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__activity_user_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__activity_user_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__activity_user_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__activity_user_id
+msgid "Responsible User"
+msgstr "Pengguna Penanggung Jawab"
+
+#. module: ssi_school_character
+#: model:school_character_anchor,name:ssi_school_character.anchor_integrity_consistent
+msgid "Returned found money to the office"
+msgstr "Mengembalikan uang temuan ke kantor"
+
+#. module: ssi_school_character
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_rubric_view_form
+msgid "Rubric"
+msgstr "Rubrik"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_rubric_descriptor__rubric_id
+msgid "Rubric this descriptor belongs to."
+msgstr "Rubrik tempat deskriptor ini berada."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__solo_level
+msgid "SOLO Level"
+msgstr "Level SOLO"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__sample_text
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_anchor_view_form
+msgid "Sample"
+msgstr "Contoh"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__scale_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__scale_id
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__scale_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_level_view_search
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_rubric_view_search
+msgid "Scale"
+msgstr "Skala"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_anchor__level_id
+msgid "Scale level this anchor example represents."
+msgstr "Level skala yang diwakili oleh contoh jangkar ini."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_rubric_descriptor__level_id
+msgid "Scale level this descriptor describes."
+msgstr "Level skala yang dijelaskan oleh deskriptor ini."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_level__scale_id
+msgid "Scale this level belongs to. A level cannot exist without a scale."
+msgstr "Skala tempat level ini berada. Level tidak dapat ada tanpa skala."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_rubric__scale_id
+msgid ""
+"Scale this rubric is built on; each descriptor line maps to a level of this "
+"scale."
+msgstr "Skala yang mendasari rubrik ini; setiap baris deskriptor dipetakan ke satu level skala ini."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__school_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_profile_view_search
+msgid "School"
+msgstr "Sekolah"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_arena__arena_type__school_culture
+msgid "School Culture"
+msgstr "Budaya Sekolah"
+
+#. module: ssi_school_character
+#: model:school_character_arena,name:ssi_school_character.arena_school_culture_5s
+msgid "School Culture (5S)"
+msgstr "Budaya Sekolah (5S)"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_profile__school_id
+msgid ""
+"School this character profile belongs to. Optional: a profile may be defined "
+"at foundation level and shared across schools, or scoped to a single school."
+msgstr "Sekolah tempat profil karakter ini berada. Opsional: profil dapat ditetapkan di tingkat yayasan dan dibagikan ke berbagai sekolah, atau dibatasi untuk satu sekolah."
+
+#. module: ssi_school_character
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_indicator_view_form
+msgid "Scope"
+msgstr "Cakupan"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_anchor__source_type__self_report
+msgid "Self Report"
+msgstr "Laporan Diri"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__sequence
+msgid "Sequence"
+msgstr "Urutan"
+
+#. module: ssi_school_character
+#: model:school_character_family,name:ssi_school_character.family_service
+msgid "Service & Compassion"
+msgstr "Pelayanan & Kasih Sayang"
+
+#. module: ssi_school_character
+#: model:school_character_method,name:ssi_school_character.method_service_learning
+msgid "Service Learning"
+msgstr "Pembelajaran Layanan"
+
+#. module: ssi_school_character
+#: model:school_character_construct,name:ssi_school_character.construct_service
+msgid "Service to Others"
+msgstr "Melayani Orang Lain"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__source_type
+msgid "Source Type"
+msgstr "Jenis Sumber"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_construct__boundary_statement
+msgid ""
+"Statement of what this construct is NOT (ICLAD Bab 6.2), used to keep the "
+"construct distinct from neighbouring constructs and to protect the validity "
+"of its assessment."
+msgstr "Pernyataan tentang apa yang BUKAN konstruk ini (ICLAD Bab 6.2), dipakai untuk menjaga konstruk tetap berbeda dari konstruk di sekitarnya dan melindungi validitas penilaiannya."
+
+#. module: ssi_school_character
+#: model:school_character_scale,name:ssi_school_character.scale_status_tdk_par_eff
+msgid "Status (Not Yet / Partial / Effective)"
+msgstr "Status (Belum / Sebagian / Efektif)"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_anchor__activity_state
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_arena__activity_state
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_construct__activity_state
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_family__activity_state
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__activity_state
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_level__activity_state
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_method__activity_state
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_profile__activity_state
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_rubric__activity_state
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_scale__activity_state
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_subconstruct__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr "Status berdasarkan aktivitas\nTerlambat: Tanggal jatuh tempo sudah lewat\nHari ini: Tanggal aktivitas adalah hari ini\nDirencanakan: Aktivitas mendatang."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__solo_level
+msgid ""
+"Structure of the Observed Learning Outcome (SOLO taxonomy) level of this "
+"indicator (ICLAD Bab 8)."
+msgstr "Level Structure of the Observed Learning Outcome (taksonomi SOLO) dari indikator ini (ICLAD Bab 8)."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__subconstruct_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_subconstruct_view_form
+msgid "Sub-construct"
+msgstr "Subkonstruk"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__subconstruct_ids
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_construct_view_form
+msgid "Sub-constructs"
+msgstr "Subkonstruk"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_construct__subconstruct_ids
+msgid "Sub-constructs that decompose this construct into finer parts."
+msgstr "Subkonstruk yang menguraikan konstruk ini menjadi bagian-bagian yang lebih halus."
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__suitable_for
+#: model_terms:ir.ui.view,arch_db:ssi_school_character.school_character_method_view_form
+msgid "Suitable For"
+msgstr "Cocok Untuk"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_anchor__source_type__teacher_report
+msgid "Teacher Report"
+msgstr "Laporan Guru"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_anchor__sample_text
+msgid ""
+"The concrete sample of performance that anchors this construct at this level."
+msgstr "Contoh konkret kinerja yang menjadi jangkar konstruk ini pada level ini."
+
+#. module: ssi_school_character
+#: model:school_character_level,name:ssi_school_character.level_iclad_transfer
+msgid "Transfer"
+msgstr "Transfer"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_anchor__activity_exception_decoration
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_arena__activity_exception_decoration
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_construct__activity_exception_decoration
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_family__activity_exception_decoration
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__activity_exception_decoration
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_level__activity_exception_decoration
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_method__activity_exception_decoration
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_profile__activity_exception_decoration
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_rubric__activity_exception_decoration
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_scale__activity_exception_decoration
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_subconstruct__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Jenis aktivitas pengecualian pada rekaman."
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_indicator__rbt_level__understand
+msgid "Understand"
+msgstr "Memahami"
+
+#. module: ssi_school_character
+#: model:ir.model.fields.selection,name:ssi_school_character.selection__school_character_indicator__solo_level__unistructural
+msgid "Unistructural"
+msgstr "Unistruktural"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__message_unread
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__message_unread
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__message_unread
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__message_unread
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__message_unread
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__message_unread
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__message_unread
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__message_unread
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__message_unread
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__message_unread
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__message_unread
+msgid "Unread Messages"
+msgstr "Pesan yang Belum Dibaca"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__message_unread_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__message_unread_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__message_unread_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__message_unread_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__message_unread_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__message_unread_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__message_unread_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__message_unread_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__message_unread_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__message_unread_counter
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Penghitung Pesan yang Belum Dibaca"
+
+#. module: ssi_school_character
+#: model:res.groups,name:ssi_school_character.school_character_user_group
+msgid "User"
+msgstr "Pengguna"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_anchor__website_message_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_arena__website_message_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_construct__website_message_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_family__website_message_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_indicator__website_message_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_level__website_message_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_method__website_message_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_profile__website_message_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_rubric__website_message_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_scale__website_message_ids
+#: model:ir.model.fields,field_description:ssi_school_character.field_school_character_subconstruct__website_message_ids
+msgid "Website Messages"
+msgstr "Pesan Situs Web"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_anchor__website_message_ids
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_arena__website_message_ids
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_construct__website_message_ids
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_family__website_message_ids
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__website_message_ids
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_level__website_message_ids
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_method__website_message_ids
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_profile__website_message_ids
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_rubric__website_message_ids
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_scale__website_message_ids
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_subconstruct__website_message_ids
+msgid "Website communication history"
+msgstr "Riwayat komunikasi situs web"
+
+#. module: ssi_school_character
+#: model:ir.model.fields,help:ssi_school_character.field_school_character_indicator__indicator_type
+msgid ""
+"Whether this is a Positive Indicator (a behaviour that counts as evidence of "
+"the construct) or a Non-indicator (a behaviour that must explicitly NOT be "
+"read as evidence of the construct)."
+msgstr "Apakah ini Indikator Positif (perilaku yang dihitung sebagai bukti konstruk) atau Bukan Indikator (perilaku yang secara eksplisit TIDAK boleh dibaca sebagai bukti konstruk)."
