@@ -149,7 +149,7 @@ msgid ""
 "\n"
 "* If active user can see and execute 'Approve' button"
 msgstr ""
-"Kebijakan setuju\n"
+"Kebijakan setujui\n"
 "\n"
 "* Jika pengguna aktif dapat melihat dan menjalankan tombol 'Setujui'"
 
@@ -335,10 +335,10 @@ msgid ""
 "* Automatically filled with user's company.\n"
 "  Default company can be changed"
 msgstr ""
-"Perusahaan yang memiliki dokumen\n"
+"Perusahaan pemilik dokumen\n"
 "\n"
-"* Otomatis diisi dengan perusahaan pengguna.\n"
-"  Perusahaan default dapat diubah"
+"* Terisi otomatis dengan perusahaan pengguna.\n"
+"  Perusahaan bawaan dapat diubah"
 
 #. module: ssi_school_character_evidence
 #: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__confirm_ok
@@ -873,7 +873,7 @@ msgstr ""
 "Status berdasarkan aktivitas\n"
 "Terlambat: Tanggal jatuh tempo sudah lewat\n"
 "Hari ini: Tanggal aktivitas adalah hari ini\n"
-"Terencana: Aktivitas mendatang."
+"Direncanakan: Aktivitas mendatang."
 
 #. module: ssi_school_character_evidence
 #: model:ir.model.fields.selection,name:ssi_school_character_evidence.selection__school_character_observation_evidence__evidence_quality__strong
@@ -1133,9 +1133,9 @@ msgid ""
 msgstr ""
 "Pengguna yang bertanggung jawab atas dokumen\n"
 "\n"
-"* Pembuat dapat berbeda dengan penanggung jawab\n"
-"* Otomatis diisi dengan pengguna yang memulai pembuatan dokumen.\n"
-"  Penanggung jawab default dapat diubah."
+"* Pengguna pembuat dapat berbeda dengan pengguna penanggung jawab\n"
+"* Terisi otomatis dengan pengguna yang memulai pembuatan dokumen.\n"
+"  Penanggung jawab bawaan dapat diubah."
 
 #. module: ssi_school_character_evidence
 #: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__reviewer_id
@@ -1147,7 +1147,7 @@ msgid ""
 msgstr ""
 "Pengguna yang bertanggung jawab memeriksa dokumen\n"
 "\n"
-"* Kecuali dikonfigurasi, pemeriksa tidak sama dengan penyetuju"
+"* Kecuali dikonfigurasi untuk menyetujui, pemeriksa tidak sama dengan penyetuju"
 
 #. module: ssi_school_character_evidence
 #: model:ir.model.fields,help:ssi_school_character_evidence.field_school_character_calibration__active_approver_user_ids
